@@ -36,6 +36,14 @@ CREATE TABLE CustomerBooking(
 	FOREIGN KEY (idFieldType) REFERENCES dbo.FieldType(id),
 	FOREIGN KEY (idFieldName) REFERENCES dbo.FieldName(id),
 )
+EXEC sp_rename 'FK__CustomerB__idFie__5812160E', 'FK_CustomerBooking_idFieldType';
+ALTER TABLE CustomerBooking
+DROP CONSTRAINT FK_CustomerBooking_idFieldType;
+ALTER TABLE CustomerBooking
+DROP COLUMN idFieldType;
+
+alter table CustomerBooking
+ADD state NVARCHAR(50);
 
 CREATE TABLE Bill(
 	id INT IDENTITY PRIMARY KEY,
@@ -56,4 +64,4 @@ CREATE TABLE InformationBooking(
 	FOREIGN KEY (idBill) REFERENCES dbo.Bill(id),
 )
 
-
+drop table InformationBooking
