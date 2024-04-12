@@ -2,8 +2,13 @@
 CREATE TABLE FieldType(
 	id INT IDENTITY PRIMARY KEY,
 	name NVARCHAR(100) NOT NULL,
+
 	price FLOAT NOT NULL
 )
+ALTER TABLE FieldType
+ADD  specialDayPrice INT;
+ALTER TABLE FieldType
+DROP COLUMN price;
 
 CREATE TABLE FieldName(
 	id INT IDENTITY PRIMARY KEY,
@@ -50,7 +55,5 @@ CREATE TABLE InformationBooking(
 	FOREIGN KEY (idCustomerBooking) REFERENCES dbo.CustomerBooking(id),
 	FOREIGN KEY (idBill) REFERENCES dbo.Bill(id),
 )
-
-
 
 
