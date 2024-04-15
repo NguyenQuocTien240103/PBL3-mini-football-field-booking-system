@@ -56,6 +56,10 @@
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button25 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -248,7 +252,7 @@
             this.đơnĐặtSânToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(699, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(761, 28);
             this.menuStrip1.TabIndex = 27;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -272,16 +276,16 @@
             // 
             // button21
             // 
-            this.button21.Location = new System.Drawing.Point(330, 57);
+            this.button21.Location = new System.Drawing.Point(543, 481);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(100, 23);
+            this.button21.Size = new System.Drawing.Size(100, 24);
             this.button21.TabIndex = 28;
             this.button21.Text = "Trống";
             this.button21.UseVisualStyleBackColor = true;
             // 
             // button22
             // 
-            this.button22.Location = new System.Drawing.Point(436, 57);
+            this.button22.Location = new System.Drawing.Point(649, 481);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(100, 23);
             this.button22.TabIndex = 29;
@@ -290,7 +294,7 @@
             // 
             // button23
             // 
-            this.button23.Location = new System.Drawing.Point(330, 86);
+            this.button23.Location = new System.Drawing.Point(543, 510);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(100, 23);
             this.button23.TabIndex = 30;
@@ -299,18 +303,57 @@
             // 
             // button24
             // 
-            this.button24.Location = new System.Drawing.Point(436, 86);
+            this.button24.Location = new System.Drawing.Point(649, 510);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(100, 23);
             this.button24.TabIndex = 31;
             this.button24.Text = "Đang bận";
             this.button24.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(118, 29);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(206, 24);
+            this.comboBox1.TabIndex = 32;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(54, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 16);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "Loại sân";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 96);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 16);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "Sân";
+            // 
+            // button25
+            // 
+            this.button25.Location = new System.Drawing.Point(330, 29);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(100, 23);
+            this.button25.TabIndex = 35;
+            this.button25.Text = "Tìm kiếm";
+            this.button25.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(699, 544);
+            this.ClientSize = new System.Drawing.Size(761, 544);
+            this.Controls.Add(this.button25);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button24);
             this.Controls.Add(this.button23);
             this.Controls.Add(this.button22);
@@ -338,7 +381,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Sân";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -375,5 +418,9 @@
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button25;
     }
 }
