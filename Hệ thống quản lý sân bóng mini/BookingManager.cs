@@ -49,5 +49,14 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             payMent.ShowDialog();
             this.Show();
         }
+
+        // click toolMenuItems on form BookingManager
+        private void MenuItem_Click(object sender, EventArgs e)
+        {
+            Manager manager = new Manager();
+            this.Hide();
+            manager.ShowDialog();
+            this.Show();
+        }
     }
 }

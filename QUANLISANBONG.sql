@@ -47,5 +47,18 @@ CREATE TABLE Account(
 
 INSERT INTO dbo.Account(username,password)	
 VALUES ('nguyentien','240103')
+INSERT INTO dbo.Account(username,password)	
+VALUES ('phamnhi','150402')
 
-SElECT * FROM dbo.Account
+SElECT * FROM dbo.Account --Transact(T)-SQL 
+
+GO --GO signals the end of a batch
+Create procedure GetAccountByUserName 
+@userName nvarchar(100)
+as
+begin
+	SElECT * FROM dbo.Account where username = @userName
+end
+GO
+EXEC dbo.GetAccountByUserName @userName = 'nguyentien';
+

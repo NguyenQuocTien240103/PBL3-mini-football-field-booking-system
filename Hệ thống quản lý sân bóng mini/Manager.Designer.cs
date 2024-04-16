@@ -114,7 +114,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.dtgvAccount = new System.Windows.Forms.DataGridView();
             this.panel16 = new System.Windows.Forms.Panel();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.button21 = new System.Windows.Forms.Button();
@@ -162,7 +162,7 @@
             this.panel30.SuspendLayout();
             this.panel34.SuspendLayout();
             this.panel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).BeginInit();
             this.panel16.SuspendLayout();
             this.panel13.SuspendLayout();
             this.SuspendLayout();
@@ -931,19 +931,19 @@
             // 
             // panel19
             // 
-            this.panel19.Controls.Add(this.dataGridView5);
+            this.panel19.Controls.Add(this.dtgvAccount);
             this.panel19.Location = new System.Drawing.Point(6, 57);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(325, 331);
             this.panel19.TabIndex = 4;
             // 
-            // dataGridView5
+            // dtgvAccount
             // 
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(3, 24);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(319, 304);
-            this.dataGridView5.TabIndex = 0;
+            this.dtgvAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvAccount.Location = new System.Drawing.Point(3, 24);
+            this.dtgvAccount.Name = "dtgvAccount";
+            this.dtgvAccount.Size = new System.Drawing.Size(319, 304);
+            this.dtgvAccount.TabIndex = 0;
             // 
             // panel16
             // 
@@ -1082,7 +1082,7 @@
             this.panel34.ResumeLayout(false);
             this.panel34.PerformLayout();
             this.panel19.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).EndInit();
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
             this.panel13.ResumeLayout(false);
@@ -1178,7 +1178,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.DataGridView dtgvAccount;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Button button21;
