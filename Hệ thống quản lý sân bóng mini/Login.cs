@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hệ_thống_quản_lý_sân_bóng_mini.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,10 +20,26 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
 
         private void btnSign_Click(object sender, EventArgs e)
         {
-            BookingManager bookingManager = new BookingManager();
-            this.Hide();
-            bookingManager.ShowDialog();
-            this.Show();
+            string username = userNametxt.Text.ToString();
+            string password = passWordtxt.Text.ToString();
+           //MessageBox.Show(username + password);
+            if (login(username, password))
+            {
+                BookingManager bookingmanager = new BookingManager();
+                this.Hide();
+                bookingmanager.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("error");
+            }
         }
+
+        bool login(string username,string password)
+        {
+            return AccountDAL.Instance.Login(username,password);
+        }
+
     }
 }

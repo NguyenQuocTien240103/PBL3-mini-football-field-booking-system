@@ -61,4 +61,6 @@ begin
 end
 GO
 EXEC dbo.GetAccountByUserName @userName = 'nguyentien';
+GO
 
+select * from dbo.Account where username='phamnhi' and password='150402'

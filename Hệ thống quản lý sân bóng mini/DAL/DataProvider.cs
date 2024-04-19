@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 {
@@ -28,8 +29,10 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             }
         }
         private DataProvider() { }
+        //private string connectionSTR =
+        //        "Data Source=DESKTOP-L96UHDF\\SQLEXPRESS;Initial Catalog=quanli;Integrated Security=True";
         private string connectionSTR =
-                "Data Source=DESKTOP-L96UHDF\\SQLEXPRESS;Initial Catalog=quanli;Integrated Security=True";
+        "Data Source=DESKTOP-CVOKJNA\\TIEN;Initial Catalog=QLSB;Integrated Security=True";
         public DataTable ExcuteQuery(string query, object[] parameter =null)
         {
             // open connection to DB
