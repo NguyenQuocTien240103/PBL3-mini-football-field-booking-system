@@ -670,7 +670,7 @@
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(618, 394);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "TheOder";
+            this.tabPage4.Text = "TheOrder";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // panel25

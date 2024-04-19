@@ -10,6 +10,24 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 {
     public class DataProvider
     {
+
+        private static DataProvider _Instance;
+        public static DataProvider Instance
+        {
+            get
+            {
+                if (_Instance == null)
+                {
+                    _Instance = new DataProvider();
+                }
+                return _Instance;
+            }
+            private set
+            {
+                
+            }
+        }
+        private DataProvider() { }
         private string connectionSTR =
                 "Data Source=DESKTOP-L96UHDF\\SQLEXPRESS;Initial Catalog=quanli;Integrated Security=True";
         public DataTable ExcuteQuery(string query, object[] parameter =null)

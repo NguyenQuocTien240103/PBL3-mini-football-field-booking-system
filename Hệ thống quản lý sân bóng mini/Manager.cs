@@ -24,9 +24,10 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         {
             //string query = "SElECT * FROM dbo.Account";
             string query = "EXEC dbo.GetAccountByUserName @userName";
-            DataProvider dataProvider = new DataProvider();
-            dtgvAccount.DataSource = dataProvider.ExcuteQuery(query,new object[] {"nguyentien"});
+            // DataProvider dataProvider = new DataProvider();
+            dtgvAccount.DataSource = DataProvider.Instance.ExcuteQuery(query,new object[] {"nguyentien"});
             
+
         }
     }
 }
