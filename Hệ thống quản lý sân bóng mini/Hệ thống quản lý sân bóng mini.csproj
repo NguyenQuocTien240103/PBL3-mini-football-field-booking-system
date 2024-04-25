@@ -48,6 +48,10 @@
   <ItemGroup>
     <Compile Include="DAL\AccountDAL.cs" />
     <Compile Include="DAL\DataProvider.cs" />
+    <Compile Include="DAL\FieldDAL.cs" />
+    <Compile Include="DAL\FieldTypeDAL.cs" />
+    <Compile Include="DTO\Field.cs" />
+    <Compile Include="DTO\FieldType.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,8 +131,6 @@
   <ItemGroup>
     <None Include="Resources\san-van-dong-nou-camp-anh-dai-dien %281%29.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

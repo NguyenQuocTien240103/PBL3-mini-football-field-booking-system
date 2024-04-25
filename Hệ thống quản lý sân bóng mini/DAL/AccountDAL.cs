@@ -9,16 +9,16 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 {
     public class AccountDAL
     {
-        private static AccountDAL _instance;
+        private static AccountDAL _Instance;
         public static AccountDAL Instance
         {
             get
             {
-                if(_instance == null)
+                if(_Instance == null)
                 {
-                    _instance = new AccountDAL();
+                    _Instance = new AccountDAL();
                 }
-                return _instance;
+                return _Instance;
             }
             private set
             {

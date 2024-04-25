@@ -63,4 +63,57 @@ GO
 EXEC dbo.GetAccountByUserName @userName = 'nguyentien';
 GO
 
-select * from dbo.Account where username='phamnhi' and password='150402'
+
+Select * from dbo.FieldType
+
+
+-- insert value for table fieldName
+INSERT INTO dbo.FieldName(name,status,idFieldType)	
+VALUES ('A','trong',1)
+INSERT INTO dbo.FieldName(name,status,idFieldType)	
+VALUES ('B','trong',1)
+INSERT INTO dbo.FieldName(name,status,idFieldType)	
+VALUES ('C','trong',1)
+INSERT INTO dbo.FieldName(name,status,idFieldType)	
+VALUES ('A','trong',2)
+INSERT INTO dbo.FieldName(name,status,idFieldType)	
+VALUES ('B','trong',2)
+INSERT INTO dbo.FieldName(name,status,idFieldType)	
+VALUES ('C','trong',2)
+
+Update dbo.FieldName
+set status='empty'
+where status ='trong'
+Select * from dbo.FieldName
+
+alter table dbo.FieldType
+add TypeName NVARCHAR(100)
+
+alter table dbo.FieldType
+drop column TypeName;
+
+Update dbo.FieldType
+set TypeName= 'san 7'
+where id = 2
+
+
+Select * from dbo.FieldType
+GO
+-- get field
+CREATE PROC GetFieldList
+as
+begin
+Select * from dbo.FieldName
+end
+GO
+	
+EXEC dbo.GetFieldList		
+
+GO
+CREATE PROC GetFieldType
+as
+begin
+Select * from dbo.FieldType
+end
+GO
+EXEC dbo.GetFieldType
