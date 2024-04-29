@@ -75,6 +75,8 @@ VALUES ('B','trong',1)
 INSERT INTO dbo.FieldName(name,status,idFieldType)	
 VALUES ('C','trong',1)
 INSERT INTO dbo.FieldName(name,status,idFieldType)	
+VALUES ('D','trong',1)
+INSERT INTO dbo.FieldName(name,status,idFieldType)	
 VALUES ('A','trong',2)
 INSERT INTO dbo.FieldName(name,status,idFieldType)	
 VALUES ('B','trong',2)
@@ -117,3 +119,44 @@ Select * from dbo.FieldType
 end
 GO
 EXEC dbo.GetFieldType
+
+GO
+
+-----29/4----
+EXEC dbo.GetFieldType
+
+EXEC dbo.GetFieldList 
+
+Select * FROM dbo.Bill
+Select * FROM dbo.CustomerBooking 
+Select * FROM dbo.Customer 
+Select * FROM dbo.FieldName 
+
+-- insert vao dbo.Customer
+INSERT INTO dbo.Customer(name,phone)	
+VALUES ('NguyenQuocTien','123')
+INSERT INTO dbo.Customer(name,phone)	
+VALUES ('LeHaiKhoa','456')
+INSERT INTO dbo.Customer(name,phone)	
+VALUES ('NguyenNhatQuan','789')
+
+-- insert vao dbo.CustomerBooking
+
+INSERT INTO dbo.CustomerBooking(idCustomer,idFieldName,startTime,priceBooking,status)	
+VALUES (1,1,GETDATE(),50000,'dadat')
+INSERT INTO dbo.CustomerBooking(idCustomer,idFieldName,startTime,priceBooking,status)	
+VALUES (2,2,GETDATE(),50000,'dadat')
+INSERT INTO dbo.CustomerBooking(idCustomer,idFieldName,startTime,priceBooking,status)	
+VALUES (3,4,GETDATE(),70000,'dadat')
+
+--insert vao dbo.Bill
+INSERT INTO dbo.Bill(idCustomerBooking,datePayment,totalPrice)	
+VALUES (1,GETDATE(),100000)
+INSERT INTO dbo.Bill(idCustomerBooking,datePayment,totalPrice)		
+VALUES (2,GETDATE(),200000)
+INSERT INTO dbo.Bill(idCustomerBooking,datePayment,totalPrice)		
+VALUES (2,GETDATE(),150000)
+
+update  dbo.FieldName 
+set status='busy'
+where id=6

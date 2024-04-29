@@ -48,10 +48,18 @@
   <ItemGroup>
     <Compile Include="DAL\AccountDAL.cs" />
     <Compile Include="DAL\DataProvider.cs" />
+    <Compile Include="DAL\detailBillDAL.cs" />
     <Compile Include="DAL\FieldDAL.cs" />
     <Compile Include="DAL\FieldTypeDAL.cs" />
+    <Compile Include="DTO\detailBill.cs" />
     <Compile Include="DTO\Field.cs" />
     <Compile Include="DTO\FieldType.cs" />
+    <Compile Include="FormInformationBookingNow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInformationBookingNow.Designer.cs">
+      <DependentUpon>FormInformationBookingNow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +92,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormInformationBookingNow.resx">
+      <DependentUpon>FormInformationBookingNow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>

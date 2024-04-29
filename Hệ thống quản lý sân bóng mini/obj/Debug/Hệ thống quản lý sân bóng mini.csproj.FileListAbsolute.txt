@@ -93,3 +93,4 @@ C:\Users\admin\Desktop\New folder (2)\software\Hệ thống quản lý sân bón
 C:\Users\admin\Desktop\New folder (2)\software\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ thống quản lý sân bóng mini.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\New folder (2)\software\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ thống quản lý sân bóng mini.exe
 C:\Users\admin\Desktop\New folder (2)\software\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ thống quản lý sân bóng mini.pdb
+C:\Users\admin\Desktop\New folder (2)\software\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ_thống_quản_lý_sân_bóng_mini.FormInformationBookingNow.resources
