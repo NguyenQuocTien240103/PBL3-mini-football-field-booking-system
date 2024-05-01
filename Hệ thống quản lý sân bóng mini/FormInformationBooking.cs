@@ -19,6 +19,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         {
             InitializeComponent();
             LoadTypeField();
+            setComboxTime();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -48,6 +49,35 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 LoadFieldByIdTypeField(choosed.Id);
             }
 
+        }
+        void setComboxTime()
+        {
+            for (int i = 0; i < 24; i++)
+            {
+                cb1.Items.Add(i);
+                cb3.Items.Add(i);
+            }
+            for (int i = 0; i < 60; i++)
+            {
+                if (i < 10)
+                {
+                    String index = i.ToString();
+                    cb2.Items.Add("0" + i);
+                    cb4.Items.Add("0" + i);
+
+                }
+                else
+                {
+                    cb2.Items.Add(i);
+                    cb4.Items.Add(i);
+                }
+            }
+
+        }
+
+        public void abc()
+        {
+            textBox3.Text = "2";
         }
     }
 }

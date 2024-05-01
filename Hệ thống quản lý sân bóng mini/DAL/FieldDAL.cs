@@ -12,8 +12,10 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
     {
         private static FieldDAL _Instance;
 
-        public static FieldDAL Instance {  
-            get { 
+        public static FieldDAL Instance
+        {
+            get
+            {
                 if (_Instance == null)
                 {
                     _Instance = new FieldDAL();
@@ -43,7 +45,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
         }
         public List<Field> GetFieldByIdFieldType(int id)
         {
-            String sql = "Select * FROM dbo.FieldName Where idFieldType = "+id.ToString();
+            String sql = "Select * FROM dbo.FieldName Where idFieldType = " + id.ToString();
             List<Field> fieldList = new List<Field>();
             DataTable data = DataProvider.Instance.ExcuteQuery(sql);
             foreach (DataRow row in data.Rows)
@@ -53,6 +55,13 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             }
             return fieldList;
         }
+        public void updateFieldById(int id, String status)
+        {
+            // String sql = "UPDATE  dbo.FieldName SET status = " + status.ToString() + "where id = " + id.ToString();
+            String sql = "UPDATE  dbo.FieldName SET status ='" + status.ToString()+"' where id = " + id.ToString();
+            DataProvider.Instance.ExcuteNonQuery(sql);
+        }
+
 
     }
 }

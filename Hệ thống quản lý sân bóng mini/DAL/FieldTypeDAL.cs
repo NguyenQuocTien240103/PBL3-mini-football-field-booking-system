@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Hệ_thống_quản_lý_sân_bóng_mini.DTO;
 
 namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
@@ -40,6 +41,16 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 
             }
             return listFieldType;
+        }
+
+        public FieldType getFieldTypeById(int id)
+        {
+        
+            string sql = "Select * FROM dbo.FieldType Where id = " + id.ToString();
+            DataTable data = DataProvider.Instance.ExcuteQuery(sql);
+            //mỗi TypeField chỉ có 1 id duy nhất nên chỉ cho 1 trường TypeField duy nhất vậy nên ta k cần dùng list
+            FieldType fieldType = new FieldType(data.Rows[0]);
+            return fieldType;
         }
     }
 }

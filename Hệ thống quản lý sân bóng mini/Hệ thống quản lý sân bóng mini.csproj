@@ -47,10 +47,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\AccountDAL.cs" />
+    <Compile Include="DAL\CustomerBookingDAL.cs" />
+    <Compile Include="DAL\CustomerDAL.cs" />
     <Compile Include="DAL\DataProvider.cs" />
     <Compile Include="DAL\detailBillDAL.cs" />
     <Compile Include="DAL\FieldDAL.cs" />
     <Compile Include="DAL\FieldTypeDAL.cs" />
+    <Compile Include="DTO\Customer.cs" />
+    <Compile Include="DTO\CustomerBooking.cs" />
     <Compile Include="DTO\detailBill.cs" />
     <Compile Include="DTO\Field.cs" />
     <Compile Include="DTO\FieldType.cs" />

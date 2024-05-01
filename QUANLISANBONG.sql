@@ -1,4 +1,4 @@
-
+﻿
 CREATE TABLE FieldType(
 	id INT IDENTITY PRIMARY KEY,
 	name NVARCHAR(100) NOT NULL,
@@ -69,34 +69,30 @@ Select * from dbo.FieldType
 
 -- insert value for table fieldName
 INSERT INTO dbo.FieldName(name,status,idFieldType)	
-VALUES ('A','trong',1)
+VALUES ('A','empty',1)
 INSERT INTO dbo.FieldName(name,status,idFieldType)	
-VALUES ('B','trong',1)
+VALUES ('B','empty',1)
 INSERT INTO dbo.FieldName(name,status,idFieldType)	
-VALUES ('C','trong',1)
+VALUES ('C','empty',1)
 INSERT INTO dbo.FieldName(name,status,idFieldType)	
-VALUES ('D','trong',1)
+VALUES ('D','empty',1)
 INSERT INTO dbo.FieldName(name,status,idFieldType)	
-VALUES ('A','trong',2)
+VALUES ('A','empty',2)
 INSERT INTO dbo.FieldName(name,status,idFieldType)	
-VALUES ('B','trong',2)
+VALUES ('B','empty',2)
 INSERT INTO dbo.FieldName(name,status,idFieldType)	
-VALUES ('C','trong',2)
+VALUES ('C','busy',2)
 
-Update dbo.FieldName
-set status='empty'
-where status ='trong'
-Select * from dbo.FieldName
 
+
+-- set kiểu dữ liệu
 alter table dbo.FieldType
 add TypeName NVARCHAR(100)
 
+-- del table
 alter table dbo.FieldType
 drop column TypeName;
 
-Update dbo.FieldType
-set TypeName= 'san 7'
-where id = 2
 
 
 Select * from dbo.FieldType
@@ -128,10 +124,30 @@ EXEC dbo.GetFieldType
 EXEC dbo.GetFieldList 
 
 Select * FROM dbo.Bill
-Select * FROM dbo.CustomerBooking 
+Select * FROM dbo.CustomerBooking where idFieldName =19
 Select * FROM dbo.Customer 
 Select * FROM dbo.FieldName 
+Select * FROM dbo.FieldType 
 
+-- lấy ra vị trí cuối cùng
+SELECT * FROM dbo.Customer  WHERE id = (SELECT MAX(id) FROM dbo.Customer );
+SELECT TOP 1 * FROM dbo.Customer  ORDER BY id DESC
+SELECT TOP 1 * FROM dbo.FieldName   ORDER BY id DESC
+SELECT * FROM dbo.FieldName  WHERE idFieldType=1 and id = (SELECT MAX(id) FROM dbo.FieldName ) 
+
+SELECT * FROM dbo.FieldName
+WHERE idFieldType = 1 
+AND id = (
+    SELECT MAX(id) FROM dbo.FieldName 
+    WHERE idFieldType = 1
+)
+
+SELECT * FROM dbo.CustomerBooking
+WHERE idFieldName = 15 
+AND id = (
+    SELECT MAX(id) FROM dbo.CustomerBooking 
+    WHERE idFieldName = 15
+)
 -- insert vao dbo.Customer
 INSERT INTO dbo.Customer(name,phone)	
 VALUES ('NguyenQuocTien','123')
@@ -157,6 +173,20 @@ VALUES (2,GETDATE(),200000)
 INSERT INTO dbo.Bill(idCustomerBooking,datePayment,totalPrice)		
 VALUES (2,GETDATE(),150000)
 
-update  dbo.FieldName 
-set status='busy'
-where id=6
+
+
+-- xử lí khi nhiều đối tượng phụ thuộc vào
+ALTER TABLE dbo.CustomerBooking	
+DROP CONSTRAINT DF__CustomerB__endTi__3E52440B;
+
+-- xóa tất cả các value
+DELETE FROM dbo.FieldName;
+DELETE FROM dbo.Customer;
+DELETE FROM dbo.CustomerBooking;
+DELETE FROM dbo.Bill;
+--Tắt ràng buộc khóa ngoại trên bảng "CustomerBooking"
+ALTER TABLE CustomerBooking NOCHECK CONSTRAINT FK__CustomerB__idCus__3F466844;
+ALTER TABLE CustomerBooking NOCHECK CONSTRAINT FK__CustomerB__idFie__403A8C7D;
+ALTER TABLE dbo.Bill NOCHECK CONSTRAINT FK__Bill__idCustomer__440B1D61;
+--Mở lại ràng buộc khóa ngoại
+ALTER TABLE CustomerBooking WITH CHECK CHECK CONSTRAINT FK__CustomerB__idCus__3F466844;
