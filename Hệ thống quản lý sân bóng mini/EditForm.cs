@@ -13,45 +13,21 @@ using Hệ_thống_quản_lý_sân_bóng_mini.DTO;
 
 namespace Hệ_thống_quản_lý_sân_bóng_mini
 {
-    public partial class FormInformationBooking : Form
+    public partial class EditForm : Form
     {
-        public FormInformationBooking()
+        public EditForm()
         {
             InitializeComponent();
             LoadTypeField();
-            setComboxTime();
-            LoadCustomerBooking();
+            setCombox();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        
-        void LoadTypeField()
-        {
-            List<FieldType> listFieldType = FieldTypeDAL.Instance.LoadFieldType();
-            cbTypeField.DataSource = listFieldType;
-            cbTypeField.DisplayMember= "TypeName";
-        }
-        void LoadFieldByIdTypeField(int id)
-        {
-            List<Field> listField = FieldDAL.Instance.GetFieldByIdFieldType(id);
-            cbField.DataSource = listField;
-            cbField.DisplayMember = "name";
-        }
 
-        private void cbTypeField_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            ComboBox cb = sender as ComboBox;
-            FieldType choosed = cb.SelectedItem as FieldType;
-            if (choosed != null)
-            {
-                LoadFieldByIdTypeField(choosed.Id);
-            }
-
-        }
-        void setComboxTime()
+        void setCombox()
         {
             for (int i = 0; i < 24; i++)
             {
@@ -76,18 +52,38 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
 
         }
 
-        public void abcd()
+        void LoadTypeField()
         {
-            textBox3.Text = "2";
+            List<FieldType> listFieldType = FieldTypeDAL.Instance.LoadFieldType();
+            cbFieldType.DataSource = listFieldType;
+            cbFieldType.DisplayMember = "TypeName";
+        }
+        void LoadFieldByIdTypeField(int id)
+        {
+            List<Field> listField = FieldDAL.Instance.GetFieldByIdFieldType(id);
+            cbNameField.DataSource = listField;
+            cbNameField.DisplayMember = "name";
         }
 
-        void LoadCustomerBooking()
+
+        private void cbFieldType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DataTable dt = CustomerBookingDAL.Instance.GetCustomerBookingDepositMoney();
-            if (dt != null)
+            ComboBox cb = sender as ComboBox;
+            FieldType choosed = cb.SelectedItem as FieldType;
+            if (choosed != null)
             {
-                dataGridView1.DataSource = dt;
+                LoadFieldByIdTypeField(choosed.Id);
             }
+        }
+
+        public void abc(Field field)
+        {
+            txtFieldID.Text = field.Id.ToString();
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -50,14 +50,21 @@
     <Compile Include="DAL\CustomerBookingDAL.cs" />
     <Compile Include="DAL\CustomerDAL.cs" />
     <Compile Include="DAL\DataProvider.cs" />
-    <Compile Include="DAL\detailBillDAL.cs" />
+    <Compile Include="DAL\CustomerBookingDetailDAL.cs" />
     <Compile Include="DAL\FieldDAL.cs" />
     <Compile Include="DAL\FieldTypeDAL.cs" />
     <Compile Include="DTO\Customer.cs" />
     <Compile Include="DTO\CustomerBooking.cs" />
+    <Compile Include="DTO\CustomerBookingDetail.cs" />
     <Compile Include="DTO\detailBill.cs" />
     <Compile Include="DTO\Field.cs" />
     <Compile Include="DTO\FieldType.cs" />
+    <Compile Include="EditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditForm.Designer.cs">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInformationBookingNow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +103,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EditForm.resx">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInformationBookingNow.resx">
       <DependentUpon>FormInformationBookingNow.cs</DependentUpon>
     </EmbeddedResource>

@@ -124,10 +124,53 @@ EXEC dbo.GetFieldType
 EXEC dbo.GetFieldList 
 
 Select * FROM dbo.Bill
-Select * FROM dbo.CustomerBooking where idFieldName =19
+Select * FROM dbo.CustomerBooking --where idFieldName=15
 Select * FROM dbo.Customer 
 Select * FROM dbo.FieldName 
 Select * FROM dbo.FieldType 
+---
+update dbo.FieldName
+set status='empty'
+where id=15
+
+
+update dbo.CustomerBooking
+set status='da thanh toan'
+where idFieldName=15 and status = 'chua thanh toan'
+----
+
+SELECT FieldName.id,
+       FieldType.TypeName, 
+       FieldName.name AS FieldName, 
+       Customer.name AS CustomerName, 
+       Customer.phone AS CustomerPhone,
+       CustomerBooking.startTime,
+       CustomerBooking.endTime,
+       CustomerBooking.priceBooking,
+       CustomerBooking.status
+FROM FieldType
+INNER JOIN FieldName ON FieldType.id = FieldName.idFieldType and  FieldName.id =17 
+INNER JOIN CustomerBooking ON FieldName.id = CustomerBooking.idFieldName and CustomerBooking.status='cho duyet'
+INNER JOIN Customer ON CustomerBooking.idCustomer = Customer.id
+ORDER BY startTime;
+
+
+-- truy vấn nhiều bảng
+SELECT FieldName.id,
+		FieldType.TypeName, 
+       FieldName.name AS FieldName, 
+       Customer.name AS CustomerName, 
+       Customer.phone AS CustomerPhone,
+       CustomerBooking.startTime,
+       CustomerBooking.endTime,
+       CustomerBooking.priceBooking,
+	   CustomerBooking.status
+FROM FieldType
+INNER JOIN FieldName ON FieldType.id = FieldName.idFieldType 
+INNER JOIN CustomerBooking ON FieldName.id = CustomerBooking.idFieldName
+INNER JOIN Customer ON CustomerBooking.idCustomer = Customer.id 
+--INNER JOIN CustomerBooking ON FieldName.id = 20
+--INNER JOIN Customer ON CustomerBooking.idCustomer = 31;
 
 -- lấy ra vị trí cuối cùng
 SELECT * FROM dbo.Customer  WHERE id = (SELECT MAX(id) FROM dbo.Customer );
@@ -143,10 +186,10 @@ AND id = (
 )
 
 SELECT * FROM dbo.CustomerBooking
-WHERE idFieldName = 15 
+WHERE idFieldName = 16
 AND id = (
     SELECT MAX(id) FROM dbo.CustomerBooking 
-    WHERE idFieldName = 15
+    WHERE idFieldName = 16
 )
 -- insert vao dbo.Customer
 INSERT INTO dbo.Customer(name,phone)	
@@ -190,3 +233,19 @@ ALTER TABLE CustomerBooking NOCHECK CONSTRAINT FK__CustomerB__idFie__403A8C7D;
 ALTER TABLE dbo.Bill NOCHECK CONSTRAINT FK__Bill__idCustomer__440B1D61;
 --Mở lại ràng buộc khóa ngoại
 ALTER TABLE CustomerBooking WITH CHECK CHECK CONSTRAINT FK__CustomerB__idCus__3F466844;
+
+
+
+SELECT FieldName.id, 
+FieldType.TypeName, 
+FieldName.name AS FieldName, 
+ Customer.name AS CustomerName, 
+Customer.phone AS CustomerPhone,
+CustomerBooking.startTime,
+ CustomerBooking.endTime,
+CustomerBooking.priceBooking, 
+CustomerBooking.status 
+FROM FieldType 
+INNER JOIN FieldName ON FieldType.id = FieldName.idFieldType and  FieldName.id = 15
+INNER JOIN CustomerBooking ON FieldName.id = CustomerBooking.idFieldName and CustomerBooking.status='chua thanh toan'
+INNER JOIN Customer ON CustomerBooking.idCustomer = Customer.id 

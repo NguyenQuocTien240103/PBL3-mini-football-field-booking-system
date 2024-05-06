@@ -22,8 +22,9 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         }
         private string saveStatusField = "";
         private int saveIDField = 0;
-        private int temp = 0;
+    
         public delegate void Mydel(Field field);
+        public delegate void Mydel1();
         private Field SaveField;
         public Mydel d { get; set; }
         public void LoadField()
@@ -87,32 +88,35 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 }
             }
         }
-         void ShowBill(int id)
+         void ShowBill(int idField)
         {
-            //string sql = "select * from dbo.fieldname where id = " + id.ToString();
-            //DataTable data = DataProvider.Instance.ExcuteQuery(sql);
-            //dtgvBill.DataSource = data;
-
-            //string sql = "Select * FROM dbo.Customer ";
-            //DataTable data = CustomerDAL.Instance.LoadFieldList(sql);
-            //dtgvBill.DataSource = data;
-
-
-            MessageBox.Show(id.ToString());
-
-
-            //String sql = "Select * FROM dbo.CustomerBooking where idFieldName=" + id.ToString();
-
-
-            //DataTable data = DataProvider.Instance.ExcuteQuery(sql);
-            DataTable data = CustomerBookingDAL.Instance.GetCustomerBookingByIDField(id);
-            if(data!=null)
+                dtgvBill.Controls.Clear();
+                DataTable dataTable = new DataTable();
+                dataTable.Columns.AddRange(new DataColumn[]
+                {
+                    new DataColumn {ColumnName = "id", DataType = typeof(int)},
+                    new DataColumn {ColumnName = "TypeName", DataType = typeof(string)},
+                    new DataColumn {ColumnName = "FieldName", DataType = typeof(string)},
+                    new DataColumn {ColumnName = "CustomerName", DataType = typeof(string)},
+                    new DataColumn {ColumnName = "CustomerPhone", DataType = typeof(string)},
+                    new DataColumn {ColumnName = "startTime", DataType = typeof(string)},
+                    new DataColumn {ColumnName = "endTime", DataType = typeof(string)},
+                    new DataColumn {ColumnName = "priceBooking", DataType = typeof(float)},
+                    new DataColumn {ColumnName = "status", DataType = typeof(string)}
+                });
+           // DataTable data = CustomerBookingDAL.Instance.GetCustomerBookingByIDField(idField);
+          //  int idCustomer = CustomerDAL.Instance.getIdCustomerLast();
+            List<CustomerBookingDetail> customerBookingDetails = CustomerBookingDetailDAL.
+                Instance.LoadCustomerBookingById(idField);
+            foreach (CustomerBookingDetail customerbooking in customerBookingDetails)
             {
-                dtgvBill.DataSource = data;
+                dataTable.Rows.Add(customerbooking.Id,
+                customerbooking.TypeName, customerbooking.FieldName, customerbooking.CustomerName,
+                customerbooking.CustomerPhone, customerbooking.startTime, customerbooking.endTime,
+                customerbooking.priceBooking, customerbooking.status);
             }
-                
-            
-          
+            dtgvBill.DataSource = dataTable;
+
         }
         private void btn_Click(object sender, EventArgs e)
         {
@@ -123,7 +127,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             
             SaveField = ((sender as Button).Tag as Field);
             saveIDField = ((sender as Button).Tag as Field).Id;
-            temp = saveIDField;
             ShowBill(fieldID);
 
         }
@@ -135,34 +138,29 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         private void btnBooking_Click(object sender, EventArgs e)
         {
             // call form FormInformationBooking
-            if (saveStatusField == "empty")
-            {
-                FormInformationBooking formInforBooking = new FormInformationBooking();
+              FormInformationBooking formInforBooking = new FormInformationBooking();
+            //  FormInformationBookingNow formInforBooking = new FormInformationBookingNow();
+            // d tham chiếu tới hàm abc của đối tượng formInforBooking
+                Mydel1 d1 = new Mydel1(formInforBooking.abcd);
+                d1();
                 this.Hide();
                 formInforBooking.ShowDialog();
                 this.Show();
-               
-            }
-            else if (saveStatusField == "")
-            {
-                MessageBox.Show("Please Select Fields");
-            }
-            else
-            {
-                MessageBox.Show("reservation");
-            }
-            saveStatusField = "";
+     
 
         }
         // click button Edit on form BookingManager
         private void btnEdit_Click(object sender, EventArgs e)
         {
             // call form FormInformationBooking
-            if (saveStatusField == "busy" || saveStatusField == "booking")
+            if (saveStatusField == "busy")
             {
-                FormInformationBooking formInforBooking = new FormInformationBooking();
+                
+                EditForm editForm = new EditForm();
+                d = new Mydel(editForm.abc);
+                d(SaveField);
                 this.Hide();
-                formInforBooking.ShowDialog();
+                editForm.ShowDialog();
                 this.Show();
             }
             else if (saveStatusField == "")
@@ -181,16 +179,26 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         private void btnPay_Click(object sender, EventArgs e)
         {
             // call form FormInformationBooking
-            if (saveStatusField == "busy" || saveStatusField == "booking")
+            if (saveStatusField == "busy" )
             {
+                //PayMent pay = new PayMent ();
+                // d tham chiếu tới hàm abc của đối tượng formInforBooking
+                
                 PayMent payMent = new PayMent();
                 this.Hide();
+                d = new Mydel(payMent.abc);
+                d(SaveField);
                 payMent.ShowDialog();
+                LoadField();
                 this.Show();
+            }
+            else if(saveStatusField == "empty")
+            {
+                MessageBox.Show("empty");
             }
             else
             {
-                MessageBox.Show("empty");
+                MessageBox.Show("Please Select Fields");
             }
                 
         }
@@ -234,9 +242,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
 
         }
 
-        public int getIdField_Choose()
-        {
-            return temp;
-        }
+        
     }
 }

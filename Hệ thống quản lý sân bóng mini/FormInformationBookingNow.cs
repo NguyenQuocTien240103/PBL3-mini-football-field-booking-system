@@ -82,21 +82,24 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             String Name = txtName.Text;
             String Phone = txtPhone.Text;
             CustomerDAL.Instance.InsertCustomer(Name, Phone); // insert Customer
-
             // lấy idCustomer mới insert
             int idCustomer = CustomerDAL.Instance.getIdCustomerLast(); // đã giải quyết
             // lấy idField
             String idfieldChoose = txtFieldID.Text.ToString();
             int idFieldChoose = int.Parse(idfieldChoose);
-            CustomerBookingDAL.Instance.InSertCustomerBooking(idCustomer, idFieldChoose, startTime, endTime, PriceBookinng,"1");
+            //CustomerBookingDAL.Instance.InSertCustomerBooking(idCustomer, idFieldChoose, startTime, endTime, PriceBookinng,"1");
             // cập  nhật trạng thái
             BookingManager bookingManager = new BookingManager();
             if (PriceBookinng > 0)
             {
-                FieldDAL.Instance.updateFieldById(idFieldChoose, "booked");
+                FieldDAL.Instance.updateFieldById(idFieldChoose, "empty");
+                CustomerBookingDAL.Instance.InSertCustomerBooking(idCustomer, idFieldChoose, startTime,
+                   endTime, PriceBookinng, "cho duyet");
             }
             else
             {
+                CustomerBookingDAL.Instance.InSertCustomerBooking(idCustomer, idFieldChoose, startTime,
+                    endTime, PriceBookinng, "chua thanh toan");
                 FieldDAL.Instance.updateFieldById(idFieldChoose, "busy");
             }
            

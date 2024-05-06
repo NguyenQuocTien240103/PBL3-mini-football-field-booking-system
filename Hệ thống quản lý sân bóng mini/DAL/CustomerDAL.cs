@@ -30,20 +30,20 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
         }
         private CustomerDAL() { }
 
-        //public List<Customer> LoadFieldList()
-        //{
-        //    String sql = "Select * FROM dbo.Customer ";
-        //    List<Customer> ListCustomer = new List<Customer>();
+        public List<Customer> LoadCustomerList()
+        {
+            String sql = "Select * FROM dbo.Customer ";
+            List<Customer> ListCustomer = new List<Customer>();
 
-        //    DataTable dataTable = DataProvider.Instance.ExcuteQuery(sql);
+            DataTable dataTable = DataProvider.Instance.ExcuteQuery(sql);
 
-        //    foreach (DataRow row in dataTable.Rows)
-        //    {
-        //        Customer customer = new Customer(row);
-        //        ListCustomer.Add(customer);
-        //    }
-        //    return ListCustomer;
-        //}
+            foreach (DataRow row in dataTable.Rows)
+            {
+                Customer customer = new Customer(row);
+                ListCustomer.Add(customer);
+            }
+            return ListCustomer;
+        }
 
         public void InsertCustomer(String name,String phone)
         {
@@ -52,23 +52,28 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             DataProvider.Instance.ExcuteNonQuery(sql);
         }
 
-        public DataTable LoadFieldList(String sql)
-        {
+        //public DataTable LoadFieldList(String sql)
+        //{
             
-            DataTable dataTable = DataProvider.Instance.ExcuteQuery(sql);
+        //    DataTable dataTable = DataProvider.Instance.ExcuteQuery(sql);
 
-            return dataTable;
+        //    return dataTable;
 
-        }
+        //}
 
         public int getIdCustomerLast()
         {
             String sql = "SELECT TOP 1 * FROM dbo.Customer  ORDER BY id DESC";
             DataTable dataTable = DataProvider.Instance.ExcuteQuery(sql);
+            if (dataTable.Rows.Count > 0)
+            {
+                Customer customer = new Customer(dataTable.Rows[0]);
 
-            Customer customer = new Customer(dataTable.Rows[0]);
+                return customer.Id;
+            }
 
-            return customer.Id;
+
+            return -1;
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using Hệ_thống_quản_lý_sân_bóng_mini.DTO;
 
 namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 {
@@ -42,19 +43,38 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             DataProvider.Instance.ExcuteNonQuery(sql);
         }
 
-        public DataTable GetCustomerBookingByIDField(int id)
+        
+        public DataTable GetCustomerBookingDepositMoney()
         {
-            //String sql =
-            //    "SELECT * FROM dbo.CustomerBooking" +
-            //    "WHERE idFieldName = " + id.ToString() +
-            //    "AND id = (SELECT MAX(id) FROM dbo.CustomerBooking  WHERE idFieldName = " + id.ToString() + ")";
+            String sql = "SELECT * FROM dbo.CustomerBooking WHERE priceBooking > 0";
 
-            String sql = "SELECT * FROM dbo.CustomerBooking WHERE " +
-                "idFieldName =  "+id.ToString() + "AND id = (   " +
-                " SELECT MAX(id) FROM dbo.CustomerBooking   " +
-                " WHERE idFieldName = "+ id.ToString()    +   ")";
+
             DataTable data = DataProvider.Instance.ExcuteQuery(sql);
             return data;
+        }
+        public List<CustomerBooking> LoadCustomerBooking()
+        {
+            List<CustomerBooking> listCustomerBooking = new List<CustomerBooking>();
+            string sql = "Select * FROM dbo.CustomerBooking";
+            DataTable data = DataProvider.Instance.ExcuteQuery(sql);
+            foreach (DataRow row in data.Rows)
+            {
+                CustomerBooking customerBooking = new CustomerBooking(row);
+                listCustomerBooking.Add(customerBooking);
+
+            }
+            return listCustomerBooking;
+        }
+
+        public void updateCustomerBooking(int idField)
+        {
+            String sql = "update dbo.CustomerBooking" +
+                "\r\nset status='da thanh toan'\r\n" +
+                "where idFieldName= " + idField.ToString()+
+                "and status = 'chua thanh toan'";
+
+            DataProvider.Instance.ExcuteNonQuery(sql);
+
         }
     }
 }

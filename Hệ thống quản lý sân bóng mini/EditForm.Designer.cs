@@ -1,6 +1,6 @@
 ﻿namespace Hệ_thống_quản_lý_sân_bóng_mini
 {
-    partial class PayMent
+    partial class EditForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,23 +29,21 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.cb4 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cb3 = new System.Windows.Forms.ComboBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.cb2 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.cb1 = new System.Windows.Forms.ComboBox();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.cb3 = new System.Windows.Forms.ComboBox();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.btnConfirm = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.txtPriceBooking = new System.Windows.Forms.TextBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.cb2 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cb1 = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -57,56 +55,73 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtFieldID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtType = new System.Windows.Forms.TextBox();
-            this.txtFieldName = new System.Windows.Forms.TextBox();
-            this.cbPrice = new System.Windows.Forms.ComboBox();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.txtTotal = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.cbFieldType = new System.Windows.Forms.ComboBox();
+            this.cbNameField = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.panel11);
-            this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.panel9);
-            this.panel1.Controls.Add(this.panel10);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.btnConfirm);
             this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.btnCancel);
+            this.panel1.Controls.Add(this.btnConfirm);
+            this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(2, 12);
+            this.panel1.Location = new System.Drawing.Point(5, 8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(599, 311);
-            this.panel1.TabIndex = 1;
+            this.panel1.Size = new System.Drawing.Size(599, 298);
+            this.panel1.TabIndex = 2;
             // 
-            // panel8
+            // panel9
             // 
-            this.panel8.Controls.Add(this.cb4);
-            this.panel8.Controls.Add(this.label8);
-            this.panel8.Controls.Add(this.label7);
-            this.panel8.Controls.Add(this.cb3);
-            this.panel8.Location = new System.Drawing.Point(297, 138);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(290, 34);
-            this.panel8.TabIndex = 12;
+            this.panel9.Controls.Add(this.txtPrice);
+            this.panel9.Controls.Add(this.label10);
+            this.panel9.Location = new System.Drawing.Point(3, 143);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(256, 34);
+            this.panel9.TabIndex = 11;
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Location = new System.Drawing.Point(49, 8);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(186, 20);
+            this.txtPrice.TabIndex = 1;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(8, 11);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(31, 13);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Price";
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.cb4);
+            this.panel7.Controls.Add(this.label8);
+            this.panel7.Controls.Add(this.label9);
+            this.panel7.Controls.Add(this.cb3);
+            this.panel7.Location = new System.Drawing.Point(276, 132);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(290, 34);
+            this.panel7.TabIndex = 10;
             // 
             // cb4
             // 
@@ -127,14 +142,14 @@
             this.label8.TabIndex = 12;
             this.label8.Text = ":";
             // 
-            // label7
+            // label9
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(8, 11);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 13);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "EndTime";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(8, 11);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 13);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "EndTime";
             // 
             // cb3
             // 
@@ -146,16 +161,36 @@
             this.cb3.Size = new System.Drawing.Size(60, 21);
             this.cb3.TabIndex = 10;
             // 
-            // panel9
+            // btnCancel
             // 
-            this.panel9.Controls.Add(this.cb2);
-            this.panel9.Controls.Add(this.label10);
-            this.panel9.Controls.Add(this.label11);
-            this.panel9.Controls.Add(this.cb1);
-            this.panel9.Location = new System.Drawing.Point(297, 98);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(290, 34);
-            this.panel9.TabIndex = 11;
+            this.btnCancel.Location = new System.Drawing.Point(380, 211);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(109, 42);
+            this.btnCancel.TabIndex = 9;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnConfirm
+            // 
+            this.btnConfirm.Location = new System.Drawing.Point(86, 211);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(109, 42);
+            this.btnConfirm.TabIndex = 7;
+            this.btnConfirm.Text = "Confirm";
+            this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.cb2);
+            this.panel8.Controls.Add(this.label6);
+            this.panel8.Controls.Add(this.label7);
+            this.panel8.Controls.Add(this.cb1);
+            this.panel8.Location = new System.Drawing.Point(276, 92);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(290, 34);
+            this.panel8.TabIndex = 6;
             // 
             // cb2
             // 
@@ -167,23 +202,23 @@
             this.cb2.Size = new System.Drawing.Size(60, 21);
             this.cb2.TabIndex = 11;
             // 
-            // label10
+            // label6
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(171, 14);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(10, 13);
-            this.label10.TabIndex = 12;
-            this.label10.Text = ":";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(171, 14);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(10, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = ":";
             // 
-            // label11
+            // label7
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(8, 11);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(52, 13);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "StartTime";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(8, 11);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 13);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "StartTime";
             // 
             // cb1
             // 
@@ -194,69 +229,6 @@
             this.cb1.Name = "cb1";
             this.cb1.Size = new System.Drawing.Size(60, 21);
             this.cb1.TabIndex = 10;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.cbPrice);
-            this.panel10.Controls.Add(this.label9);
-            this.panel10.Location = new System.Drawing.Point(3, 178);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(256, 34);
-            this.panel10.TabIndex = 10;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(8, 11);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(31, 13);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Price";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(380, 248);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 42);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // btnConfirm
-            // 
-            this.btnConfirm.Location = new System.Drawing.Point(110, 248);
-            this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(109, 42);
-            this.btnConfirm.TabIndex = 7;
-            this.btnConfirm.Text = "Confirm";
-            this.btnConfirm.UseVisualStyleBackColor = true;
-            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.txtPriceBooking);
-            this.panel7.Controls.Add(this.label6);
-            this.panel7.Location = new System.Drawing.Point(3, 138);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(256, 34);
-            this.panel7.TabIndex = 5;
-            // 
-            // txtPriceBooking
-            // 
-            this.txtPriceBooking.Location = new System.Drawing.Point(83, 8);
-            this.txtPriceBooking.Name = "txtPriceBooking";
-            this.txtPriceBooking.Size = new System.Drawing.Size(152, 20);
-            this.txtPriceBooking.TabIndex = 1;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 11);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 13);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "PriceBooking";
             // 
             // panel6
             // 
@@ -285,9 +257,9 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.txtFieldName);
+            this.panel5.Controls.Add(this.cbNameField);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Location = new System.Drawing.Point(297, 49);
+            this.panel5.Location = new System.Drawing.Point(276, 49);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(290, 34);
             this.panel5.TabIndex = 3;
@@ -303,9 +275,9 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.txtType);
+            this.panel4.Controls.Add(this.cbFieldType);
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(297, 9);
+            this.panel4.Location = new System.Drawing.Point(276, 9);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(290, 34);
             this.panel4.TabIndex = 2;
@@ -346,19 +318,19 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.txtID);
+            this.panel2.Controls.Add(this.txtFieldID);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(3, 9);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(256, 34);
             this.panel2.TabIndex = 0;
             // 
-            // txtID
+            // txtFieldID
             // 
-            this.txtID.Location = new System.Drawing.Point(49, 8);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(186, 20);
-            this.txtID.TabIndex = 1;
+            this.txtFieldID.Location = new System.Drawing.Point(49, 8);
+            this.txtFieldID.Name = "txtFieldID";
+            this.txtFieldID.Size = new System.Drawing.Size(186, 20);
+            this.txtFieldID.TabIndex = 1;
             // 
             // label1
             // 
@@ -369,72 +341,43 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "ID";
             // 
-            // txtType
+            // cbFieldType
             // 
-            this.txtType.Location = new System.Drawing.Point(83, 8);
-            this.txtType.Name = "txtType";
-            this.txtType.Size = new System.Drawing.Size(186, 20);
-            this.txtType.TabIndex = 2;
+            this.cbFieldType.DropDownHeight = 110;
+            this.cbFieldType.FormattingEnabled = true;
+            this.cbFieldType.IntegralHeight = false;
+            this.cbFieldType.Location = new System.Drawing.Point(83, 7);
+            this.cbFieldType.Name = "cbFieldType";
+            this.cbFieldType.Size = new System.Drawing.Size(186, 21);
+            this.cbFieldType.TabIndex = 11;
+            this.cbFieldType.SelectedIndexChanged += new System.EventHandler(this.cbFieldType_SelectedIndexChanged);
             // 
-            // txtFieldName
+            // cbNameField
             // 
-            this.txtFieldName.Location = new System.Drawing.Point(83, 8);
-            this.txtFieldName.Name = "txtFieldName";
-            this.txtFieldName.Size = new System.Drawing.Size(186, 20);
-            this.txtFieldName.TabIndex = 2;
+            this.cbNameField.DropDownHeight = 110;
+            this.cbNameField.FormattingEnabled = true;
+            this.cbNameField.IntegralHeight = false;
+            this.cbNameField.Location = new System.Drawing.Point(83, 7);
+            this.cbNameField.Name = "cbNameField";
+            this.cbNameField.Size = new System.Drawing.Size(186, 21);
+            this.cbNameField.TabIndex = 11;
             // 
-            // cbPrice
-            // 
-            this.cbPrice.FormattingEnabled = true;
-            this.cbPrice.Location = new System.Drawing.Point(83, 8);
-            this.cbPrice.Name = "cbPrice";
-            this.cbPrice.Size = new System.Drawing.Size(152, 21);
-            this.cbPrice.TabIndex = 13;
-            this.cbPrice.SelectedIndexChanged += new System.EventHandler(this.cbPrice_SelectedIndexChanged);
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.txtTotal);
-            this.panel11.Controls.Add(this.label12);
-            this.panel11.Location = new System.Drawing.Point(297, 178);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(290, 34);
-            this.panel11.TabIndex = 13;
-            // 
-            // txtTotal
-            // 
-            this.txtTotal.Location = new System.Drawing.Point(83, 8);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(186, 20);
-            this.txtTotal.TabIndex = 1;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(8, 11);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(31, 13);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Total";
-            // 
-            // PayMent
+            // EditForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(606, 332);
+            this.ClientSize = new System.Drawing.Size(608, 306);
             this.Controls.Add(this.panel1);
-            this.Name = "PayMent";
+            this.Name = "EditForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PayMent";
+            this.Text = "EditForm";
             this.panel1.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -445,8 +388,6 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -454,13 +395,21 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnConfirm;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox txtPriceBooking;
+        private System.Windows.Forms.ComboBox cb4;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cb3;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnConfirm;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.ComboBox cb2;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cb1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label label5;
@@ -472,23 +421,9 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtFieldID;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.ComboBox cb4;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox cb3;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.ComboBox cb2;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox cb1;
-        private System.Windows.Forms.TextBox txtFieldName;
-        private System.Windows.Forms.TextBox txtType;
-        private System.Windows.Forms.ComboBox cbPrice;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TextBox txtTotal;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox cbNameField;
+        private System.Windows.Forms.ComboBox cbFieldType;
     }
 }

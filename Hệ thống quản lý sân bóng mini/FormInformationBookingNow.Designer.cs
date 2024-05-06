@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.cb4 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -56,10 +59,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtFieldID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.txtPrice = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -67,7 +68,6 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -86,6 +86,31 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(599, 298);
             this.panel1.TabIndex = 1;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.txtPrice);
+            this.panel9.Controls.Add(this.label10);
+            this.panel9.Location = new System.Drawing.Point(3, 143);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(256, 34);
+            this.panel9.TabIndex = 11;
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Location = new System.Drawing.Point(49, 8);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(186, 20);
+            this.txtPrice.TabIndex = 1;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(8, 11);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(31, 13);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Price";
             // 
             // panel7
             // 
@@ -332,31 +357,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "ID";
             // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.txtPrice);
-            this.panel9.Controls.Add(this.label10);
-            this.panel9.Location = new System.Drawing.Point(3, 143);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(256, 34);
-            this.panel9.TabIndex = 11;
-            // 
-            // txtPrice
-            // 
-            this.txtPrice.Location = new System.Drawing.Point(49, 8);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(186, 20);
-            this.txtPrice.TabIndex = 1;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(8, 11);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(31, 13);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Price";
-            // 
             // FormInformationBookingNow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -366,6 +366,8 @@
             this.Name = "FormInformationBookingNow";
             this.Text = "FormInformationBookingNow";
             this.panel1.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -380,8 +382,6 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             this.ResumeLayout(false);
 
         }
