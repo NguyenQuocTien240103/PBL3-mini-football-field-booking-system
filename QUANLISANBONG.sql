@@ -39,7 +39,11 @@ CREATE TABLE Bill(
 	totalPrice FLOAT NOT NULL,
 	FOREIGN KEY (idCustomerBooking) REFERENCES dbo.CustomerBooking(id),
 )
-
+ALTER TABLE dbo.Bill
+ADD paymentDay DATE NOT NULL DEFAULT GETDATE();
+insert into dbo.Bill(idCustomerBooking,totalPrice)
+values (34,200000)
+	select * from dbo.Bill
 CREATE TABLE Account(
 	username NVARCHAR(100),
 	password NVARCHAR(100),
@@ -124,53 +128,62 @@ EXEC dbo.GetFieldType
 EXEC dbo.GetFieldList 
 
 Select * FROM dbo.Bill
-Select * FROM dbo.CustomerBooking --where idFieldName=15
+	Select * FROM dbo.CustomerBooking --where idFieldName=15
 Select * FROM dbo.Customer 
 Select * FROM dbo.FieldName 
 Select * FROM dbo.FieldType 
 ---
 update dbo.FieldName
 set status='empty'
-where id=15
+where id=12
 
+update dbo.Customer
+set name='nhi',phone='123'
+where id=8
 
 update dbo.CustomerBooking
 set status='da thanh toan'
 where idFieldName=15 and status = 'chua thanh toan'
 ----
-
-SELECT FieldName.id,
-       FieldType.TypeName, 
-       FieldName.name AS FieldName, 
-       Customer.name AS CustomerName, 
-       Customer.phone AS CustomerPhone,
-       CustomerBooking.startTime,
-       CustomerBooking.endTime,
-       CustomerBooking.priceBooking,
-       CustomerBooking.status
-FROM FieldType
-INNER JOIN FieldName ON FieldType.id = FieldName.idFieldType and  FieldName.id =17 
-INNER JOIN CustomerBooking ON FieldName.id = CustomerBooking.idFieldName and CustomerBooking.status='cho duyet'
-INNER JOIN Customer ON CustomerBooking.idCustomer = Customer.id
-ORDER BY startTime;
-
-
 -- truy vấn nhiều bảng
-SELECT FieldName.id,
-		FieldType.TypeName, 
+
+SELECT 
+	   CustomerBooking.id,FieldName.id AS idField,
+	   FieldType.TypeName, 
        FieldName.name AS FieldName, 
        Customer.name AS CustomerName, 
-       Customer.phone AS CustomerPhone,
+       Customer.phone AS CustomerPhone,	
        CustomerBooking.startTime,
        CustomerBooking.endTime,
        CustomerBooking.priceBooking,
 	   CustomerBooking.status
 FROM FieldType
 INNER JOIN FieldName ON FieldType.id = FieldName.idFieldType 
-INNER JOIN CustomerBooking ON FieldName.id = CustomerBooking.idFieldName
+INNER JOIN CustomerBooking ON FieldName.id = CustomerBooking.idFieldName 
 INNER JOIN Customer ON CustomerBooking.idCustomer = Customer.id 
---INNER JOIN CustomerBooking ON FieldName.id = 20
---INNER JOIN Customer ON CustomerBooking.idCustomer = 31;
+
+SELECT 
+    Customer.name as CustomerName ,
+    Customer.phone,
+    FieldType.TypeName AS FieldType, 
+    FieldName.name AS FieldName, 
+    CustomerBooking.startTime,
+    CustomerBooking.endTime,
+    CustomerBooking.priceBooking,
+    CustomerBooking.status,
+    Bill.totalPrice,
+    Bill.paymentDay
+FROM 
+    FieldType
+INNER JOIN 
+    FieldName ON FieldType.id = FieldName.idFieldType
+INNER JOIN 
+    CustomerBooking ON FieldName.id = CustomerBooking.idFieldName
+INNER JOIN 
+    Customer ON CustomerBooking.idCustomer = Customer.id 
+INNER JOIN 
+    Bill ON CustomerBooking.id = Bill.idCustomerBooking and Bill.paymentDay='2024-05-09'
+
 
 -- lấy ra vị trí cuối cùng
 SELECT * FROM dbo.Customer  WHERE id = (SELECT MAX(id) FROM dbo.Customer );
@@ -199,29 +212,13 @@ VALUES ('LeHaiKhoa','456')
 INSERT INTO dbo.Customer(name,phone)	
 VALUES ('NguyenNhatQuan','789')
 
--- insert vao dbo.CustomerBooking
-
-INSERT INTO dbo.CustomerBooking(idCustomer,idFieldName,startTime,priceBooking,status)	
-VALUES (1,1,GETDATE(),50000,'dadat')
-INSERT INTO dbo.CustomerBooking(idCustomer,idFieldName,startTime,priceBooking,status)	
-VALUES (2,2,GETDATE(),50000,'dadat')
-INSERT INTO dbo.CustomerBooking(idCustomer,idFieldName,startTime,priceBooking,status)	
-VALUES (3,4,GETDATE(),70000,'dadat')
-
---insert vao dbo.Bill
-INSERT INTO dbo.Bill(idCustomerBooking,datePayment,totalPrice)	
-VALUES (1,GETDATE(),100000)
-INSERT INTO dbo.Bill(idCustomerBooking,datePayment,totalPrice)		
-VALUES (2,GETDATE(),200000)
-INSERT INTO dbo.Bill(idCustomerBooking,datePayment,totalPrice)		
-VALUES (2,GETDATE(),150000)
-
 
 
 -- xử lí khi nhiều đối tượng phụ thuộc vào
 ALTER TABLE dbo.CustomerBooking	
 DROP CONSTRAINT DF__CustomerB__endTi__3E52440B;
-
+alter table dbo.Bill
+DROP CONSTRAINT DF__Bill__datePaymen__4316F928;
 -- xóa tất cả các value
 DELETE FROM dbo.FieldName;
 DELETE FROM dbo.Customer;
@@ -233,19 +230,3 @@ ALTER TABLE CustomerBooking NOCHECK CONSTRAINT FK__CustomerB__idFie__403A8C7D;
 ALTER TABLE dbo.Bill NOCHECK CONSTRAINT FK__Bill__idCustomer__440B1D61;
 --Mở lại ràng buộc khóa ngoại
 ALTER TABLE CustomerBooking WITH CHECK CHECK CONSTRAINT FK__CustomerB__idCus__3F466844;
-
-
-
-SELECT FieldName.id, 
-FieldType.TypeName, 
-FieldName.name AS FieldName, 
- Customer.name AS CustomerName, 
-Customer.phone AS CustomerPhone,
-CustomerBooking.startTime,
- CustomerBooking.endTime,
-CustomerBooking.priceBooking, 
-CustomerBooking.status 
-FROM FieldType 
-INNER JOIN FieldName ON FieldType.id = FieldName.idFieldType and  FieldName.id = 15
-INNER JOIN CustomerBooking ON FieldName.id = CustomerBooking.idFieldName and CustomerBooking.status='chua thanh toan'
-INNER JOIN Customer ON CustomerBooking.idCustomer = Customer.id 

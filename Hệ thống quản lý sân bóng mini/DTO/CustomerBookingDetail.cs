@@ -4,10 +4,12 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
 {
     public class CustomerBookingDetail
+
     {
         private int _Id;
         public int Id
@@ -18,7 +20,19 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             }
             set
             {
-                _Id = value;
+                _Id= value;
+            }
+        }
+        private int _IdField;
+        public int IdField
+        {
+            get
+            {
+                return _IdField;
+            }
+            set
+            {
+                _IdField = value;
             }
         }
         private string _TypeName;
@@ -125,10 +139,11 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
         }
 
 
-        public CustomerBookingDetail(int Id, string TypeName, string FieldName,
+        public CustomerBookingDetail(int id,int IdField, string TypeName, string FieldName,
             string CustomerName, string CustomerPhone, string startTime, string endTime, float priceBooking,string status)
         {
-            this.Id = Id;
+            this.Id = id;
+            this.IdField = IdField;
             this.TypeName = TypeName;
             this.FieldName = FieldName;
             this.CustomerName = CustomerName;
@@ -142,6 +157,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
         public CustomerBookingDetail(DataRow row)
         {
             this.Id = (int)row["id"];
+            this.IdField = (int)row["idField"];
             this.TypeName = (string)row["TypeName"];
             this.FieldName = (string)row["FieldName"];
             this.CustomerName= (string)row["CustomerName"];
@@ -151,6 +167,10 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             this.priceBooking = Convert.ToSingle(row["priceBooking"]);
             this.status = (string)row["status"];
 
+        }
+        public override string ToString()
+        {
+            return Id + " " + IdField + " " + TypeName + " " + FieldName + " " + CustomerName + " " + CustomerPhone+ " " + startTime + " " + endTime + " " + priceBooking + " " +status ;
         }
     }
 }

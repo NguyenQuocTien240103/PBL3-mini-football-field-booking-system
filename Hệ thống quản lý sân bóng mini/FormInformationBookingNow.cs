@@ -87,7 +87,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             // lấy idField
             String idfieldChoose = txtFieldID.Text.ToString();
             int idFieldChoose = int.Parse(idfieldChoose);
-            //CustomerBookingDAL.Instance.InSertCustomerBooking(idCustomer, idFieldChoose, startTime, endTime, PriceBookinng,"1");
             // cập  nhật trạng thái
             BookingManager bookingManager = new BookingManager();
             if (PriceBookinng > 0)

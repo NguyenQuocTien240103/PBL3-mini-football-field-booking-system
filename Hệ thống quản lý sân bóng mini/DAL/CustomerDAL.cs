@@ -52,15 +52,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             DataProvider.Instance.ExcuteNonQuery(sql);
         }
 
-        //public DataTable LoadFieldList(String sql)
-        //{
-            
-        //    DataTable dataTable = DataProvider.Instance.ExcuteQuery(sql);
-
-        //    return dataTable;
-
-        //}
-
         public int getIdCustomerLast()
         {
             String sql = "SELECT TOP 1 * FROM dbo.Customer  ORDER BY id DESC";
@@ -74,6 +65,14 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 
 
             return -1;
+        }
+
+        public void updateCustomer(int idCustomer,string name,string phone)
+        {
+            String sql = "update dbo.Customer " +
+                "set name = '" + name + "', phone = '" + phone + "' " +
+                "where id = " + idCustomer;
+            DataProvider.Instance.ExcuteNonQuery(sql);
         }
     }
 }

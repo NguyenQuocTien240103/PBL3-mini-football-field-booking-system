@@ -47,7 +47,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             cbPrice.Items.Add(fieldType.SpecialPrice.ToString());
 
             // showTime khi ta sử dụng deletgate để tham chiếu đến hàm abc
-            showTimeFromField();
+            showInformationFromField();
 
         }
         void setCombox()
@@ -77,10 +77,16 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            int idField = int.Parse(txtID.Text.ToString());
-            CustomerBookingDAL.Instance.updateCustomerBooking(idField);
-            FieldDAL.Instance.updateFieldById(idField, "empty");
-            this.Close();
+            if (txtTotal.Text != "")
+            {
+
+                int idField = int.Parse(txtID.Text.ToString());
+                int idCustomerBooking = CustomerBookingDAL.Instance.getIdCustomerByidField(idField);
+                BillDAL.Instance.insertBill(idCustomerBooking, float.Parse(txtTotal.Text));
+                CustomerBookingDAL.Instance.updateCustomerBooking(idField);
+                FieldDAL.Instance.updateFieldById(idField, "empty");
+                this.Close();   
+            }
         }
 
         private void cbPrice_SelectedIndexChanged(object sender, EventArgs e)
@@ -106,7 +112,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             txtTotal.Text = (a * price).ToString();
 
         }
-        void showTimeFromField()
+        void showInformationFromField()
         {
             List<CustomerBooking> customerBookings = CustomerBookingDAL.Instance.LoadCustomerBooking();
             

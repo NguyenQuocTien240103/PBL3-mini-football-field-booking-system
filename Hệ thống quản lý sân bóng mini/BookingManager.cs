@@ -54,18 +54,14 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                         if(item2.Id == 1)
                         {
                             btn.Text = item2.TypeName + item1.Name + Environment.NewLine + item1.Status;
-                            //btn.TabStop= false;
-                            //btn.Click += btn_Click;
-                            //btn.Tag = item1;
+                            
                             flowLayoutPanel1.Controls.Add(btn);
                         }
 
                         else if (item2.Id == 2)
                         {
                             btn.Text = item2.TypeName + item1.Name + Environment.NewLine + item1.Status;
-                            //btn.TabStop = true;
-                            //btn.Click += btn_Click;
-                            //btn.Tag = item1;
+                            
                             flowLayoutPanel2.Controls.Add(btn);
                         }
                         
@@ -95,6 +91,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 dataTable.Columns.AddRange(new DataColumn[]
                 {
                     new DataColumn {ColumnName = "id", DataType = typeof(int)},
+                    new DataColumn {ColumnName = "idField", DataType = typeof(int)},
                     new DataColumn {ColumnName = "TypeName", DataType = typeof(string)},
                     new DataColumn {ColumnName = "FieldName", DataType = typeof(string)},
                     new DataColumn {ColumnName = "CustomerName", DataType = typeof(string)},
@@ -104,13 +101,11 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                     new DataColumn {ColumnName = "priceBooking", DataType = typeof(float)},
                     new DataColumn {ColumnName = "status", DataType = typeof(string)}
                 });
-           // DataTable data = CustomerBookingDAL.Instance.GetCustomerBookingByIDField(idField);
-          //  int idCustomer = CustomerDAL.Instance.getIdCustomerLast();
             List<CustomerBookingDetail> customerBookingDetails = CustomerBookingDetailDAL.
                 Instance.LoadCustomerBookingById(idField);
             foreach (CustomerBookingDetail customerbooking in customerBookingDetails)
             {
-                dataTable.Rows.Add(customerbooking.Id,
+                dataTable.Rows.Add(customerbooking.Id,customerbooking.IdField,
                 customerbooking.TypeName, customerbooking.FieldName, customerbooking.CustomerName,
                 customerbooking.CustomerPhone, customerbooking.startTime, customerbooking.endTime,
                 customerbooking.priceBooking, customerbooking.status);
@@ -120,13 +115,15 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         }
         private void btn_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("tien");
+        
             int fieldID = ((sender as Button).Tag as Field).Id;
+
             saveStatusField = ((sender as Button).Tag as Field).Status;
-            //Field getField = ((sender as Button).Tag as Field);
             
             SaveField = ((sender as Button).Tag as Field);
+
             saveIDField = ((sender as Button).Tag as Field).Id;
+
             ShowBill(fieldID);
 
         }
@@ -139,12 +136,11 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         {
             // call form FormInformationBooking
               FormInformationBooking formInforBooking = new FormInformationBooking();
-            //  FormInformationBookingNow formInforBooking = new FormInformationBookingNow();
             // d tham chiếu tới hàm abc của đối tượng formInforBooking
-                Mydel1 d1 = new Mydel1(formInforBooking.abcd);
-                d1();
+        
                 this.Hide();
                 formInforBooking.ShowDialog();
+                LoadField();
                 this.Show();
      
 
@@ -159,8 +155,9 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 EditForm editForm = new EditForm();
                 d = new Mydel(editForm.abc);
                 d(SaveField);
-                this.Hide();
+                
                 editForm.ShowDialog();
+                LoadField();
                 this.Show();
             }
             else if (saveStatusField == "")
@@ -241,7 +238,5 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             saveStatusField = "";
 
         }
-
-        
     }
 }

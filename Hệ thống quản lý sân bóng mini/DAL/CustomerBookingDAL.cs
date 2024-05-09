@@ -42,7 +42,15 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 
             DataProvider.Instance.ExcuteNonQuery(sql);
         }
+        public void updateCustomerBooking(int idCustomerBooking,int idCustomer, int idFieldName,
+           String startTime, String endTime, float priceBooking, String status)
+        {
 
+            String sql = "update dbo.CustomerBooking " +
+                "set idCustomer = '" + idCustomer + "', idFieldName = '" + idFieldName + "', startTime = '" + startTime + "', endTime = '" + endTime + "', priceBooking = '" +priceBooking + "', status = '" +status+ "' " +
+                "where id = " + idCustomerBooking;
+            DataProvider.Instance.ExcuteNonQuery(sql);
+        }
         
         public DataTable GetCustomerBookingDepositMoney()
         {
@@ -75,6 +83,28 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 
             DataProvider.Instance.ExcuteNonQuery(sql);
 
+        }
+        public void updateCustomerBookingById(int idCustomerBooking)
+        {
+            String sql = "update dbo.CustomerBooking set status= 'chua thanh toan' Where id=" + idCustomerBooking;
+            DataProvider.Instance.ExcuteQuery(sql);
+        }
+
+        public CustomerBooking getCustomerBookingById(int idCustomerBooking)
+        {
+            String sql = "Select * FROM dbo.CustomerBooking Where id=" + idCustomerBooking;
+            DataTable data = DataProvider.Instance.ExcuteQuery(sql);
+            CustomerBooking customerBooking = new CustomerBooking(data.Rows[0]);
+            return customerBooking;
+
+        }
+
+        public int getIdCustomerByidField(int idField)
+        {
+            String sql = "Select * from dbo.CustomerBooking Where status='chua thanh toan' and idFieldName=" + idField;
+            DataTable data = DataProvider.Instance.ExcuteQuery(sql);
+            CustomerBooking customerBooking = new CustomerBooking(data.Rows[0]);
+            return customerBooking.Id;
         }
     }
 }

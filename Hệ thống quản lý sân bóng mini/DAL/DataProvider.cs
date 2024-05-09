@@ -29,31 +29,17 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             }
         }
         private DataProvider() { }
+       // private string connectionSTR =
+         //       "Data Source=DESKTOP-L96UHDF\\SQLEXPRESS;Initial Catalog=quanli;Integrated Security=True";
         private string connectionSTR =
-                "Data Source=DESKTOP-L96UHDF\\SQLEXPRESS;Initial Catalog=quanli;Integrated Security=True";
-        //private string connectionSTR =
-        //"Data Source=DESKTOP-CVOKJNA\\TIEN;Initial Catalog=QLSB;Integrated Security=True";
-        public DataTable ExcuteQuery(string query, object[] parameter =null)
+        "Data Source=DESKTOP-CVOKJNA\\TIEN;Initial Catalog=QLSB;Integrated Security=True";
+        public DataTable ExcuteQuery(string query)
         {
             // open connection to DB
             SqlConnection connection = new SqlConnection(connectionSTR);
             connection.Open();
             // execute query
             SqlCommand cmd = new SqlCommand(query, connection);
-            if(parameter != null )
-            {
-                int i = 0;
-                string[] listPara = query.Split(' ');
-                foreach(string para in listPara)
-                {
-                    if (para.Contains("@"))
-                    {
-                        cmd.Parameters.AddWithValue(para, parameter[i]);
-                        i++;
-                    }
-                
-                }
-            }
             // represent one table
             DataTable data = new DataTable();
 
@@ -64,7 +50,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             return data;
         }
 
-        public int ExcuteNonQuery(string query, object[] parameter = null)
+        public int ExcuteNonQuery(string query)
         {
             int data = 0;
             // open connection to DB
@@ -72,51 +58,36 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             connection.Open();
             // execute query
             SqlCommand cmd = new SqlCommand(query, connection);
-            if (parameter != null)
-            {
-                int i = 0;
-                string[] listPara = query.Split(' ');
-                foreach (string para in listPara)
-                {
-                    if (para.Contains("@"))
-                    {
-                        cmd.Parameters.AddWithValue(para, parameter[i]);
-                        i++;
-                    }
-
-                }
-            }
-
             data = cmd.ExecuteNonQuery();
             connection.Close();
             return data;
         }
-        public object ExcuteScaLar (string query, object[] parameter = null)
-        {
-            object data = 0;
-            // open connection to DB
-            SqlConnection connection = new SqlConnection(connectionSTR);
-            connection.Open();
-            // execute query
-            SqlCommand cmd = new SqlCommand(query, connection);
-            if (parameter != null)
-            {
-                int i = 0;
-                string[] listPara = query.Split(' ');
-                foreach (string para in listPara)
-                {
-                    if (para.Contains("@"))
-                    {
-                        cmd.Parameters.AddWithValue(para, parameter[i]);
-                        i++;
-                    }
+        //public object ExcuteScaLar (string query, object[] parameter = null)
+        //{
+        //    object data = 0;
+        //    // open connection to DB
+        //    SqlConnection connection = new SqlConnection(connectionSTR);
+        //    connection.Open();
+        //    // execute query
+        //    SqlCommand cmd = new SqlCommand(query, connection);
+        //    if (parameter != null)
+        //    {
+        //        int i = 0;
+        //        string[] listPara = query.Split(' ');
+        //        foreach (string para in listPara)
+        //        {
+        //            if (para.Contains("@"))
+        //            {
+        //                cmd.Parameters.AddWithValue(para, parameter[i]);
+        //                i++;
+        //            }
 
-                }
-            }
+        //        }
+        //    }
 
-            data = cmd.ExecuteScalar();
-            connection.Close();
-            return data;
-        }
+        //    data = cmd.ExecuteScalar();
+        //    connection.Close();
+        //    return data;
+        //}
     }
 }
