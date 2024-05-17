@@ -128,14 +128,14 @@ EXEC dbo.GetFieldType
 EXEC dbo.GetFieldList 
 
 Select * FROM dbo.Bill
-	Select * FROM dbo.CustomerBooking --where idFieldName=15
+Select * FROM dbo.CustomerBooking --where idFieldName=15
 Select * FROM dbo.Customer 
 Select * FROM dbo.FieldName 
 Select * FROM dbo.FieldType 
 ---
 update dbo.FieldName
 set status='empty'
-where id=12
+where id=10
 
 update dbo.Customer
 set name='nhi',phone='123'

@@ -82,38 +82,36 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(8, 12);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(5, 8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(898, 458);
+            this.panel1.Size = new System.Drawing.Size(599, 298);
             this.panel1.TabIndex = 2;
             // 
             // panel9
             // 
             this.panel9.Controls.Add(this.txtPriceBooking);
             this.panel9.Controls.Add(this.label10);
-            this.panel9.Location = new System.Drawing.Point(5, 204);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel9.Location = new System.Drawing.Point(3, 133);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(384, 52);
+            this.panel9.Size = new System.Drawing.Size(256, 34);
             this.panel9.TabIndex = 11;
             // 
             // txtPriceBooking
             // 
-            this.txtPriceBooking.Location = new System.Drawing.Point(74, 12);
-            this.txtPriceBooking.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPriceBooking.Location = new System.Drawing.Point(49, 8);
             this.txtPriceBooking.Name = "txtPriceBooking";
             this.txtPriceBooking.ReadOnly = true;
-            this.txtPriceBooking.Size = new System.Drawing.Size(277, 26);
+            this.txtPriceBooking.Size = new System.Drawing.Size(186, 20);
             this.txtPriceBooking.TabIndex = 1;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(12, 17);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.BackColor = System.Drawing.Color.Honeydew;
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(8, 11);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(44, 20);
+            this.label10.Size = new System.Drawing.Size(31, 13);
             this.label10.TabIndex = 1;
             this.label10.Text = "Price";
             // 
@@ -123,60 +121,59 @@
             this.panel7.Controls.Add(this.label8);
             this.panel7.Controls.Add(this.label9);
             this.panel7.Controls.Add(this.cb3);
-            this.panel7.Location = new System.Drawing.Point(414, 203);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel7.Location = new System.Drawing.Point(276, 132);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(435, 52);
+            this.panel7.Size = new System.Drawing.Size(290, 34);
             this.panel7.TabIndex = 10;
             // 
             // cb4
             // 
             this.cb4.DropDownHeight = 110;
+            this.cb4.Enabled = false;
             this.cb4.FormattingEnabled = true;
             this.cb4.IntegralHeight = false;
-            this.cb4.Location = new System.Drawing.Point(314, 12);
-            this.cb4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cb4.Location = new System.Drawing.Point(209, 8);
             this.cb4.Name = "cb4";
-            this.cb4.Size = new System.Drawing.Size(88, 28);
+            this.cb4.Size = new System.Drawing.Size(60, 21);
             this.cb4.TabIndex = 11;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(256, 17);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(171, 11);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(13, 20);
+            this.label8.Size = new System.Drawing.Size(10, 13);
             this.label8.TabIndex = 12;
             this.label8.Text = ":";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 17);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.BackColor = System.Drawing.Color.Honeydew;
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(8, 11);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(72, 20);
+            this.label9.Size = new System.Drawing.Size(49, 13);
             this.label9.TabIndex = 1;
             this.label9.Text = "EndTime";
             // 
             // cb3
             // 
             this.cb3.DropDownHeight = 110;
+            this.cb3.Enabled = false;
             this.cb3.FormattingEnabled = true;
             this.cb3.IntegralHeight = false;
-            this.cb3.Location = new System.Drawing.Point(124, 12);
-            this.cb3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cb3.Location = new System.Drawing.Point(83, 8);
             this.cb3.Name = "cb3";
-            this.cb3.Size = new System.Drawing.Size(88, 28);
+            this.cb3.Size = new System.Drawing.Size(60, 21);
             this.cb3.TabIndex = 10;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(570, 325);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCancel.ForeColor = System.Drawing.Color.Black;
+            this.btnCancel.Location = new System.Drawing.Point(380, 211);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(164, 65);
+            this.btnCancel.Size = new System.Drawing.Size(109, 42);
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -184,10 +181,10 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(129, 325);
-            this.btnConfirm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnConfirm.ForeColor = System.Drawing.Color.Black;
+            this.btnConfirm.Location = new System.Drawing.Point(86, 211);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(164, 65);
+            this.btnConfirm.Size = new System.Drawing.Size(109, 42);
             this.btnConfirm.TabIndex = 7;
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
@@ -199,79 +196,77 @@
             this.panel8.Controls.Add(this.label6);
             this.panel8.Controls.Add(this.label7);
             this.panel8.Controls.Add(this.cb1);
-            this.panel8.Location = new System.Drawing.Point(414, 142);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel8.Location = new System.Drawing.Point(276, 92);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(435, 52);
+            this.panel8.Size = new System.Drawing.Size(290, 34);
             this.panel8.TabIndex = 6;
             // 
             // cb2
             // 
             this.cb2.DropDownHeight = 110;
+            this.cb2.Enabled = false;
             this.cb2.FormattingEnabled = true;
             this.cb2.IntegralHeight = false;
-            this.cb2.Location = new System.Drawing.Point(314, 14);
-            this.cb2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cb2.Location = new System.Drawing.Point(209, 9);
             this.cb2.Name = "cb2";
-            this.cb2.Size = new System.Drawing.Size(88, 28);
+            this.cb2.Size = new System.Drawing.Size(60, 21);
             this.cb2.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(256, 22);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(171, 14);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(13, 20);
+            this.label6.Size = new System.Drawing.Size(10, 13);
             this.label6.TabIndex = 12;
             this.label6.Text = ":";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 17);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.BackColor = System.Drawing.Color.Honeydew;
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(8, 11);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 20);
+            this.label7.Size = new System.Drawing.Size(52, 13);
             this.label7.TabIndex = 1;
             this.label7.Text = "StartTime";
             // 
             // cb1
             // 
             this.cb1.DropDownHeight = 110;
+            this.cb1.Enabled = false;
             this.cb1.FormattingEnabled = true;
             this.cb1.IntegralHeight = false;
-            this.cb1.Location = new System.Drawing.Point(123, 12);
-            this.cb1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cb1.Location = new System.Drawing.Point(82, 8);
             this.cb1.Name = "cb1";
-            this.cb1.Size = new System.Drawing.Size(88, 28);
+            this.cb1.Size = new System.Drawing.Size(60, 21);
             this.cb1.TabIndex = 10;
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.txtPhone);
             this.panel6.Controls.Add(this.label5);
-            this.panel6.Location = new System.Drawing.Point(5, 142);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel6.Location = new System.Drawing.Point(3, 92);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(384, 52);
+            this.panel6.Size = new System.Drawing.Size(256, 34);
             this.panel6.TabIndex = 4;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(74, 12);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPhone.Location = new System.Drawing.Point(49, 8);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(277, 26);
+            this.txtPhone.Size = new System.Drawing.Size(186, 20);
             this.txtPhone.TabIndex = 1;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 17);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.BackColor = System.Drawing.Color.Honeydew;
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(8, 11);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 20);
+            this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 1;
             this.label5.Text = "Phone";
             // 
@@ -279,10 +274,9 @@
             // 
             this.panel5.Controls.Add(this.cbNameField);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Location = new System.Drawing.Point(414, 75);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel5.Location = new System.Drawing.Point(276, 49);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(435, 52);
+            this.panel5.Size = new System.Drawing.Size(290, 34);
             this.panel5.TabIndex = 3;
             // 
             // cbNameField
@@ -290,20 +284,20 @@
             this.cbNameField.DropDownHeight = 110;
             this.cbNameField.FormattingEnabled = true;
             this.cbNameField.IntegralHeight = false;
-            this.cbNameField.Location = new System.Drawing.Point(124, 11);
-            this.cbNameField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbNameField.Location = new System.Drawing.Point(83, 7);
             this.cbNameField.Name = "cbNameField";
-            this.cbNameField.Size = new System.Drawing.Size(277, 28);
+            this.cbNameField.Size = new System.Drawing.Size(186, 21);
             this.cbNameField.TabIndex = 11;
             this.cbNameField.SelectedIndexChanged += new System.EventHandler(this.cbNameField_SelectedIndexChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 17);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.BackColor = System.Drawing.Color.Honeydew;
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(8, 11);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 20);
+            this.label4.Size = new System.Drawing.Size(57, 13);
             this.label4.TabIndex = 1;
             this.label4.Text = "NameField";
             // 
@@ -311,10 +305,9 @@
             // 
             this.panel4.Controls.Add(this.cbFieldType);
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(414, 14);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel4.Location = new System.Drawing.Point(276, 9);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(435, 52);
+            this.panel4.Size = new System.Drawing.Size(290, 34);
             this.panel4.TabIndex = 2;
             // 
             // cbFieldType
@@ -322,20 +315,20 @@
             this.cbFieldType.DropDownHeight = 110;
             this.cbFieldType.FormattingEnabled = true;
             this.cbFieldType.IntegralHeight = false;
-            this.cbFieldType.Location = new System.Drawing.Point(124, 11);
-            this.cbFieldType.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbFieldType.Location = new System.Drawing.Point(83, 7);
             this.cbFieldType.Name = "cbFieldType";
-            this.cbFieldType.Size = new System.Drawing.Size(277, 28);
+            this.cbFieldType.Size = new System.Drawing.Size(186, 21);
             this.cbFieldType.TabIndex = 11;
             this.cbFieldType.SelectedIndexChanged += new System.EventHandler(this.cbFieldType_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 17);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.BackColor = System.Drawing.Color.Honeydew;
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(8, 11);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 20);
+            this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "Type";
             // 
@@ -343,27 +336,26 @@
             // 
             this.panel3.Controls.Add(this.txtName);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(4, 75);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel3.Location = new System.Drawing.Point(3, 49);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(384, 52);
+            this.panel3.Size = new System.Drawing.Size(256, 34);
             this.panel3.TabIndex = 1;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(74, 12);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtName.Location = new System.Drawing.Point(49, 8);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(277, 26);
+            this.txtName.Size = new System.Drawing.Size(186, 20);
             this.txtName.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 17);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.BackColor = System.Drawing.Color.Honeydew;
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(8, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 20);
+            this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Name";
             // 
@@ -371,37 +363,37 @@
             // 
             this.panel2.Controls.Add(this.txtFieldID);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(4, 14);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel2.Location = new System.Drawing.Point(3, 9);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(384, 52);
+            this.panel2.Size = new System.Drawing.Size(256, 34);
             this.panel2.TabIndex = 0;
             // 
             // txtFieldID
             // 
-            this.txtFieldID.Location = new System.Drawing.Point(74, 12);
-            this.txtFieldID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtFieldID.Location = new System.Drawing.Point(49, 8);
             this.txtFieldID.Name = "txtFieldID";
-            this.txtFieldID.Size = new System.Drawing.Size(277, 26);
+            this.txtFieldID.Size = new System.Drawing.Size(186, 20);
             this.txtFieldID.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 17);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.BackColor = System.Drawing.Color.Honeydew;
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(8, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 20);
+            this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "ID";
             // 
             // EditForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(912, 471);
+            this.BackColor = System.Drawing.Color.Honeydew;
+            this.ClientSize = new System.Drawing.Size(608, 306);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "EditForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditForm";

@@ -300,7 +300,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 string endTime = cb3.SelectedItem.ToString()+ "h"+ cb4.SelectedItem.ToString();
                 CustomerBooking customerBooking = CustomerBookingDAL.Instance.getCustomerBookingById(int.Parse(s1));
                 CustomerDAL.Instance.updateCustomer(customerBooking.IdCustomer, txtCustomerName.Text, txtCustomerPhone.Text);
-                FieldDAL.Instance.updateFieldById(int.Parse(txtIdField.Text),"empty");
+            //    FieldDAL.Instance.updateFieldById(int.Parse(txtIdField.Text),"empty");
                 CustomerBookingDAL.Instance.updateCustomerBooking(int.Parse(s1),customerBooking.IdCustomer, int.Parse(txtIdField.Text), startTime, endTime, float.Parse(txtPriceBooking.Text.ToString()),txtStatus.Text );
                 this.Close();
             }
@@ -343,6 +343,28 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         {
             
             updateDatagridViewAfterSearch(txtFieldType.Text, txtFieldName.Text.ToString(), txtSearch.Text.ToLower());
+        }
+
+        
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            if(txtIdCustomerBooking.Text.ToString() == "")
+            {
+                MessageBox.Show("vui lòng chọn đơn đặt sân");
+            }
+            else
+            {
+                // cap nhat thanh trang thai da huy
+                CustomerBookingDAL.Instance.updatestatusCustomerBookingById(int.Parse(txtIdCustomerBooking.Text));
+                BillDAL.Instance.insertBill(int.Parse(txtIdCustomerBooking.Text), float.Parse(txtPriceBooking.Text));
+                this.Close();
+            }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

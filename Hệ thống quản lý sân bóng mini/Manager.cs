@@ -21,7 +21,9 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             InitializeComponent();
        //     loadAccountList();
             loadBill();
-          //  load();
+            //  load();
+            LoadField();
+            LoadTypeField();
         }
 
         //void loadAccountList()
@@ -82,6 +84,109 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             DataTable data = DataProvider.Instance.ExcuteQuery(sql);
             dataGridView1.Controls.Clear();
             dataGridView1.DataSource = data;
+        }
+
+        void LoadField()
+        {
+            
+                DataTable dataTable = new DataTable();
+                dataTable.Columns.AddRange(new DataColumn[]
+                {
+                    new DataColumn {ColumnName = "id", DataType = typeof(int)},
+                    new DataColumn {ColumnName = "Name", DataType = typeof(string)},
+                    new DataColumn {ColumnName = "idType", DataType = typeof(int)},
+                  //  new DataColumn {ColumnName = "status", DataType = typeof(string)}
+                });
+                List<Field> listField = FieldDAL.
+                    Instance.LoadFieldList();
+                foreach (Field field in listField)
+                {
+                    dataTable.Rows.Add(field.Id,field.Name,field.IdFieldType);
+                }
+                dataGridView2.DataSource = dataTable;
+
+            
+
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                // Lấy hàng đã click
+
+
+                DataGridViewRow selectedRow = dataGridView2.Rows[e.RowIndex];
+
+                // Tiếp theo, bạn có thể lấy giá trị từ các ô trong hàng đã chọn
+                txtIdField.Text = selectedRow.Cells[0].Value.ToString();
+                txtNameField.Text = selectedRow.Cells[1].Value.ToString();
+                cbIdType.Text = selectedRow.Cells[2].Value.ToString(); 
+                int id = int.Parse(cbIdType.Text);
+                showTypeName(id);
+            }
+
+        }
+
+        void showTypeName(int id)
+        {
+            List<FieldType> listFieldType = FieldTypeDAL.Instance.LoadFieldType();
+            foreach (FieldType fieldType in listFieldType)
+            {
+                if (fieldType.Id == id)
+                {
+                    txtTypeName.Text = fieldType.TypeName;
+                }
+            }
+        }
+
+        void LoadTypeField()
+        {
+            List<FieldType> listFieldType = FieldTypeDAL.Instance.LoadFieldType();
+            cbIdType.DataSource = listFieldType;
+            cbIdType.DisplayMember = "id";
+        }
+
+        private void cbIdType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          //  List<FieldType> listFieldType = FieldTypeDAL.Instance.LoadFieldType();
+            ComboBox cb = sender as ComboBox;
+            FieldType choosed = cb.SelectedItem as FieldType;
+            if (choosed != null)
+            {
+                int id = choosed.Id;
+                showTypeName(id);
+            }
+            
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(cbIdType.Text);
+            bool check = true;
+            List<Field> listField = FieldDAL.Instance.GetFieldByIdFieldType(id);
+            foreach(Field field in listField)
+            {
+                if(field.Name == txtNameField.Text)
+                {
+                    check = false;
+                    break;
+                }
+            }
+            if (check)
+            {
+                // insert vào
+            }
+        }
+
+        private void panel19_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

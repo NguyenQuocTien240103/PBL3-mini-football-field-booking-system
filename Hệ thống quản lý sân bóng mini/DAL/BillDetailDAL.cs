@@ -60,7 +60,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             foreach (DataRow row in data.Rows)
             {
                 BillDetail bill = new BillDetail(row);
-               // MessageBox.Show(bill.Name.ToString());
+               //    MessageBox.Show(bill.Name.ToString());
                 listBill.Add(bill);
 
             }

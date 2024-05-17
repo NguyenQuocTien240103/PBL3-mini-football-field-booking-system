@@ -40,9 +40,10 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             {
                 Button btn = new Button()
                 {
-                    Width = 50,
+                    Width = 60,
                     Height = 50
                 };
+              //  btn.Image = btn.Image = Image.FromFile("anh.jpg");
                 btn.Click += btn_Click;
                 btn.Tag = item1;
                 btn.TabStop = false;
@@ -84,7 +85,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 }
             }
         }
-         void ShowBill(int idField)
+         void ShowField(int idField)
         {
                 dtgvBill.Controls.Clear();
                 DataTable dataTable = new DataTable();
@@ -124,7 +125,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
 
             saveIDField = ((sender as Button).Tag as Field).Id;
 
-            ShowBill(fieldID);
+            ShowField(fieldID);
 
         }
         private void label3_Click(object sender, EventArgs e)
@@ -148,7 +149,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         // click button Edit on form BookingManager
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            // call form FormInformationBooking
+                // call form FormInformationBooking
             if (saveStatusField == "busy")
             {
                 
@@ -236,6 +237,11 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 MessageBox.Show("reservation");
             }
             saveStatusField = "";
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

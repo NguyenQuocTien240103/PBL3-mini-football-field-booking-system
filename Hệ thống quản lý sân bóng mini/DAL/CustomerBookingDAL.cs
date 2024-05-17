@@ -87,7 +87,12 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
         public void updateCustomerBookingById(int idCustomerBooking)
         {
             String sql = "update dbo.CustomerBooking set status= 'chua thanh toan' Where id=" + idCustomerBooking;
-            DataProvider.Instance.ExcuteQuery(sql);
+            DataProvider.Instance.ExcuteNonQuery(sql);
+        }
+        public void updatestatusCustomerBookingById(int idCustomerBooking)
+        {
+            string sql = "update dbo.CustomerBooking set status = 'da huy' where id = " + idCustomerBooking;
+            DataProvider.Instance.ExcuteNonQuery(sql);
         }
 
         public CustomerBooking getCustomerBookingById(int idCustomerBooking)
@@ -105,6 +110,12 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             DataTable data = DataProvider.Instance.ExcuteQuery(sql);
             CustomerBooking customerBooking = new CustomerBooking(data.Rows[0]);
             return customerBooking.Id;
+        }
+
+        public void delCustomerBookingById(int idCustomerBooking)
+        {
+            string sql = "Delete from dbo.CustomerBooking where id = " + idCustomerBooking;
+            DataProvider.Instance.ExcuteNonQuery(sql);
         }
     }
 }
