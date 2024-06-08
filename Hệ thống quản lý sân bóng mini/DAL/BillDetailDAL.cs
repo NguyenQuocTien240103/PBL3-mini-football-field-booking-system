@@ -55,7 +55,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
                     "INNER JOIN \r\n    " +
                     "Bill ON CustomerBooking.id = Bill.idCustomerBooking";
             
-            DataTable data = DataProvider.Instance.ExcuteQuery(sql);
+            DataTable data = DataProvider.Instance.ExecuteQuery(sql);
             List<BillDetail>   listBill = new List<BillDetail>();
             foreach (DataRow row in data.Rows)
             {

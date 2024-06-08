@@ -49,8 +49,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             }
         }
 
-        private string _StartTime;
-        public string StartTime
+        private DateTime _StartTime;
+        public DateTime StartTime
         {
             get
             {
@@ -62,8 +62,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             }
         }
 
-        private string _EndTime;
-        public string EndTime
+        private DateTime _EndTime;
+        public DateTime EndTime
         {
             get
             {
@@ -101,10 +101,21 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             }
         }
 
-
+        private DateTime _Ngaydat;
+        public DateTime Ngaydat
+        {
+            get
+            {
+                return _Ngaydat;
+            }
+            set
+            {
+                _Ngaydat = value;
+            }
+        }
 
         public CustomerBooking(int id,int idCustomer, 
-            int idFieldName, string startTime, string EndTime, int priceBooking, string status)
+            int idFieldName, DateTime startTime, DateTime EndTime, int priceBooking, string status, DateTime ngaydat)
         {
             this.Id = id;
             this.IdCustomer = idCustomer;
@@ -113,6 +124,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             this.EndTime = EndTime;
             this.PriceBooking = priceBooking;
             this.Status = status;
+            this.Ngaydat = ngaydat;
         }
 
         public CustomerBooking(DataRow row)
@@ -120,10 +132,11 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             this.Id = (int)row["id"];
             this.IdCustomer = (int)row["idCustomer"];
             this.IdFieldName = (int)row["idFieldName"]; 
-            this.StartTime = (string)row["startTime"];
-            this.EndTime =  (string)row["endTime"];
+            this.StartTime = (DateTime)row["startTime"];
+            this.EndTime =  (DateTime)row["endTime"];
             this.PriceBooking = Convert.ToSingle(row["priceBooking"]);
             this.Status = (string)row["status"];
+            this.Ngaydat = (DateTime)row["ngaydat"];
         }
     }
 }

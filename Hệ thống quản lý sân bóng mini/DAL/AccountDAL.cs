@@ -30,7 +30,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
         {
             string query =  "select * from dbo.Account where username='" + username + "' and password='" + password+"'";
             ;
-            DataTable rs = DataProvider.Instance.ExcuteQuery(query);
+            DataTable rs = DataProvider.Instance.ExecuteQuery(query);
             return rs.Rows.Count == 0;
             
         }

@@ -58,6 +58,11 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
                 _SpecialPrice = value;
             }
         }
+        public override string ToString()
+        {
+            return _Id.ToString();
+
+        }
         public FieldType(int id, string typeName, float normalPrice, float specialPrice) {
             this.Id = id;
             this.TypeName= typeName;

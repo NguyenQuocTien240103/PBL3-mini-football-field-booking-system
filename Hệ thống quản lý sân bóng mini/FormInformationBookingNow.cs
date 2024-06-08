@@ -27,18 +27,12 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         {
             this.Close();
         }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         void setCombox()
         {
             for(int i = 0; i < 24; i++)
             {
-                cb1.Items.Add(i);
-                cb3.Items.Add(i);
+                cb1.Items.Add("0"+i);
+                cb3.Items.Add("0"+i);
             }
             for (int i = 0; i < 60; i++)
             {
@@ -58,10 +52,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
         public void abc(Field field)
         {
             // Gán dữ liệu từ Form1 cho textField2 của Form2
@@ -76,34 +66,24 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            String startTime = cb1.SelectedItem.ToString()+'h'+cb2.SelectedItem.ToString();
-            String endTime = cb3.SelectedItem.ToString() + 'h' + cb4.SelectedItem.ToString();
             float PriceBookinng = float.Parse(txtPrice.Text.ToString());
-            String Name = txtName.Text;
-            String Phone = txtPhone.Text;
-            CustomerDAL.Instance.InsertCustomer(Name, Phone); // insert Customer
+            string Name = txtName.Text;
+            string Phone = txtPhone.Text;
+            // insert Customer
+            CustomerDAL.Instance.InsertCustomer(Name, Phone);
             // lấy idCustomer mới insert
             int idCustomer = CustomerDAL.Instance.getIdCustomerLast(); // đã giải quyết
-            // lấy idField
-            String idfieldChoose = txtFieldID.Text.ToString();
-            int idFieldChoose = int.Parse(idfieldChoose);
-            // cập  nhật trạng thái
-            BookingManager bookingManager = new BookingManager();
-            if (PriceBookinng > 0)
-            {
-                FieldDAL.Instance.updateFieldById(idFieldChoose, "empty");
-                CustomerBookingDAL.Instance.InSertCustomerBooking(idCustomer, idFieldChoose, startTime,
-                   endTime, PriceBookinng, "cho duyet");
-            }
-            else
-            {
-                CustomerBookingDAL.Instance.InSertCustomerBooking(idCustomer, idFieldChoose, startTime,
-                    endTime, PriceBookinng, "chua thanh toan");
-                FieldDAL.Instance.updateFieldById(idFieldChoose, "busy");
-            }
-           
+            DateTime startTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, 
+                int.Parse(cb1.SelectedItem.ToString()), int.Parse(cb2.SelectedItem.ToString()), 0);
+
+            DateTime endTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, 
+                int.Parse(cb3.SelectedItem.ToString()), int.Parse(cb4.SelectedItem.ToString()), 0);
+
+            CustomerBookingDAL.Instance.InSertCustomerBooking(idCustomer, int.Parse(txtFieldID.Text), startTime,
+                endTime, PriceBookinng, "truc tiep", DateTime.Now.Date);
+            //update state field by idField
+            FieldDAL.Instance.updateFieldById(int.Parse(txtFieldID.Text), "busy");
             this.Close();
         }
-
     }
 }

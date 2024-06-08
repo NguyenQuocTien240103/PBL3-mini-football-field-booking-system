@@ -86,8 +86,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             }
         }
 
-        private String _startTime;
-        public String startTime
+        private DateTime _startTime;
+        public DateTime startTime
         {
             get
             {
@@ -99,8 +99,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             }
         }
 
-        private String _endTime;
-        public String endTime
+        private DateTime _endTime;
+        public DateTime endTime
         {
             get
             {
@@ -137,10 +137,22 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
                 _status = value;
             }
         }
+        private DateTime _Ngaydat;
+        public DateTime Ngaydat
+        {
+            get
+            {
+                return _Ngaydat;
+            }
+            set
+            {
+                _Ngaydat = value;
+            }
+        }
 
 
         public CustomerBookingDetail(int id,int IdField, string TypeName, string FieldName,
-            string CustomerName, string CustomerPhone, string startTime, string endTime, float priceBooking,string status)
+            string CustomerName, string CustomerPhone, DateTime startTime, DateTime endTime, float priceBooking,string status,DateTime ngaydat)
         {
             this.Id = id;
             this.IdField = IdField;
@@ -152,6 +164,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             this.endTime = endTime;
             this.priceBooking = priceBooking;
             this.status = status;
+            this.Ngaydat = ngaydat;
         }
 
         public CustomerBookingDetail(DataRow row)
@@ -162,15 +175,16 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             this.FieldName = (string)row["FieldName"];
             this.CustomerName= (string)row["CustomerName"];
             this.CustomerPhone = (string)row["CustomerPhone"]; 
-            this.startTime = (string)row["startTime"];
-            this.endTime = (string)row["endTime"];
+            this.startTime = (DateTime)row["startTime"];
+            this.endTime = (DateTime)row["endTime"];
             this.priceBooking = Convert.ToSingle(row["priceBooking"]);
             this.status = (string)row["status"];
+            this.Ngaydat = (DateTime)row["ngaydat"];
 
         }
         public override string ToString()
         {
-            return Id + " " + IdField + " " + TypeName + " " + FieldName + " " + CustomerName + " " + CustomerPhone+ " " + startTime + " " + endTime + " " + priceBooking + " " +status ;
+            return Id + " " + IdField + " " + TypeName + " " + FieldName + " " + CustomerName + " " + CustomerPhone+ " " + startTime + " " + endTime + " " + priceBooking + " " +status+ " "+Ngaydat+" " ;
         }
     }
 }

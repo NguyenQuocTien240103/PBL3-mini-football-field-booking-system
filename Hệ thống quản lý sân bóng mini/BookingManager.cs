@@ -43,7 +43,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                     Width = 60,
                     Height = 50
                 };
-              //  btn.Image = btn.Image = Image.FromFile("anh.jpg");
                 btn.Click += btn_Click;
                 btn.Tag = item1;
                 btn.TabStop = false;
@@ -74,9 +73,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                             case "busy":
                                 btn.BackColor = Color.Red;
                                 break;
-                            case "booked":
-                                btn.BackColor = Color.Orange;
-                                break;
+                            
 
 
                         }
@@ -91,6 +88,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 DataTable dataTable = new DataTable();
                 dataTable.Columns.AddRange(new DataColumn[]
                 {
+                    
                     new DataColumn {ColumnName = "id", DataType = typeof(int)},
                     new DataColumn {ColumnName = "idField", DataType = typeof(int)},
                     new DataColumn {ColumnName = "TypeName", DataType = typeof(string)},
@@ -100,18 +98,24 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                     new DataColumn {ColumnName = "startTime", DataType = typeof(string)},
                     new DataColumn {ColumnName = "endTime", DataType = typeof(string)},
                     new DataColumn {ColumnName = "priceBooking", DataType = typeof(float)},
-                    new DataColumn {ColumnName = "status", DataType = typeof(string)}
+                    new DataColumn {ColumnName = "status", DataType = typeof(string)},
+                    new DataColumn {ColumnName = "bookingDay", DataType = typeof(DateTime)}
                 });
             List<CustomerBookingDetail> customerBookingDetails = CustomerBookingDetailDAL.
                 Instance.LoadCustomerBookingById(idField);
+            
             foreach (CustomerBookingDetail customerbooking in customerBookingDetails)
             {
                 dataTable.Rows.Add(customerbooking.Id,customerbooking.IdField,
                 customerbooking.TypeName, customerbooking.FieldName, customerbooking.CustomerName,
-                customerbooking.CustomerPhone, customerbooking.startTime, customerbooking.endTime,
-                customerbooking.priceBooking, customerbooking.status);
+                customerbooking.CustomerPhone, customerbooking.startTime.ToString("HH:mm"), customerbooking.endTime.ToString("HH:mm"),
+                customerbooking.priceBooking, customerbooking.status,customerbooking.Ngaydat);
+                
             }
             dtgvBill.DataSource = dataTable;
+            dtgvBill.Columns["id"].Visible = false;
+            dtgvBill.Columns["idField"].Visible = false;
+
 
         }
         private void btn_Click(object sender, EventArgs e)
@@ -128,23 +132,17 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             ShowField(fieldID);
 
         }
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
+        
         // click button Booking on form BookingManager
         private void btnBooking_Click(object sender, EventArgs e)
         {
             // call form FormInformationBooking
               FormInformationBooking formInforBooking = new FormInformationBooking();
             // d tham chiếu tới hàm abc của đối tượng formInforBooking
-        
                 this.Hide();
                 formInforBooking.ShowDialog();
                 LoadField();
                 this.Show();
-     
-
         }
         // click button Edit on form BookingManager
         private void btnEdit_Click(object sender, EventArgs e)
@@ -163,14 +161,13 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             }
             else if (saveStatusField == "")
             {
-                MessageBox.Show("Please Select Fields");
+                MessageBox.Show("Vui lòng chọn sân");
             }
             else
             {
                 MessageBox.Show("empty");
             }
             saveStatusField = "";
-
         }
 
         // click button Pay on form BookingManager
@@ -179,9 +176,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             // call form FormInformationBooking
             if (saveStatusField == "busy" )
             {
-                //PayMent pay = new PayMent ();
                 // d tham chiếu tới hàm abc của đối tượng formInforBooking
-                
                 PayMent payMent = new PayMent();
                 this.Hide();
                 d = new Mydel(payMent.abc);
@@ -196,7 +191,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             }
             else
             {
-                MessageBox.Show("Please Select Fields");
+                MessageBox.Show("Vui lòng chọn sân");
             }
                 
         }
@@ -205,14 +200,10 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         private void MenuItem_Click(object sender, EventArgs e)
         {
             Manager manager = new Manager();
+            manager.d += new Manager.Mydel(LoadField);
             this.Hide();
             manager.ShowDialog();
             this.Show();
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnBookNow_Click(object sender, EventArgs e)
@@ -230,18 +221,13 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             }
             else if (saveStatusField == "")
             {
-                MessageBox.Show("Please Select Fields");
+                MessageBox.Show("Vui lòng chọn sân");
             }
             else
             {
-                MessageBox.Show("reservation");
+                MessageBox.Show("Đã được đặt");
             }
             saveStatusField = "";
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
 
         }
     }

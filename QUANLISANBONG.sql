@@ -30,7 +30,16 @@ CREATE TABLE CustomerBooking(
 	FOREIGN KEY (idCustomer) REFERENCES dbo.Customer(id),
 	FOREIGN KEY (idFieldName) REFERENCES dbo.FieldName(id),
 )
+-- update table CustomerBooking
+ALTER TABLE dbo.CustomerBooking
+  ADD ngaydat DATETIME;
 
+ALTER TABLE dbo.CustomerBooking
+ALTER COLUMN startTime DATETIME
+
+ALTER TABLE dbo.CustomerBooking
+ALTER COLUMN endTime DATETIME
+----
 
 CREATE TABLE Bill(
 	id INT IDENTITY PRIMARY KEY,
@@ -39,8 +48,12 @@ CREATE TABLE Bill(
 	totalPrice FLOAT NOT NULL,
 	FOREIGN KEY (idCustomerBooking) REFERENCES dbo.CustomerBooking(id),
 )
+
+-- update table Bill
 ALTER TABLE dbo.Bill
 ADD paymentDay DATE NOT NULL DEFAULT GETDATE();
+
+----
 insert into dbo.Bill(idCustomerBooking,totalPrice)
 values (34,200000)
 	select * from dbo.Bill
@@ -85,7 +98,7 @@ VALUES ('A','empty',2)
 INSERT INTO dbo.FieldName(name,status,idFieldType)	
 VALUES ('B','empty',2)
 INSERT INTO dbo.FieldName(name,status,idFieldType)	
-VALUES ('C','busy',2)
+VALUES ('C','empty',2)
 
 
 
@@ -135,7 +148,7 @@ Select * FROM dbo.FieldType
 ---
 update dbo.FieldName
 set status='empty'
-where id=10
+where id=24
 
 update dbo.Customer
 set name='nhi',phone='123'
@@ -156,10 +169,11 @@ SELECT
        CustomerBooking.startTime,
        CustomerBooking.endTime,
        CustomerBooking.priceBooking,
-	   CustomerBooking.status
+	   CustomerBooking.status,
+	   CustomerBooking.ngaydat
 FROM FieldType
-INNER JOIN FieldName ON FieldType.id = FieldName.idFieldType 
-INNER JOIN CustomerBooking ON FieldName.id = CustomerBooking.idFieldName 
+INNER JOIN FieldName ON FieldType.id = FieldName.idFieldType and FieldName.id=23 
+INNER JOIN CustomerBooking ON FieldName.id = CustomerBooking.idFieldName and CustomerBooking.status='trực tiếp'
 INNER JOIN Customer ON CustomerBooking.idCustomer = Customer.id 
 
 SELECT 
@@ -230,3 +244,4 @@ ALTER TABLE CustomerBooking NOCHECK CONSTRAINT FK__CustomerB__idFie__403A8C7D;
 ALTER TABLE dbo.Bill NOCHECK CONSTRAINT FK__Bill__idCustomer__440B1D61;
 --Mở lại ràng buộc khóa ngoại
 ALTER TABLE CustomerBooking WITH CHECK CHECK CONSTRAINT FK__CustomerB__idCus__3F466844;
+

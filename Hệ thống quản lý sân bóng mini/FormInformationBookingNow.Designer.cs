@@ -208,7 +208,7 @@
             this.cb2.Name = "cb2";
             this.cb2.Size = new System.Drawing.Size(60, 21);
             this.cb2.TabIndex = 11;
-            this.cb2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+           // this.cb2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -218,7 +218,7 @@
             this.label6.Size = new System.Drawing.Size(10, 13);
             this.label6.TabIndex = 12;
             this.label6.Text = ":";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+          //  this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 

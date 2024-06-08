@@ -54,8 +54,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         {
             for (int i = 0; i < 24; i++)
             {
-                cb1.Items.Add(i);
-                cb3.Items.Add(i);
+                cb1.Items.Add("0" + i);
+                cb3.Items.Add("0" + i);
             }
             for (int i = 0; i < 60; i++)
             {
@@ -95,21 +95,24 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             String s = cb.SelectedItem.ToString();
             float price = float.Parse(s);
             showTotalPrice(price);
+
         }
 
         void showTotalPrice(float price)
         {
+
             string giobatdau = cb1.SelectedItem.ToString();
             float giobegin = float.Parse(giobatdau);
             string phutbatdau = cb2.SelectedItem.ToString();
             float phutbegin = float.Parse(phutbatdau);
             string giokethuc = cb3.SelectedItem.ToString();
-            float gioend = float.Parse (giokethuc);
+            float gioend = float.Parse(giokethuc);
             string phutkethuc = cb4.SelectedItem.ToString();
             float phutend = float.Parse(phutkethuc);
-            float hieu = (gioend * 60 + phutend)-(giobegin * 60 + phutbegin) ;
+            float hieu = (gioend * 60 + phutend) - (giobegin * 60 + phutbegin);
             float a = hieu / 60;
             txtTotal.Text = (a * price).ToString();
+
 
         }
         void showInformationFromField()
@@ -122,21 +125,23 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             int idCustomer = 0;
             foreach ( CustomerBooking customerBooking in customerBookings )
             {
-                if(customerBooking.IdFieldName == idField && customerBooking.Status=="chua thanh toan")
+                if(customerBooking.IdFieldName == idField && customerBooking.Status=="truc tiep")
                 {
-                    tgbatdau = customerBooking.StartTime;
-                    tgkethuc = customerBooking.EndTime;
+                    tgbatdau = customerBooking.StartTime.ToString("HH:mm");
+                    tgkethuc = customerBooking.EndTime.ToString("HH:mm");
                     idCustomer = customerBooking.IdCustomer;
                     txtPriceBooking.Text = customerBooking.PriceBooking.ToString();
                     break;
                 }
             }
-            string[] parts1 = tgbatdau.Split('h');
-            string[] parts2 = tgkethuc.Split('h');
+          //  MessageBox.Show(tgbatdau + tgkethuc);
+            string[] parts1 = tgbatdau.Split(':');
+            string[] parts2 = tgkethuc.Split(':');
             cb1.Text = parts1[0];
             cb2.Text = parts1[1];
             cb3.Text = parts2[0];
             cb4.Text = parts2[1];
+
 
             List<Customer> ListCustomers = CustomerDAL.Instance.LoadCustomerList();
             foreach( Customer customer in ListCustomers )

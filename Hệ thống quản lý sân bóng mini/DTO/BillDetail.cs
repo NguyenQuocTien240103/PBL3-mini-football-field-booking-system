@@ -65,8 +65,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
         }
 
 
-        private string _StartTime;
-        public string StartTime
+        private DateTime _StartTime;
+        public DateTime StartTime
         {
             get
             {
@@ -78,8 +78,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
                 _StartTime = value;
             }
         }
-        private string _EndTime;
-        public string EndTime
+        private DateTime _EndTime;
+        public DateTime EndTime
         {
             get
             {
@@ -148,7 +148,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
                 _PaymentDay = value;
             }
         }
-        public BillDetail(string name, string phone,  string fieldType, string fieldName,  string startTime, string endTime,
+        public BillDetail(string name, string phone,  string fieldType, string fieldName, DateTime startTime, DateTime endTime,
             float priceBooking, string status, float totalPrice,  DateTime paymentDay)
         {
             this.Name = name;
@@ -169,8 +169,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             this.Phone = (string)row["phone"];
             this.FieldType = (string)row["FieldType"];
             this.FieldName = (string)row["FieldName"];  
-            this.StartTime = (string)row["startTime"];
-            this.EndTime= (string)row["endTime"];
+            this.StartTime = (DateTime)row["startTime"];
+            this.EndTime= (DateTime)row["endTime"];
             this.PriceBooking = Convert.ToSingle(row["priceBooking"]);
             this.Status = (string)row["status"];
             this.TotalPrice = Convert.ToSingle(row["totalPrice"]);
