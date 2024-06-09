@@ -173,13 +173,15 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             List<CustomerBooking> customerBookings = CustomerBookingDAL.Instance.LoadCustomerBooking();
             foreach (CustomerBooking customerBooking in customerBookings)
             {
-                if (customerBooking.IdFieldName == tempForSaveidField && customerBooking.Status == "chua thanh toan") //tempForSaveidField là idField sân mà mình click vào
+                if (customerBooking.IdFieldName == tempForSaveidField && customerBooking.Status == "truc tiep") //tempForSaveidField là idField sân mà mình click vào
                 {
                     idCustomer = customerBooking.IdCustomer;
                     idCustomerBooking = customerBooking.Id;
                     break;
                 }
             }
+
+            // lay ra idkhac hang, lay ra id CustierBooking
             // update Customer
             CustomerDAL.Instance.updateCustomer(idCustomer,txtName.Text,txtPhone.Text);
 

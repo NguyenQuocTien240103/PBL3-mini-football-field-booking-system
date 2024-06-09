@@ -189,7 +189,10 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         }
         private void btnDel_Click(object sender, EventArgs e)
         {
+
             FieldDAL.Instance.DelField(int.Parse(txtIdField.Text));
+            LoadField();
+            d();
         }
 
 
@@ -239,9 +242,32 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         }
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            FieldDAL.Instance.updateField(int.Parse(txtIdField.Text), txtNameField.Text.ToString(), int.Parse(cbIdType.SelectedItem.ToString()));
-            LoadField();
-            d();
+            int id = int.Parse(cbIdType.Text);
+            bool check = true;
+            List<Field> listField = FieldDAL.Instance.GetFieldByIdFieldType(id);
+            foreach (Field field in listField)
+            {
+                if (field.Name == txtNameField.Text)
+                {
+                    check = false;
+                    break;
+                }
+            }
+            if (check)
+            {
+                // insert vào
+              //  FieldDAL.Instance.insertField(txtNameField.Text, int.Parse(cbIdType.Text));
+              //  LoadField();
+              //  d();
+                FieldDAL.Instance.updateField(int.Parse(txtIdField.Text), txtNameField.Text.ToString(), int.Parse(cbIdType.SelectedItem.ToString()));
+                LoadField();
+                d();
+            }
+            else
+            {
+                MessageBox.Show("Sân đã trùng tên");
+            }
+            
         }
     }
 }

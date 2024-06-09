@@ -385,23 +385,26 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             }
             else
             {
-                string startTime = cb1.SelectedItem.ToString() + "h" + cb2.SelectedItem.ToString();
-                string endTime = cb3.SelectedItem.ToString()+ "h"+ cb4.SelectedItem.ToString();
-                CustomerBooking customerBooking = CustomerBookingDAL.Instance.getCustomerByCustomerBooking(int.Parse(s1));
-                // update cho customer
-                //if (ktragiodat(int.Parse(txtIdField.Text), startTime, endTime))
-                //{
+                DateTime startTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month,
+              DateTime.Today.Day, int.Parse(cb1.SelectedItem.ToString()), int.Parse(cb2.SelectedItem.ToString()), 0);
 
-                //    CustomerDAL.Instance.updateCustomer(customerBooking.IdCustomer, txtCustomerName.Text, txtCustomerPhone.Text);
-                //    //    FieldDAL.Instance.updateFieldById(int.Parse(txtIdField.Text),"empty");
-                //    CustomerBookingDAL.Instance.updateCustomerBooking(int.Parse(s1), customerBooking.IdCustomer, int.Parse(txtIdField.Text), startTime, endTime, float.Parse(txtPriceBooking.Text.ToString()), txtStatus.Text);
-                //    this.Close();
-                //}
-                //else
-                //{
-                //    MessageBox.Show("san da co nguoi dat");
-                //}
-            }
+                DateTime endTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month,
+                    DateTime.Today.Day, int.Parse(cb3.SelectedItem.ToString()), int.Parse(cb4.SelectedItem.ToString()), 0);
+                CustomerBooking customerBooking = CustomerBookingDAL.Instance.getCustomerByCustomerBooking(int.Parse(s1));
+                
+                    if (ktragiodat(int.Parse(txtIdField.Text), startTime.ToString("HH:mm"), endTime.ToString("HH:mm"))){ 
+
+                        CustomerDAL.Instance.updateCustomer(customerBooking.IdCustomer, txtCustomerName.Text, txtCustomerPhone.Text);
+                        CustomerBookingDAL.Instance.updateCustomerBooking(int.Parse(s1), customerBooking.IdCustomer, int.Parse(txtIdField.Text), startTime, endTime, float.Parse(txtPriceBooking.Text.ToString()), txtStatus.Text);
+                        this.Close();
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sân đã có người đặt");
+                    }
+                }
+            
         }
 
         public void updateDatagridViewAfterSearch(string TypeName, string FieldName, string search)
@@ -464,3 +467,5 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
 
     }
 }
+
+
