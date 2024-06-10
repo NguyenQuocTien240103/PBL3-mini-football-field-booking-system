@@ -74,6 +74,7 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.btnEditType = new System.Windows.Forms.Button();
             this.btnDelType = new System.Windows.Forms.Button();
+            this.btnRf = new System.Windows.Forms.Button();
             this.tabPage2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -325,13 +326,14 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage1.Size = new System.Drawing.Size(1119, 613);
+            this.tabPage1.Size = new System.Drawing.Size(1119, 616);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Bill";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnRf);
             this.panel2.Controls.Add(this.btnSearch);
             this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Location = new System.Drawing.Point(9, 9);
@@ -342,7 +344,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(826, 11);
+            this.btnSearch.Location = new System.Drawing.Point(976, 13);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(112, 35);
@@ -353,7 +355,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(180, 13);
+            this.dateTimePicker1.Location = new System.Drawing.Point(364, 22);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(406, 26);
@@ -571,6 +573,17 @@
             this.btnDelType.Text = "Del";
             this.btnDelType.UseVisualStyleBackColor = true;
             // 
+            // btnRf
+            // 
+            this.btnRf.Location = new System.Drawing.Point(24, 13);
+            this.btnRf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnRf.Name = "btnRf";
+            this.btnRf.Size = new System.Drawing.Size(112, 35);
+            this.btnRf.TabIndex = 2;
+            this.btnRf.Text = "Refresh";
+            this.btnRf.UseVisualStyleBackColor = true;
+            this.btnRf.Click += new System.EventHandler(this.btnRf_Click);
+            // 
             // Manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -662,5 +675,6 @@
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.TextBox txtPriceNormal;
+        private System.Windows.Forms.Button btnRf;
     }
 }

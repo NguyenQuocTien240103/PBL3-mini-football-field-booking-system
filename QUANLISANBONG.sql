@@ -148,7 +148,7 @@ Select * FROM dbo.FieldType
 ---
 update dbo.FieldName
 set status='empty'
-where id=24
+where id=26
 
 update dbo.Customer
 set name='nhi',phone='123'

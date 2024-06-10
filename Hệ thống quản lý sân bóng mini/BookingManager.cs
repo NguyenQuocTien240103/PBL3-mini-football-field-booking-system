@@ -40,9 +40,19 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             {
                 Button btn = new Button()
                 {
-                    Width = 60,
-                    Height = 50
+                    Width = 120,
+                    Height = 70,
+                    Font = new Font("Segoe UI", 9, FontStyle.Bold),
+                    FlatStyle = FlatStyle.Flat,
+                    FlatAppearance = { BorderSize = 0 },
+                    Cursor = Cursors.Hand,
+                    TextAlign = ContentAlignment.TopCenter, // Căn chỉnh văn bản bên trái
+                    ImageAlign = ContentAlignment.BottomCenter, // Căn chỉnh hình ảnh bên phải
+                    TextImageRelation = TextImageRelation.TextAboveImage, // Văn bản trước hình ảnh
                 };
+                Image originalImage = Image.FromFile("image\\sanbong.png");
+                Image resizedImage = originalImage.GetThumbnailImage(btn.Width/2, btn.Height /2, null, IntPtr.Zero);
+                btn.Image = resizedImage;
                 btn.Click += btn_Click;
                 btn.Tag = item1;
                 btn.TabStop = false;
@@ -53,26 +63,35 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                     {
                         if(item2.Id == 1)
                         {
-                            btn.Text = item2.TypeName + item1.Name + Environment.NewLine + item1.Status;
-                            
+                            // btn.Text = item2.TypeName + item1.Name + Environment.NewLine + item1.Status;
+                            btn.Text = item2.TypeName + item1.Name;
+
                             flowLayoutPanel1.Controls.Add(btn);
                         }
 
                         else if (item2.Id == 2)
                         {
-                            btn.Text = item2.TypeName + item1.Name + Environment.NewLine + item1.Status;
-                            
+                            // btn.Text = item2.TypeName + item1.Name + Environment.NewLine + item1.Status;
+                            btn.Text = item2.TypeName + item1.Name;
+
                             flowLayoutPanel2.Controls.Add(btn);
                         }
                         
                         switch(item1.Status )
                         {
                             case "empty":
-                                btn.BackColor = Color.Green;
+                               // btn.BackColor = Color.Green;
+                               // break;
+
+                                btn.BackColor = Color.FromArgb(75, 181, 67);  // Sử dụng mã màu RGB cho xanh
+                                btn.ForeColor = Color.White;
                                 break;
                             case "busy":
-                                btn.BackColor = Color.Red;
+                                btn.BackColor = Color.FromArgb(204, 37, 41);  // Sử dụng mã màu RGB cho đỏ
+                                btn.ForeColor = Color.White;
                                 break;
+                             //   btn.BackColor = Color.Red;
+                               // break;
                             
 
 
@@ -228,6 +247,11 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 MessageBox.Show("Đã được đặt");
             }
             saveStatusField = "";
+
+        }
+
+        private void BookingManager_Load(object sender, EventArgs e)
+        {
 
         }
     }
