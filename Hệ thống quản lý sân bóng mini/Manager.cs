@@ -269,5 +269,10 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             }
             
         }
+
+        private void btnRf_Click(object sender, EventArgs e)
+        {
+            loadBill();
+        }
     }
 }

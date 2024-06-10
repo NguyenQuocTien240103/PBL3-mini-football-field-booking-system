@@ -152,7 +152,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             });
             List<CustomerBookingDetail> customerBookingDetails = CustomerBookingDetailDAL.
                 Instance.LoadCustomerBookingById1();
-            int i = 1;
+           
             foreach (CustomerBookingDetail customerbooking in customerBookingDetails) {  
 
                 dataTable.Rows.Add(customerbooking.Id, customerbooking.IdField,
@@ -281,9 +281,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-                
-           // string startTime = cb1.SelectedItem.ToString() + 'h' + cb2.SelectedItem.ToString();
-          ///  string endTime = cb3.SelectedItem.ToString() + 'h' + cb4.SelectedItem.ToString();
             float PriceBookinng = float.Parse(txtPriceBooking.Text.ToString());
             string Name = txtCustomerName.Text;
             string Phone = txtCustomerPhone.Text;
@@ -355,6 +352,42 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             return check;
         }
 
+        public bool ktragiodat1(int idField, string startTime, string endTime,int idCustomerBooking)
+        {
+            bool check = true;
+            List<CustomerBooking> customerbookings = CustomerBookingDAL.Instance.LoadCustomerBooking();
+            foreach (CustomerBooking customerbooking in customerbookings)
+            {
+                if ((customerbooking.Status == "dat truoc" || customerbooking.Status == "truc tiep") && customerbooking.IdFieldName == idField && customerbooking.Id!=idCustomerBooking)
+                {
+                    if (sosanhthoigian(endTime, customerbooking.StartTime.ToString("HH:mm")) == true &&
+                        sosanhthoigian(endTime, customerbooking.EndTime.ToString("HH:mm")) == false)
+                    {
+
+                        check = false;
+                        break;
+                    }
+                    if (sosanhthoigian(startTime, customerbooking.EndTime.ToString("hh:mm")) == false &&
+                        sosanhthoigian(startTime, customerbooking.StartTime.ToString("hh:mm")) == true)
+                    {
+
+                        check = false;
+                        break;
+                    }
+                    if (sosanhthoigian(startTime, customerbooking.StartTime.ToString("hh:mm")) == false &&
+                        sosanhthoigian(endTime, customerbooking.EndTime.ToString("hh:mm")) == true)
+                    {
+
+                        check = false;
+                        break;
+                    }
+
+                }
+            }
+            return check;
+        }
+
+
         public bool sosanhthoigian(string time1, string time2) {
             int minutes1 = TimeToMinutes(time1);
             
@@ -390,16 +423,25 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
 
                 DateTime endTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month,
                     DateTime.Today.Day, int.Parse(cb3.SelectedItem.ToString()), int.Parse(cb4.SelectedItem.ToString()), 0);
+
                 CustomerBooking customerBooking = CustomerBookingDAL.Instance.getCustomerByCustomerBooking(int.Parse(s1));
                 
-                    if (ktragiodat(int.Parse(txtIdField.Text), startTime.ToString("HH:mm"), endTime.ToString("HH:mm"))){ 
+                    //if (ktragiodat(int.Parse(txtIdField.Text), startTime.ToString("HH:mm"), endTime.ToString("HH:mm"))){ 
 
-                        CustomerDAL.Instance.updateCustomer(customerBooking.IdCustomer, txtCustomerName.Text, txtCustomerPhone.Text);
-                        CustomerBookingDAL.Instance.updateCustomerBooking(int.Parse(s1), customerBooking.IdCustomer, int.Parse(txtIdField.Text), startTime, endTime, float.Parse(txtPriceBooking.Text.ToString()), txtStatus.Text);
-                        this.Close();
+                    //    CustomerDAL.Instance.updateCustomer(customerBooking.IdCustomer, txtCustomerName.Text, txtCustomerPhone.Text);
+                    //    CustomerBookingDAL.Instance.updateCustomerBooking(int.Parse(s1), customerBooking.IdCustomer, int.Parse(txtIdField.Text), startTime, endTime, float.Parse(txtPriceBooking.Text.ToString()), txtStatus.Text);
+                    //    this.Close();
 
-                    }
-                    else
+                    //}
+                if (ktragiodat1(int.Parse(txtIdField.Text), startTime.ToString("HH:mm"), endTime.ToString("HH:mm"),int.Parse(s1)))
+                {
+
+                    CustomerDAL.Instance.updateCustomer(customerBooking.IdCustomer, txtCustomerName.Text, txtCustomerPhone.Text);
+                    CustomerBookingDAL.Instance.updateCustomerBooking(int.Parse(s1), customerBooking.IdCustomer, int.Parse(txtIdField.Text), startTime, endTime, float.Parse(txtPriceBooking.Text.ToString()), txtStatus.Text);
+                    this.Close();
+
+                }
+                else
                     {
                         MessageBox.Show("Sân đã có người đặt");
                     }

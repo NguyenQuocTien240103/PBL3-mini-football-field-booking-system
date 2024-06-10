@@ -217,7 +217,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             //DataProvider.Instance.ExcuteNonQuery(sql);
             string sql = "UPDATE dbo.CustomerBooking " +
                 "SET status = 'da thanh toan' " +
-                "WHERE idFieldName = @idField AND status = 'chua thanh toan'";
+                "WHERE idFieldName = @idField AND status = 'truc tiep'";
 
             SqlParameter[] parameters = new SqlParameter[]
             {
@@ -231,7 +231,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
         {
             //String sql = "update dbo.CustomerBooking set status= 'chua thanh toan' Where id=" + idCustomerBooking;
             //DataProvider.Instance.ExcuteNonQuery(sql);
-            string sql = "UPDATE dbo.CustomerBooking SET status = 'chua thanh toan' WHERE id = @idCustomerBooking";
+            string sql = "UPDATE dbo.CustomerBooking SET status = 'truc tiep' WHERE id = @idCustomerBooking";
 
             SqlParameter[] parameters = new SqlParameter[]
             {

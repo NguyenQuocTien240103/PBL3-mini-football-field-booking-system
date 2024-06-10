@@ -16,8 +16,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BookingManager());
-          //  Application.Run(new Manager());
+           Application.Run(new BookingManager());
+          //  Application.Run(new Form1());
         }
     }
 }

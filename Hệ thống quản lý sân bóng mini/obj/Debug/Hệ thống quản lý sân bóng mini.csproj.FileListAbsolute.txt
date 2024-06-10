@@ -111,3 +111,4 @@ C:\Users\nguye\OneDrive\Desktop\pbl3\software\Hệ thống quản lý sân bóng
 C:\Users\nguye\OneDrive\Desktop\pbl3\software\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ thống quản lý sân bóng mini.csproj.CoreCompileInputs.cache
 C:\Users\nguye\OneDrive\Desktop\pbl3\software\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ thống quản lý sân bóng mini.exe
 C:\Users\nguye\OneDrive\Desktop\pbl3\software\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ thống quản lý sân bóng mini.pdb
+C:\Users\nguye\OneDrive\Desktop\pbl3\software\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ_thống_quản_lý_sân_bóng_mini.Form1.resources
