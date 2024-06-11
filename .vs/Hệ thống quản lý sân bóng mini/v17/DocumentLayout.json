@@ -1,173 +1,176 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\",
+  "WorkspaceRootPath": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|c:\\users\\nguye\\onedrive\\desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\bookingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|c:\\users\\nguye\\onedrive\\desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\bookingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\bookingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\bookingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\bookingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\bookingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|c:\\users\\nguye\\onedrive\\desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\resources\\san-van-dong-nou-camp-anh-dai-dien (1).jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\resources\\san-van-dong-nou-camp-anh-dai-dien (1).jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\resources\\san-van-dong-nou-camp-anh-dai-dien (1).jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|c:\\users\\nguye\\onedrive\\desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\resources\\oip (2) (1).jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\resources\\oip (2) (1).jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\resources\\oip (2) (1).jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|c:\\users\\nguye\\onedrive\\desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\resources\\oip (1).jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\resources\\oip (1).jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\resources\\oip (1).jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|c:\\users\\nguye\\onedrive\\desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|c:\\users\\nguye\\onedrive\\desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|c:\\users\\nguye\\onedrive\\desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|c:\\users\\nguye\\onedrive\\desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\customerbookingdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\customerbookingdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\customerbookingdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbookingnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbookingnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbookingnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\fielddal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\fielddal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\fielddal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\billdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\billdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\billdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbookingnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbookingnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbookingnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbooking.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbooking.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbooking.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\customerbookingdetaildal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\customerbookingdetaildal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\customerbookingdetaildal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\fieldtypedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\fieldtypedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\fieldtypedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\customerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\customerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\customerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\billdetaildal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\billdetaildal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\billdetaildal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\customerbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\customerbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\customerbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\accountdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\accountdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dal\\accountdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\fieldtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\fieldtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\fieldtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\manager.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\manager.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\manager.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbookingnow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbookingnow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\forminformationbookingnow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\bookingmanager.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\bookingmanager.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\bookingmanager.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\billdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\billdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\billdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\customerbookingdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\customerbookingdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\customerbookingdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj|solutionrelative:h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\dto\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -178,27 +181,38 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OIP (1).jpg - Bitmap [432x507, 24 bit, JPG]",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\OIP (1).jpg",
-              "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\OIP (1).jpg",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\OIP (1).jpg - Bitmap [432x507, 24 bit, JPG]",
-              "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\OIP (1).jpg - Bitmap [432x507, 24 bit, JPG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2024-06-10T04:28:06.662Z",
-              "EditorCaption": " - Bitmap [432x507, 24 bit, JPG]"
+              "DocumentIndex": 0,
+              "Title": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj",
+              "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj",
+              "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-11T15:26:24.702Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "OIP (1).jpg - Bitmap [432x507, 24 bit, JPG]",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\OIP (1).jpg",
+              "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\OIP (1).jpg",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\OIP (1).jpg - Bitmap [432x507, 24 bit, JPG]",
+              "RelativeToolTip": "..\\..\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\OIP (1).jpg - Bitmap [432x507, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-06-10T04:28:06.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BookingManager.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.cs [Design]",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.cs [Design]",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T06:04:33.003Z",
@@ -206,73 +220,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "FormInformationBooking.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.cs",
               "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.cs [Design]",
-              "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.cs [Design]",
+              "RelativeToolTip": "..\\..\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T06:07:09.887Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BookingManager.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.cs",
-              "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.cs",
-              "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAuwCgAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T15:49:47.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OIP (2) (1).jpg - Bitmap [169x169, 24 bit, JPG]",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\OIP (2) (1).jpg",
-              "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\OIP (2) (1).jpg",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\OIP (2) (1).jpg - Bitmap [169x169, 24 bit, JPG]",
-              "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\OIP (2) (1).jpg - Bitmap [169x169, 24 bit, JPG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2024-06-10T04:28:10.024Z",
-              "EditorCaption": " - Bitmap [169x169, 24 bit, JPG]"
+              "WhenOpened": "2024-05-06T06:07:09.887Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "san-van-dong-nou-camp-anh-dai-dien (1).jpg - Bitmap [432x507, 24 bit, JPG]",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\san-van-dong-nou-camp-anh-dai-dien (1).jpg",
-              "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\san-van-dong-nou-camp-anh-dai-dien (1).jpg",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\san-van-dong-nou-camp-anh-dai-dien (1).jpg - Bitmap [432x507, 24 bit, JPG]",
-              "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\san-van-dong-nou-camp-anh-dai-dien (1).jpg - Bitmap [432x507, 24 bit, JPG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2024-06-10T04:28:11.346Z",
-              "EditorCaption": " - Bitmap [432x507, 24 bit, JPG]"
+              "Title": "BookingManager.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.cs",
+              "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.cs",
+              "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAuwCgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T15:49:47.905Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
+              "Title": "OIP (2) (1).jpg - Bitmap [169x169, 24 bit, JPG]",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\OIP (2) (1).jpg",
+              "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\OIP (2) (1).jpg",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\OIP (2) (1).jpg - Bitmap [169x169, 24 bit, JPG]",
+              "RelativeToolTip": "..\\..\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\OIP (2) (1).jpg - Bitmap [169x169, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-06-10T04:28:10.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "san-van-dong-nou-camp-anh-dai-dien (1).jpg - Bitmap [432x507, 24 bit, JPG]",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\san-van-dong-nou-camp-anh-dai-dien (1).jpg",
+              "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\san-van-dong-nou-camp-anh-dai-dien (1).jpg",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\san-van-dong-nou-camp-anh-dai-dien (1).jpg - Bitmap [432x507, 24 bit, JPG]",
+              "RelativeToolTip": "..\\..\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Resources\\san-van-dong-nou-camp-anh-dai-dien (1).jpg - Bitmap [432x507, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-06-10T04:28:11.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Form1.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Form1.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Form1.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Form1.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Form1.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAwBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T03:58:02.849Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-10T03:58:02.849Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Settings.settings",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\Settings.settings",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\Settings.settings",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\Settings.settings",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\Settings.settings",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\Settings.settings",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\Settings.settings",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
               "WhenOpened": "2024-06-10T04:00:06.986Z",
@@ -280,24 +289,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Program.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Program.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Program.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Program.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwBcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T08:10:09.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T08:10:09.854Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\Resources.resx",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\Resources.resx",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\Resources.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2024-06-10T04:00:09.357Z",
@@ -305,35 +313,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\AssemblyInfo.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Properties\\AssemblyInfo.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAswBgAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T04:00:32.146Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-10T04:00:32.146Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Manager.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.cs",
               "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.cs [Design]",
-              "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.cs [Design]",
+              "RelativeToolTip": "..\\..\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T07:14:10.868Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Manager.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.cs",
               "ViewState": "AQIAANUAAAAAAAAAAAAiwA8BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -341,11 +348,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "EditForm.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\EditForm.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\EditForm.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\EditForm.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\EditForm.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\EditForm.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\EditForm.cs",
               "ViewState": "AQIAAEgAAAAAAAAAAAAowLYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -353,24 +360,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "FormInformationBooking.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAMEAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T06:58:28.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T06:58:28.653Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "PayMent.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\PayMent.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\PayMent.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\PayMent.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\PayMent.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\PayMent.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\PayMent.cs",
               "ViewState": "AQIAAF4AAAAAAAAAAAAwwFYAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -378,22 +384,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "PayMent.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\PayMent.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\PayMent.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\PayMent.cs",
               "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\PayMent.cs [Design]",
-              "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\PayMent.cs [Design]",
+              "RelativeToolTip": "..\\..\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\PayMent.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T07:32:27.471Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "CustomerBookingDAL.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerBookingDAL.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerBookingDAL.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerBookingDAL.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerBookingDAL.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerBookingDAL.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerBookingDAL.cs",
               "ViewState": "AQIAAEoAAAAAAAAAAIAwwEMAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -401,33 +407,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "FormInformationBookingNow.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.cs",
               "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.cs [Design]",
-              "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.cs [Design]",
+              "RelativeToolTip": "..\\..\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T06:07:12.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "EditForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\EditForm.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\EditForm.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\EditForm.cs",
               "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\EditForm.cs [Design]",
-              "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\EditForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\EditForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-05T17:17:36.61Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "FieldDAL.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\FieldDAL.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\FieldDAL.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\FieldDAL.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\FieldDAL.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\FieldDAL.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\FieldDAL.cs",
               "ViewState": "AQIAAEwAAAAAAAAAAIAwwFgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -435,11 +441,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "BillDAL.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\BillDAL.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\BillDAL.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\BillDAL.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\BillDAL.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\BillDAL.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\BillDAL.cs",
               "ViewState": "AQIAACoAAAAAAAAAAIAwwC8AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -447,22 +453,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Login.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Login.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Login.cs",
               "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Login.cs [Design]",
-              "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Login.cs [Design]",
+              "RelativeToolTip": "..\\..\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T06:04:31.042Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "FormInformationBookingNow.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.cs",
               "ViewState": "AQIAAEIAAAAAAAAAAIAwwEQAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -470,24 +476,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "FormInformationBooking.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.Designer.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.Designer.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.Designer.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.Designer.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBooking.Designer.cs",
               "ViewState": "AQIAAEICAAAAAAAAAIAwwFcCAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T02:49:11.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T02:49:11.91Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "CustomerBookingDetailDAL.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerBookingDetailDAL.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerBookingDetailDAL.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerBookingDetailDAL.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerBookingDetailDAL.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerBookingDetailDAL.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerBookingDetailDAL.cs",
               "ViewState": "AQIAAE8AAAAAAAAAAAAtwGEAAACDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -495,11 +500,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "FieldTypeDAL.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\FieldTypeDAL.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\FieldTypeDAL.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\FieldTypeDAL.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\FieldTypeDAL.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\FieldTypeDAL.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\FieldTypeDAL.cs",
               "ViewState": "AQIAACgAAAAAAAAAAAAtwDUAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -507,11 +512,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "CustomerDAL.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerDAL.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerDAL.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerDAL.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerDAL.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerDAL.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\CustomerDAL.cs",
               "ViewState": "AQIAABwAAAAAAAAAAAApwDAAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -519,11 +524,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "BillDetailDAL.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\BillDetailDAL.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\BillDetailDAL.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\BillDetailDAL.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\BillDetailDAL.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\BillDetailDAL.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\BillDetailDAL.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAApwCcAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -531,11 +536,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "DataProvider.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\DataProvider.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\DataProvider.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\DataProvider.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\DataProvider.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\DataProvider.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\DataProvider.cs",
               "ViewState": "AQIAAE8AAAAAAAAAAAAuwEUAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -543,11 +548,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "CustomerBooking.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\CustomerBooking.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\CustomerBooking.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\CustomerBooking.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\CustomerBooking.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\CustomerBooking.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\CustomerBooking.cs",
               "ViewState": "AQIAAF4AAAAAAAAAAAAwwIYAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -555,11 +560,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "AccountDAL.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\AccountDAL.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\AccountDAL.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\AccountDAL.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\AccountDAL.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\AccountDAL.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DAL\\AccountDAL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -567,11 +572,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Customer.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Customer.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Customer.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Customer.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Customer.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Customer.cs",
               "ViewState": "AQIAACAAAAAAAAAAAAAgwDsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -579,11 +584,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "Field.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Field.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Field.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Field.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Field.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Field.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Field.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAYwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -591,11 +596,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "FieldType.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\FieldType.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\FieldType.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\FieldType.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\FieldType.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\FieldType.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\FieldType.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAuwC0AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -603,11 +608,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "Manager.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.Designer.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.Designer.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.Designer.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.Designer.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Manager.Designer.cs",
               "ViewState": "AQIAAD0BAAAAAAAAAIAwwEsBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -615,11 +620,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Login.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Login.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Login.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Login.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Login.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\Login.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -627,11 +632,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "FormInformationBookingNow.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.Designer.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.Designer.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.Designer.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.Designer.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\FormInformationBookingNow.Designer.cs",
               "ViewState": "AQIAAMQAAAAAAAAAAIAwwNIAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -639,23 +644,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "BookingManager.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.Designer.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.Designer.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.Designer.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.Designer.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\BookingManager.Designer.cs",
               "ViewState": "AQIAAHIAAAAAAAAAAIAwwIAAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T10:07:09.006Z"
+              "WhenOpened": "2024-06-07T10:07:09.006Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "BillDetail.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\BillDetail.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\BillDetail.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\BillDetail.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\BillDetail.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\BillDetail.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\BillDetail.cs",
               "ViewState": "AQIAAEUAAAAAAAAAAAAowJYAAAB2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -663,11 +669,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "CustomerBookingDetail.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\CustomerBookingDetail.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\CustomerBookingDetail.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\CustomerBookingDetail.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\CustomerBookingDetail.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\CustomerBookingDetail.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\CustomerBookingDetail.cs",
               "ViewState": "AQIAAJ4AAAAAAAAAAAAqwFkAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -675,11 +681,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "Bill.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Bill.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Bill.cs",
               "RelativeDocumentMoniker": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Bill.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\pbl3\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Bill.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\hi\\software\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Bill.cs",
               "RelativeToolTip": "H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD s\u00E2n b\u00F3ng mini\\DTO\\Bill.cs",
               "ViewState": "AQIAAE4AAAAAAAAAAAAAAEkAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
