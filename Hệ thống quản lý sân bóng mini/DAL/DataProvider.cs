@@ -32,8 +32,8 @@
            // private string connectionSTR =
              //       "Data Source=DESKTOP-L96UHDF\\SQLEXPRESS;Initial Catalog=quanli;Integrated Security=True";
             private string connectionSTR =
-            //"Data Source=DESKTOP-CVOKJNA\\TIEN;Initial Catalog=QLSB;Integrated Security=True";
-            "Data Source = KHOAS84\\KHOA;Initial Catalog = QLSB; Integrated Security = True";
+            "Data Source=DESKTOP-CVOKJNA\\TIEN;Initial Catalog=QLSB;Integrated Security=True";
+            //"Data Source = KHOAS84\\KHOA;Initial Catalog = QLSB; Integrated Security = True";
         //public DataTable ExcuteQuery(string query)
         //{
         //    // open connection to DB
