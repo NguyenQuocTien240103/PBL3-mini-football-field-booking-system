@@ -34,16 +34,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
        public void InSertCustomerBooking(int idCustomer,int idFieldName,
            string startTime, string endTime, float priceBooking, string status ,DateTime ngaydat)
         {
-            //String sql = "INSERT INTO dbo.CustomerBooking(idCustomer,idFieldName,startTime,endTime,priceBooking,status,ngaydat)" +
-            //  "VALUES " + "(" + idCustomer.ToString() + "," + idFieldName.ToString() + "," +
 
-            //  "'" + startTime.ToString() + "'" + "," + "'" + endTime.ToString() + "'" + "," +
-
-            //  priceBooking.ToString() + "," + "'" + status.ToString() + "','"+ngaydat+"')";
-
-            //DataProvider.Instance.ExcuteNonQuery(sql);
-
-            // Parameterized SQL query to enhance security
             string sql = "INSERT INTO dbo.CustomerBooking (idCustomer, idFieldName, startTime, endTime, priceBooking, status, ngaydat) " +
                          "VALUES (@idCustomer, @idFieldName, @startTime, @endTime, @priceBooking, @status, @ngaydat)";
 
@@ -89,15 +80,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
         public void InSertCustomerBooking1(int idCustomer, int idFieldName,
            string startTime, string endTime, float priceBooking, string status)
         {
-            //String sql = "INSERT INTO dbo.CustomerBooking(idCustomer,idFieldName,startTime,endTime,priceBooking,status)" +
-            //  "VALUES " + "(" + idCustomer.ToString() + "," + idFieldName.ToString() + "," +
-
-            //  "'" + startTime.ToString() + "'" + "," + "'" + endTime.ToString() + "'" + "," +
-
-            //  priceBooking.ToString() + "," + "'" + status.ToString() +  "')";
-
-            //DataProvider.Instance.ExcuteNonQuery(sql);
-            // Parameterized SQL query to enhance security
             string sql = "INSERT INTO dbo.CustomerBooking (idCustomer, idFieldName, startTime, endTime, priceBooking, status) " +
                          "VALUES (@idCustomer, @idFieldName, @startTime, @endTime, @priceBooking, @status)";
 
@@ -186,7 +168,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 
             DataProvider.Instance.ExecuteNonQuery(sql, parameters);
         }
-        public void  
+        public void updatestatusCustomerBookingById(int idCustomerBooking)
         {
             string sql = "update dbo.CustomerBooking set status = 'da huy' where id =@idCustomerBooking ";
             SqlParameter[] parameters = new SqlParameter[]
