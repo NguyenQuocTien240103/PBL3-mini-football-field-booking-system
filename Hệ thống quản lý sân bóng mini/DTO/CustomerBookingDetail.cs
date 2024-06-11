@@ -47,8 +47,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
                 _TypeName = value;
             }
         }
-        private String _FieldName;
-        public String FieldName
+        private string _FieldName;
+        public string FieldName
         {
             get
             {
@@ -60,8 +60,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             }
         }
 
-        private String _CustomerName;
-        public String CustomerName
+        private string _CustomerName;
+        public string CustomerName
         {
             get
             {
@@ -73,8 +73,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             }
         }
 
-        private String _CustomerPhone;
-        public String CustomerPhone
+        private string _CustomerPhone;
+        public string CustomerPhone
         {
             get
             {
@@ -125,8 +125,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             }
         }
 
-        private String _status;
-        public String status
+        private string _status;
+        public string status
         {
             get
             {
@@ -184,7 +184,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
         }
         public override string ToString()
         {
-            return Id + " " + IdField + " " + TypeName + " " + FieldName + " " + CustomerName + " " + CustomerPhone+ " " + startTime + " " + endTime + " " + priceBooking + " " +status+ " "+Ngaydat+" " ;
+            return Id + " " + IdField + " " + TypeName + " " + FieldName + " " + CustomerName + " " + CustomerPhone+ " " + startTime.ToString("HH:mm") + " " + endTime.ToString("HH:mm") + " " + priceBooking + " " +status+ " "+Ngaydat.ToString("dd/MM//yyyy") + " " ;
         }
     }
 }

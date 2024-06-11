@@ -32,10 +32,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             {
                 if (i < 10)
                 {
-                    String index = i.ToString();
                     cb2.Items.Add("0" + i);
                     cb4.Items.Add("0" + i);
-
                 }
                 else
                 {
@@ -43,7 +41,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                     cb4.Items.Add(i);
                 }
             }
-
         } 
         void LoadTypeField()
         {
@@ -56,18 +53,13 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             List<Field> listField = FieldDAL.Instance.GetFieldByIdFieldType(id);
             cbNameField.DataSource = listField;
             cbNameField.DisplayMember = "name";
-
         }
-
         private int IdType = 0; // lưu Id của TypeField
         private void cbFieldType_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             ComboBox cb = sender as ComboBox;
             FieldType choosed = cb.SelectedItem as FieldType;
-
             List<FieldType> listFieldType = FieldTypeDAL.Instance.LoadFieldType();
-
             if (choosed != null)
             {
                 // lấy ra idFieldType 
@@ -75,10 +67,10 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                     if(fieldType.Id == choosed.Id)
                     {
                         IdType = choosed.Id;  // đã lưu được Id của TypeField
+                        break;
                     }
                 }
-                LoadFieldByIdTypeField(choosed.Id);
-                
+                LoadFieldByIdTypeField(choosed.Id); 
             }
         }
         private string FieldName = ""; // lưu tên của Field
@@ -89,28 +81,26 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
 
             if(choosed != null)
             {
-                FieldName = choosed.Name; // lấy ra được tên roài
+                FieldName = choosed.Name; // lấy ra được tên sân
             }
             showIdFieldBy(IdType, FieldName);
-            
         }
-
         void showIdFieldBy(int idType,string FieldName)
         {
-            
             List<Field> listField = FieldDAL.Instance.LoadFieldList();
             foreach (Field field in listField)
             {
                 if(field.IdFieldType == idType && field.Name==FieldName) {
                     txtFieldID.Text = field.Id.ToString(); 
                 }
-            }
-                
+            }  
         }
-
         public void abc(Field field)
         {
             txtFieldID.Text = field.Id.ToString();
+            FieldType fieldType = FieldTypeDAL.Instance.getFieldTypeById(field.IdFieldType);
+            cbFieldType.Text = fieldType.TypeName.ToString();
+            cbNameField.Text = field.Name.ToString();
             showInformationFromField();
         }
 
@@ -119,7 +109,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         void showInformationFromField()
         {
             List<CustomerBooking> customerBookings = CustomerBookingDAL.Instance.LoadCustomerBooking();
-
             int idField = int.Parse(txtFieldID.Text);
             // lưu lại id Field đã chọn vào biến temp;
             tempForSaveidField = idField;
@@ -156,12 +145,11 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 }
             }
         }
-        
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             DateTime startTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 
                 DateTime.Today.Day, int.Parse(cb1.SelectedItem.ToString()), int.Parse(cb2.SelectedItem.ToString()), 0);
-
+           
             DateTime endTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 
                 DateTime.Today.Day, int.Parse(cb3.SelectedItem.ToString()), int.Parse(cb4.SelectedItem.ToString()), 0);
 
@@ -169,7 +157,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             float PriceBookinng = float.Parse(txtPriceBooking.Text.ToString()); // lấy ra text của priceBooking
             int idCustomer = 0; // lưu lại id của customer
 
-            // lấy ra đơn đặt CustomerBooking
+            // lấy ra đơn đặt CustomerBooking, id cần update
             List<CustomerBooking> customerBookings = CustomerBookingDAL.Instance.LoadCustomerBooking();
             foreach (CustomerBooking customerBooking in customerBookings)
             {
@@ -181,29 +169,42 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 }
             }
 
-            // lay ra idkhac hang, lay ra id CustierBooking
             // update Customer
             CustomerDAL.Instance.updateCustomer(idCustomer,txtName.Text,txtPhone.Text);
 
             // nếu id sân hiện tại khác với id sân mình đã click vào
             if (!int.Parse(txtFieldID.Text).Equals(tempForSaveidField))
             {
-                
                 // kiểm tra trạng thái của sân mình muốn chuyển qua
-               
                 if (checkFieldBusyBy(int.Parse(txtFieldID.Text))){
                     MessageBox.Show("sân này đang có người đá vui lòng chọn sân khác");
                 }
                 else
                 {
-                    // cập nhật lại idField mới và chuyển idField cũ về empty
-                    FieldDAL.Instance.updateFieldById(tempForSaveidField, "empty");
-                    FieldDAL.Instance.updateFieldById(int.Parse(txtFieldID.Text), "busy");
-                  //  CustomerBookingDAL.Instance.updateCustomerBooking(idCustomerBooking, idCustomer, int.Parse(txtFieldID.Text), startTime, endTime, PriceBookinng, "chua thanh toan");
-                    CustomerBookingDAL.Instance.updateCustomerBooking(idCustomerBooking, idCustomer, int.Parse(txtFieldID.Text), startTime, endTime, PriceBookinng, "truc tiep");
-
+                    if (ktragiodat(int.Parse(txtFieldID.Text), startTime.ToString("HH:mm"), endTime.ToString("HH:mm"),DateTime.Now.ToString("dd/MM/yyyy")))
+                    {
+                        FieldDAL.Instance.updateFieldById(tempForSaveidField, "empty");
+                        FieldDAL.Instance.updateFieldById(int.Parse(txtFieldID.Text), "busy");
+                        CustomerBookingDAL.Instance.updateCustomerBooking(idCustomerBooking, idCustomer, int.Parse(txtFieldID.Text), startTime, endTime, PriceBookinng, "truc tiep", DateTime.Now);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sân đã có người đặt");
+                    }
                 }
             }
+            else
+            {
+                if (ktragiodat(int.Parse(txtFieldID.Text), startTime.ToString("HH:mm"), endTime.ToString("HH:mm"), DateTime.Now.ToString("dd/MM/yyyy")))
+                {
+                    CustomerBookingDAL.Instance.updateCustomerBooking(idCustomerBooking, idCustomer, int.Parse(txtFieldID.Text), startTime, endTime, PriceBookinng, "truc tiep", DateTime.Now);
+                }
+                else
+                {
+                    MessageBox.Show("Sân đã có người đặt");
+                }
+            }
+
             this.Close();
         }
         bool checkFieldBusyBy(int idField)
@@ -229,6 +230,58 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        public bool ktragiodat(int idField, string startTime, string endTime, string ngaydat)
+        {
+            bool check = true;
+            List<CustomerBooking> customerbookings = CustomerBookingDAL.Instance.LoadCustomerBooking();
+            foreach (CustomerBooking customerbooking in customerbookings)
+            {
+                if (customerbooking.Status == "dat truoc" && customerbooking.IdFieldName == idField && customerbooking.Ngaydat.ToString("dd/MM/yyyy") == ngaydat)
+                {
+                   
+                    if (sosanhthoigian(endTime, customerbooking.StartTime.ToString("HH:mm")) == true &&
+                        sosanhthoigian(endTime, customerbooking.EndTime.ToString("HH:mm")) == false)
+                    {
+                        check = false;
+                        break;
+                    }
+                    if (sosanhthoigian(startTime, customerbooking.EndTime.ToString("hh:mm")) == false &&
+                        sosanhthoigian(startTime, customerbooking.StartTime.ToString("hh:mm")) == true)
+                    {
+                        check = false;
+                        break;
+                    }
+                    if (sosanhthoigian(startTime, customerbooking.StartTime.ToString("hh:mm")) == false &&
+                        sosanhthoigian(endTime, customerbooking.EndTime.ToString("hh:mm")) == true)
+                    {
+                        check = false;
+                        break;
+                    }
+
+                }
+            }
+            return check;
+        }
+        public bool sosanhthoigian(string time1, string time2)
+        {
+            int minutes1 = TimeToMinutes(time1);
+            int minutes2 = TimeToMinutes(time2);
+            if (minutes1 > minutes2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public int TimeToMinutes(string time)
+        {
+            string[] parts = time.Split(':');
+            int hours = int.Parse(parts[0]);
+            int minutes = int.Parse(parts[1]);
+            return hours * 60 + minutes;
         }
     }
 }

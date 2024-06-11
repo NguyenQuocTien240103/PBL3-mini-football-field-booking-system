@@ -41,14 +41,14 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                     new DataColumn {ColumnName = "priceBooking", DataType = typeof(float)},
                     new DataColumn {ColumnName = "status", DataType = typeof(string)},
                     new DataColumn {ColumnName = "totalPrice", DataType = typeof(float)},
-                    new DataColumn {ColumnName = "payMentDay", DataType = typeof(DateTime)}
+                    new DataColumn {ColumnName = "payMentDay", DataType = typeof(string)}
             });
             List<BillDetail> listBillDetal = BillDetailDAL.Instance.LoadBill();
             foreach (BillDetail billdetail in listBillDetal)
             {
                 dataTable.Rows.Add(billdetail.Name,billdetail.Phone,billdetail.FieldType,billdetail.FieldName,
                     billdetail.StartTime.ToString("HH:mm"),billdetail.EndTime.ToString("HH:mm"),
-                    billdetail.PriceBooking,billdetail.Status,billdetail.TotalPrice,billdetail.PaymentDay);
+                    billdetail.PriceBooking,billdetail.Status,billdetail.TotalPrice,billdetail.PaymentDay.ToString("MM/dd/yyyy"));
             }
             dataGridView1.DataSource = dataTable;
         }

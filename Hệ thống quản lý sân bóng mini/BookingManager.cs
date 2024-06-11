@@ -20,13 +20,13 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             InitializeComponent();
             LoadField();
         }
-        private string saveStatusField = "";
-        private int saveIDField = 0;
-    
         public delegate void Mydel(Field field);
-        public delegate void Mydel1();
-        private Field SaveField;
         public Mydel d { get; set; }
+
+        private Field SaveField;
+        private string saveStatusField = "";
+        private int saveIDField = -1;
+
         public void LoadField()
         {
             flowLayoutPanel1.Controls.Clear();
@@ -36,7 +36,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
 
             List<FieldType> fieldTypeList = FieldTypeDAL.Instance.LoadFieldType();
 
-            foreach(Field item1 in fieldList)
+            foreach(Field field in fieldList)
             {
                 Button btn = new Button()
                 {
@@ -50,39 +50,38 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                     ImageAlign = ContentAlignment.BottomCenter, // Căn chỉnh hình ảnh bên phải
                     TextImageRelation = TextImageRelation.TextAboveImage, // Văn bản trước hình ảnh
                 };
+
                 Image originalImage = Image.FromFile("image\\sanbong.png");
                 Image resizedImage = originalImage.GetThumbnailImage(btn.Width/2, btn.Height /2, null, IntPtr.Zero);
                 btn.Image = resizedImage;
                 btn.Click += btn_Click;
-                btn.Tag = item1;
+                btn.Tag = field;
                 btn.TabStop = false;
-                foreach (FieldType item2 in fieldTypeList)
+
+                foreach (FieldType fieldType in fieldTypeList)
                 {
 
-                    if (item1.IdFieldType == item2.Id)
+                    if (field.IdFieldType == fieldType.Id)
                     {
-                        if(item2.Id == 1)
+                        if(fieldType.Id == 1)
                         {
                             // btn.Text = item2.TypeName + item1.Name + Environment.NewLine + item1.Status;
-                            btn.Text = item2.TypeName + item1.Name;
+                            btn.Text = fieldType.TypeName + field.Name;
 
                             flowLayoutPanel1.Controls.Add(btn);
                         }
 
-                        else if (item2.Id == 2)
+                        else if (fieldType.Id == 2)
                         {
                             // btn.Text = item2.TypeName + item1.Name + Environment.NewLine + item1.Status;
-                            btn.Text = item2.TypeName + item1.Name;
+                            btn.Text = fieldType.TypeName + field.Name;
 
                             flowLayoutPanel2.Controls.Add(btn);
                         }
                         
-                        switch(item1.Status )
+                        switch(field.Status)
                         {
                             case "empty":
-                               // btn.BackColor = Color.Green;
-                               // break;
-
                                 btn.BackColor = Color.FromArgb(75, 181, 67);  // Sử dụng mã màu RGB cho xanh
                                 btn.ForeColor = Color.White;
                                 break;
@@ -90,19 +89,14 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                                 btn.BackColor = Color.FromArgb(204, 37, 41);  // Sử dụng mã màu RGB cho đỏ
                                 btn.ForeColor = Color.White;
                                 break;
-                             //   btn.BackColor = Color.Red;
-                               // break;
-                            
-
-
                         }
                     }                
-
                 }
             }
         }
          void ShowField(int idField)
-        {
+         {
+
                 dtgvBill.Controls.Clear();
                 DataTable dataTable = new DataTable();
                 dataTable.Columns.AddRange(new DataColumn[]
@@ -118,44 +112,43 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                     new DataColumn {ColumnName = "endTime", DataType = typeof(string)},
                     new DataColumn {ColumnName = "priceBooking", DataType = typeof(float)},
                     new DataColumn {ColumnName = "status", DataType = typeof(string)},
-                    new DataColumn {ColumnName = "bookingDay", DataType = typeof(DateTime)}
+                    new DataColumn {ColumnName = "bookingDay", DataType = typeof(string)}
                 });
-            List<CustomerBookingDetail> customerBookingDetails = CustomerBookingDetailDAL.
+                List<CustomerBookingDetail> customerBookingDetails = CustomerBookingDetailDAL.
                 Instance.LoadCustomerBookingById(idField);
             
-            foreach (CustomerBookingDetail customerbooking in customerBookingDetails)
-            {
-                dataTable.Rows.Add(customerbooking.Id,customerbooking.IdField,
-                customerbooking.TypeName, customerbooking.FieldName, customerbooking.CustomerName,
-                customerbooking.CustomerPhone, customerbooking.startTime.ToString("HH:mm"), customerbooking.endTime.ToString("HH:mm"),
-                customerbooking.priceBooking, customerbooking.status,customerbooking.Ngaydat);
+                foreach (CustomerBookingDetail customerbooking in customerBookingDetails)
+                {
+                    dataTable.Rows.Add(customerbooking.Id,customerbooking.IdField,
+                    customerbooking.TypeName, customerbooking.FieldName, customerbooking.CustomerName,
+                    customerbooking.CustomerPhone, customerbooking.startTime.ToString("HH:mm"), customerbooking.endTime.ToString("HH:mm"),
+                    customerbooking.priceBooking, customerbooking.status,customerbooking.Ngaydat.ToString("MM/dd/yyyy"));
                 
-            }
-            dtgvBill.DataSource = dataTable;
-            dtgvBill.Columns["id"].Visible = false;
-            dtgvBill.Columns["idField"].Visible = false;
-
-
-        }
+                }
+                dtgvBill.DataSource = dataTable;
+                dtgvBill.Columns["id"].Visible = false;
+                dtgvBill.Columns["idField"].Visible = false;
+         }
         private void btn_Click(object sender, EventArgs e)
         {
-        
+            
             int fieldID = ((sender as Button).Tag as Field).Id;
 
+            // lưu lại trạng thái sân
             saveStatusField = ((sender as Button).Tag as Field).Status;
             
+            //lưu lại Field
             SaveField = ((sender as Button).Tag as Field);
 
+            // lưu lại id của sân đó
             saveIDField = ((sender as Button).Tag as Field).Id;
 
+            // show thông tin đặt sân từ id sân đó
             ShowField(fieldID);
 
         }
-        
-        // click button Booking on form BookingManager
         private void btnBooking_Click(object sender, EventArgs e)
         {
-            // call form FormInformationBooking
               FormInformationBooking formInforBooking = new FormInformationBooking();
             // d tham chiếu tới hàm abc của đối tượng formInforBooking
                 this.Hide();
@@ -163,17 +156,14 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 LoadField();
                 this.Show();
         }
-        // click button Edit on form BookingManager
         private void btnEdit_Click(object sender, EventArgs e)
         {
                 // call form FormInformationBooking
             if (saveStatusField == "busy")
             {
-                
                 EditForm editForm = new EditForm();
                 d = new Mydel(editForm.abc);
                 d(SaveField);
-                
                 editForm.ShowDialog();
                 LoadField();
                 this.Show();
@@ -188,15 +178,13 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             }
             saveStatusField = "";
         }
-
-        // click button Pay on form BookingManager
         private void btnPay_Click(object sender, EventArgs e)
         {
             // call form FormInformationBooking
             if (saveStatusField == "busy" )
             {
-                // d tham chiếu tới hàm abc của đối tượng formInforBooking
                 PayMent payMent = new PayMent();
+                // d tham chiếu tới hàm abc của đối tượng formInforBooking
                 this.Hide();
                 d = new Mydel(payMent.abc);
                 d(SaveField);
@@ -214,8 +202,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             }
                 
         }
-
-        // click toolMenuItems on form BookingManager
         private void MenuItem_Click(object sender, EventArgs e)
         {
             Manager manager = new Manager();
@@ -247,12 +233,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 MessageBox.Show("Đã được đặt");
             }
             saveStatusField = "";
-
-        }
-
-        private void BookingManager_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

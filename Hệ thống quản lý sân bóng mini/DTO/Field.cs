@@ -64,6 +64,17 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.demo
             this.IdFieldType = IdFieldType;
 
         }
+        public Field(int Id, string Name)
+        {
+            this.Id = Id;   
+            this.Name = Name;
+
+        }
+        public override string ToString()
+        {
+            return _Name;
+
+        }
 
         public Field(DataRow row)
         {

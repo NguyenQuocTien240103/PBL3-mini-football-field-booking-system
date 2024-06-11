@@ -80,6 +80,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Honeydew;
             this.panel1.Controls.Add(this.panel11);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.panel9);
@@ -115,6 +116,7 @@
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(277, 26);
             this.txtTotal.TabIndex = 1;
+            this.txtTotal.TabStop = false;
             // 
             // label12
             // 
@@ -142,10 +144,11 @@
             // 
             // cb3
             // 
+            this.cb3.Enabled = false;
             this.cb3.FormattingEnabled = true;
             this.cb3.Location = new System.Drawing.Point(134, 13);
             this.cb3.Name = "cb3";
-            this.cb3.Size = new System.Drawing.Size(121, 28);
+            this.cb3.Size = new System.Drawing.Size(98, 28);
             this.cb3.TabIndex = 13;
             // 
             // cb4
@@ -197,10 +200,11 @@
             // 
             // cb1
             // 
+            this.cb1.Enabled = false;
             this.cb1.FormattingEnabled = true;
             this.cb1.Location = new System.Drawing.Point(134, 19);
             this.cb1.Name = "cb1";
-            this.cb1.Size = new System.Drawing.Size(121, 28);
+            this.cb1.Size = new System.Drawing.Size(98, 28);
             this.cb1.TabIndex = 13;
             // 
             // cb2
@@ -210,10 +214,10 @@
             this.cb2.Enabled = false;
             this.cb2.FormattingEnabled = true;
             this.cb2.IntegralHeight = false;
-            this.cb2.Location = new System.Drawing.Point(314, 14);
+            this.cb2.Location = new System.Drawing.Point(313, 19);
             this.cb2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cb2.Name = "cb2";
-            this.cb2.Size = new System.Drawing.Size(88, 28);
+            this.cb2.Size = new System.Drawing.Size(89, 28);
             this.cb2.TabIndex = 11;
             // 
             // label10
@@ -256,6 +260,7 @@
             this.cbPrice.Name = "cbPrice";
             this.cbPrice.Size = new System.Drawing.Size(226, 28);
             this.cbPrice.TabIndex = 13;
+            this.cbPrice.TabStop = false;
             this.cbPrice.SelectedIndexChanged += new System.EventHandler(this.cbPrice_SelectedIndexChanged);
             // 
             // label9
@@ -272,24 +277,32 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.SeaGreen;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
             this.button2.Location = new System.Drawing.Point(570, 382);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(164, 65);
             this.button2.TabIndex = 9;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.TabStop = false;
+            this.button2.Text = "CANCEL";
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnConfirm
             // 
+            this.btnConfirm.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.ForeColor = System.Drawing.Color.Transparent;
             this.btnConfirm.Location = new System.Drawing.Point(165, 382);
             this.btnConfirm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(164, 65);
             this.btnConfirm.TabIndex = 7;
-            this.btnConfirm.Text = "Confirm";
-            this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.TabStop = false;
+            this.btnConfirm.Text = "CONFIRM";
+            this.btnConfirm.UseVisualStyleBackColor = false;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // panel7
@@ -309,6 +322,7 @@
             this.txtPriceBooking.Name = "txtPriceBooking";
             this.txtPriceBooking.Size = new System.Drawing.Size(226, 26);
             this.txtPriceBooking.TabIndex = 1;
+            this.txtPriceBooking.TabStop = false;
             // 
             // label6
             // 
@@ -339,6 +353,7 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(277, 26);
             this.txtPhone.TabIndex = 1;
+            this.txtPhone.TabStop = false;
             // 
             // label5
             // 
@@ -364,6 +379,7 @@
             // 
             // txtFieldName
             // 
+            this.txtFieldName.Enabled = false;
             this.txtFieldName.Location = new System.Drawing.Point(124, 12);
             this.txtFieldName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtFieldName.Name = "txtFieldName";
@@ -394,6 +410,7 @@
             // 
             // txtType
             // 
+            this.txtType.Enabled = false;
             this.txtType.Location = new System.Drawing.Point(124, 12);
             this.txtType.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtType.Name = "txtType";
@@ -429,6 +446,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(277, 26);
             this.txtName.TabIndex = 1;
+            this.txtName.TabStop = false;
             // 
             // label2
             // 
@@ -454,6 +472,7 @@
             // 
             // txtID
             // 
+            this.txtID.Enabled = false;
             this.txtID.Location = new System.Drawing.Point(74, 12);
             this.txtID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtID.Name = "txtID";

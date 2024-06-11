@@ -68,15 +68,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
         public void InSertCustomerBooking(int idCustomer, int idFieldName,
            DateTime startTime, DateTime endTime, float priceBooking, string status, DateTime ngaydat)
         {
-            //String sql = "INSERT INTO dbo.CustomerBooking(idCustomer,idFieldName,startTime,endTime,priceBooking,status,ngaydat)" +
-            //  "VALUES " + "(" + idCustomer.ToString() + "," + idFieldName.ToString() + "," +
-
-            //  "'" + startTime.ToString() + "'" + "," + "'" + endTime.ToString() + "'" + "," +
-
-            //  priceBooking.ToString() + "," + "'" + status.ToString() + "','" + ngaydat + "')";
-
-            //DataProvider.Instance.ExcuteNonQuery(sql);
-
             // Câu lệnh SQL với tham số
             string sql = "INSERT INTO dbo.CustomerBooking(idCustomer, idFieldName, startTime, endTime, priceBooking, status, ngaydat) " +
                          "VALUES (@idCustomer, @idFieldName, @startTime, @endTime, @priceBooking, @status, @ngaydat)";
@@ -84,20 +75,17 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             // Tạo mảng các SqlParameter
             SqlParameter[] parameters = new SqlParameter[]
             {
-        new SqlParameter("@idCustomer", idCustomer),
-        new SqlParameter("@idFieldName", idFieldName),
-        new SqlParameter("@startTime", startTime),
-        new SqlParameter("@endTime", endTime),
-        new SqlParameter("@priceBooking", priceBooking),
-        new SqlParameter("@status", status),
-        new SqlParameter("@ngaydat", ngaydat)
+                new SqlParameter("@idCustomer", idCustomer),
+                new SqlParameter("@idFieldName", idFieldName),
+                new SqlParameter("@startTime", startTime),
+                new SqlParameter("@endTime", endTime),
+                new SqlParameter("@priceBooking", priceBooking),
+                new SqlParameter("@status", status),
+                new SqlParameter("@ngaydat", ngaydat)
             };
             DataProvider.Instance.ExecuteNonQuery(sql, parameters);
-
-
-
-
         }
+
         public void InSertCustomerBooking1(int idCustomer, int idFieldName,
            string startTime, string endTime, float priceBooking, string status)
         {
@@ -127,59 +115,27 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             // Execute non-query with parameters
             DataProvider.Instance.ExecuteNonQuery(sql, parameters);
         }
-        public void updateCustomerBooking(int idCustomerBooking,int idCustomer, int idFieldName,
-           String startTime, String endTime, float priceBooking, String status)
-        {
-
-            //String sql = "update dbo.CustomerBooking " +
-            //    "set idCustomer = '" + idCustomer + "', idFieldName = '" + idFieldName + "', startTime = '" + startTime + "', endTime = '" + endTime + "', priceBooking = '" +priceBooking + "', status = '" +status+ "' " +
-            //    "where id = " + idCustomerBooking;
-            //DataProvider.Instance.ExcuteNonQuery(sql);
-
-            // Parameterized SQL query to enhance security
-            string sql = "UPDATE dbo.CustomerBooking " +
-                         "SET idCustomer = @idCustomer, idFieldName = @idFieldName, startTime = @startTime, endTime = @endTime, priceBooking = @priceBooking, status = @status " +
-                         "WHERE id = @idCustomerBooking";
-
-            // Create array of SqlParameter
-            SqlParameter[] parameters = new SqlParameter[]
-            {
-        new SqlParameter("@idCustomerBooking", idCustomerBooking),
-        new SqlParameter("@idCustomer", idCustomer),
-        new SqlParameter("@idFieldName", idFieldName),
-        new SqlParameter("@startTime", startTime),
-        new SqlParameter("@endTime", endTime),
-        new SqlParameter("@priceBooking", priceBooking),
-        new SqlParameter("@status", status)
-            };
-
-            // Execute non-query with parameters
-            DataProvider.Instance.ExecuteNonQuery(sql, parameters);
-        }
+   
         public void updateCustomerBooking(int idCustomerBooking, int idCustomer, int idFieldName,
-           DateTime startTime, DateTime endTime, float priceBooking, String status)
+           DateTime startTime, DateTime endTime, float priceBooking, string status,DateTime ngaydat)
         {
-
-            //String sql = "update dbo.CustomerBooking " +
-            //    "set idCustomer = '" + idCustomer + "', idFieldName = '" + idFieldName + "', startTime = '" + startTime + "', endTime = '" + endTime + "', priceBooking = '" + priceBooking + "', status = '" + status + "' " +
-            //    "where id = " + idCustomerBooking;
-            //DataProvider.Instance.ExcuteNonQuery(sql);
 
             // Parameterized SQL query to enhance security
             string sql = "UPDATE dbo.CustomerBooking " +
-                         "SET idCustomer = @idCustomer, idFieldName = @idFieldName, startTime = @startTime, endTime = @endTime, priceBooking = @priceBooking, status = @status " +
+                         "SET idCustomer = @idCustomer, idFieldName = @idFieldName, startTime = @startTime, endTime = @endTime, priceBooking = @priceBooking, status = @status, ngaydat = @ngaydat " +
                          "WHERE id = @idCustomerBooking";
 
             // Create array of SqlParameter
             SqlParameter[] parameters = new SqlParameter[]
             {
-        new SqlParameter("@idCustomerBooking", idCustomerBooking),
-        new SqlParameter("@idCustomer", idCustomer),
-        new SqlParameter("@idFieldName", idFieldName),
-        new SqlParameter("@startTime", startTime),
-        new SqlParameter("@endTime", endTime),
-        new SqlParameter("@priceBooking", priceBooking),
-        new SqlParameter("@status", status)
+                new SqlParameter("@idCustomerBooking", idCustomerBooking),
+                new SqlParameter("@idCustomer", idCustomer),
+                new SqlParameter("@idFieldName", idFieldName),
+                new SqlParameter("@startTime", startTime),
+                new SqlParameter("@endTime", endTime),
+                new SqlParameter("@priceBooking", priceBooking),
+                new SqlParameter("@status", status),
+                new SqlParameter("@ngaydat", ngaydat)
             };
 
             // Execute non-query with parameters
@@ -187,9 +143,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
         }
         public DataTable GetCustomerBookingDepositMoney()
         {
-            String sql = "SELECT * FROM dbo.CustomerBooking WHERE priceBooking > 0";
-
-
+            string sql = "SELECT * FROM dbo.CustomerBooking WHERE priceBooking > 0";
             DataTable data = DataProvider.Instance.ExecuteQuery(sql);
             return data;
         }
@@ -209,19 +163,13 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 
         public void updateCustomerBooking(int idField)
         {
-            //String sql = "update dbo.CustomerBooking" +
-            //    "\r\nset status='da thanh toan'\r\n" +
-            //    "where idFieldName= " + idField.ToString()+
-            //    "and status = 'chua thanh toan'";
-
-            //DataProvider.Instance.ExcuteNonQuery(sql);
             string sql = "UPDATE dbo.CustomerBooking " +
                 "SET status = 'da thanh toan' " +
                 "WHERE idFieldName = @idField AND status = 'truc tiep'";
 
             SqlParameter[] parameters = new SqlParameter[]
             {
-        new SqlParameter("@idField", idField)
+                new SqlParameter("@idField", idField)
             };
 
             DataProvider.Instance.ExecuteNonQuery(sql, parameters);
@@ -229,8 +177,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
         }
         public void updateCustomerBookingById(int idCustomerBooking)
         {
-            //String sql = "update dbo.CustomerBooking set status= 'chua thanh toan' Where id=" + idCustomerBooking;
-            //DataProvider.Instance.ExcuteNonQuery(sql);
             string sql = "UPDATE dbo.CustomerBooking SET status = 'truc tiep' WHERE id = @idCustomerBooking";
 
             SqlParameter[] parameters = new SqlParameter[]
@@ -252,11 +198,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 
         public CustomerBooking getCustomerByCustomerBooking(int idCustomerBooking)
         {
-            //String sql = "Select * FROM dbo.CustomerBooking Where id=" + idCustomerBooking;
-            //DataTable data = DataProvider.Instance.ExcuteQuery(sql);
-            //CustomerBooking customerBooking = new CustomerBooking(data.Rows[0]);
-            //return customerBooking;
-
             string sql = "SELECT * FROM dbo.CustomerBooking WHERE id = @idCustomerBooking";
 
             SqlParameter[] parameters = new SqlParameter[]
@@ -279,9 +220,9 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 
         }
 
-        public int getIdCustomerByidField(int idField)
+        public int getIdCustomerOnCustomerBookingBy(int idField)
         {
-            String sql = "Select * from dbo.CustomerBooking Where status='truc tiep' and idFieldName=@idField" ;
+            string sql = "Select * from dbo.CustomerBooking Where status='truc tiep' and idFieldName=@idField" ;
             SqlParameter[] parameters = new SqlParameter[]
             {
                new SqlParameter("@idField", idField)
@@ -293,11 +234,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 
         public void delCustomerBookingById(int idCustomerBooking)
         {
-           // string sql = "Delete from dbo.CustomerBooking where id = " + idCustomerBooking;
-         //   DataProvider.Instance.ExcuteNonQuery(sql);
-
-
-
 
             string sql = "Delete from dbo.CustomerBooking where id = @idCustomerBooking";
 

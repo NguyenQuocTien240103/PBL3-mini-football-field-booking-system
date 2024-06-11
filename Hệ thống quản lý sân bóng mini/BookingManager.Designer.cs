@@ -59,7 +59,7 @@
             // ToolStripMenuItem
             // 
             this.ToolStripMenuItem.Name = "ToolStripMenuItem";
-            this.ToolStripMenuItem.Size = new System.Drawing.Size(98, 29);
+            this.ToolStripMenuItem.Size = new System.Drawing.Size(98, 30);
             this.ToolStripMenuItem.Text = "Manager";
             this.ToolStripMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
             // 
@@ -184,7 +184,6 @@
             this.Name = "BookingManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Booking Manager";
-            this.Load += new System.EventHandler(this.BookingManager_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBill)).EndInit();

@@ -49,16 +49,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
         }
         public List<Field> GetFieldByIdFieldType(int id)
         {
-            //String sql = "Select * FROM dbo.FieldName Where idFieldType = " + id.ToString();
-            //List<Field> fieldList = new List<Field>();
-            //DataTable data = DataProvider.Instance.ExcuteQuery(sql);
-            //foreach (DataRow row in data.Rows)
-            //{
-            //    Field field = new Field(row);
-            //    fieldList.Add(field);
-            //}
-            //return fieldList;
-            // Using parameterized SQL query to enhance security
             string sql = "SELECT * FROM dbo.FieldName WHERE idFieldType = @id";
 
             // Create SqlParameter array

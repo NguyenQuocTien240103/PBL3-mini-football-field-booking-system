@@ -74,6 +74,7 @@
             this.btnDel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -106,11 +107,12 @@
             this.txtIdField.ReadOnly = true;
             this.txtIdField.Size = new System.Drawing.Size(277, 26);
             this.txtIdField.TabIndex = 1;
+            this.txtIdField.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(12, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -136,11 +138,12 @@
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.Size = new System.Drawing.Size(277, 26);
             this.txtCustomerName.TabIndex = 1;
+            this.txtCustomerName.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(12, 17);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -167,11 +170,12 @@
             this.txtFieldType.ReadOnly = true;
             this.txtFieldType.Size = new System.Drawing.Size(174, 26);
             this.txtFieldType.TabIndex = 2;
+            this.txtFieldType.TabStop = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(12, 17);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -198,11 +202,12 @@
             this.txtFieldName.ReadOnly = true;
             this.txtFieldName.Size = new System.Drawing.Size(174, 26);
             this.txtFieldName.TabIndex = 2;
+            this.txtFieldName.TabStop = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(12, 17);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -228,11 +233,12 @@
             this.txtCustomerPhone.Name = "txtCustomerPhone";
             this.txtCustomerPhone.Size = new System.Drawing.Size(277, 26);
             this.txtCustomerPhone.TabIndex = 1;
+            this.txtCustomerPhone.TabStop = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(12, 17);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -258,12 +264,13 @@
             this.txtPriceBooking.Name = "txtPriceBooking";
             this.txtPriceBooking.Size = new System.Drawing.Size(226, 26);
             this.txtPriceBooking.TabIndex = 1;
+            this.txtPriceBooking.TabStop = false;
             this.txtPriceBooking.Text = "50000";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(12, 17);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -274,26 +281,32 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.ForeColor = System.Drawing.Color.Black;
-            this.btnConfirm.Location = new System.Drawing.Point(238, 561);
+            this.btnConfirm.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.ForeColor = System.Drawing.Color.Transparent;
+            this.btnConfirm.Location = new System.Drawing.Point(6, 561);
             this.btnConfirm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(98, 58);
+            this.btnConfirm.Size = new System.Drawing.Size(110, 58);
             this.btnConfirm.TabIndex = 7;
-            this.btnConfirm.Text = "Confirm";
-            this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.TabStop = false;
+            this.btnConfirm.Text = "CONFIRM";
+            this.btnConfirm.UseVisualStyleBackColor = false;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // button2
             // 
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(792, 561);
+            this.button2.BackColor = System.Drawing.Color.SeaGreen;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Location = new System.Drawing.Point(1097, 561);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 58);
             this.button2.TabIndex = 9;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.TabStop = false;
+            this.button2.Text = "CANCEL";
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // panel9
@@ -319,6 +332,7 @@
             this.cb2.Name = "cb2";
             this.cb2.Size = new System.Drawing.Size(88, 28);
             this.cb2.TabIndex = 11;
+            this.cb2.TabStop = false;
             // 
             // label7
             // 
@@ -333,7 +347,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(12, 15);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -353,6 +367,7 @@
             this.cb1.Name = "cb1";
             this.cb1.Size = new System.Drawing.Size(88, 28);
             this.cb1.TabIndex = 10;
+            this.cb1.TabStop = false;
             // 
             // panel8
             // 
@@ -377,6 +392,7 @@
             this.cb4.Name = "cb4";
             this.cb4.Size = new System.Drawing.Size(88, 28);
             this.cb4.TabIndex = 11;
+            this.cb4.TabStop = false;
             // 
             // label8
             // 
@@ -391,7 +407,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(12, 17);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -411,6 +427,7 @@
             this.cb3.Name = "cb3";
             this.cb3.Size = new System.Drawing.Size(88, 28);
             this.cb3.TabIndex = 10;
+            this.cb3.TabStop = false;
             // 
             // panel10
             // 
@@ -430,11 +447,12 @@
             this.txtStatus.ReadOnly = true;
             this.txtStatus.Size = new System.Drawing.Size(226, 26);
             this.txtStatus.TabIndex = 1;
+            this.txtStatus.TabStop = false;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(12, 17);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -445,19 +463,23 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.Location = new System.Drawing.Point(510, 561);
+            this.btnUpdate.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.Transparent;
+            this.btnUpdate.Location = new System.Drawing.Point(570, 561);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(106, 58);
             this.btnUpdate.TabIndex = 14;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.TabStop = false;
+            this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(6, 296);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -475,6 +497,7 @@
             this.cbTypeField.Name = "cbTypeField";
             this.cbTypeField.Size = new System.Drawing.Size(78, 28);
             this.cbTypeField.TabIndex = 3;
+            this.cbTypeField.TabStop = false;
             this.cbTypeField.SelectedIndexChanged += new System.EventHandler(this.cbTypeField_SelectedIndexChanged);
             // 
             // cbField
@@ -485,6 +508,7 @@
             this.cbField.Name = "cbField";
             this.cbField.Size = new System.Drawing.Size(70, 28);
             this.cbField.TabIndex = 3;
+            this.cbField.TabStop = false;
             this.cbField.SelectedIndexChanged += new System.EventHandler(this.cbField_SelectedIndexChanged);
             // 
             // txtSearch
@@ -494,29 +518,35 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(397, 26);
             this.txtSearch.TabIndex = 16;
+            this.txtSearch.TabStop = false;
             // 
             // btnSearch
             // 
-            this.btnSearch.ForeColor = System.Drawing.Color.Black;
+            this.btnSearch.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.Transparent;
             this.btnSearch.Location = new System.Drawing.Point(1100, 258);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(111, 31);
             this.btnSearch.TabIndex = 17;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Text = "SEARCH";
+            this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Location = new System.Drawing.Point(364, 561);
+            this.btnAdd.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.Transparent;
+            this.btnAdd.Location = new System.Drawing.Point(298, 561);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(110, 58);
             this.btnAdd.TabIndex = 18;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.TabStop = false;
+            this.btnAdd.Text = "ADD";
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // panel11
@@ -537,11 +567,12 @@
             this.txtIdCustomerBooking.ReadOnly = true;
             this.txtIdCustomerBooking.Size = new System.Drawing.Size(277, 26);
             this.txtIdCustomerBooking.TabIndex = 1;
+            this.txtIdCustomerBooking.TabStop = false;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.White;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(12, 17);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -552,18 +583,23 @@
             // 
             // btnDel
             // 
-            this.btnDel.ForeColor = System.Drawing.Color.Black;
-            this.btnDel.Location = new System.Drawing.Point(651, 561);
+            this.btnDel.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.ForeColor = System.Drawing.Color.Transparent;
+            this.btnDel.Location = new System.Drawing.Point(827, 561);
             this.btnDel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(110, 58);
             this.btnDel.TabIndex = 20;
-            this.btnDel.Text = "Delete";
-            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.TabStop = false;
+            this.btnDel.Text = "DELETE";
+            this.btnDel.UseVisualStyleBackColor = false;
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.btnDel);
             this.panel1.Controls.Add(this.panel11);
@@ -588,9 +624,8 @@
             this.panel1.Location = new System.Drawing.Point(8, 14);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1216, 640);
+            this.panel1.Size = new System.Drawing.Size(1221, 649);
             this.panel1.TabIndex = 0;
-//            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
             // dateTimePicker1
             // 
@@ -598,6 +633,18 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(351, 26);
             this.dateTimePicker1.TabIndex = 21;
+            this.dateTimePicker1.TabStop = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(457, 167);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(293, 36);
+            this.label13.TabIndex = 51;
+            this.label13.Text = "Sân bóng mini TKQ";
             // 
             // FormInformationBooking
             // 
@@ -685,5 +732,6 @@
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label13;
     }
 }

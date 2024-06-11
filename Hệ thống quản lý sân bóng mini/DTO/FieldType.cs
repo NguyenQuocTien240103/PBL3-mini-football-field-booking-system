@@ -60,7 +60,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
         }
         public override string ToString()
         {
-            return _Id.ToString();
+            return _TypeName;
 
         }
         public FieldType(int id, string typeName, float normalPrice, float specialPrice) {
@@ -68,6 +68,11 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             this.TypeName= typeName;
             this.NormalPrice = normalPrice;
             this.SpecialPrice = specialPrice;
+        }
+        public FieldType(int id, string typeName)
+        {
+            this.Id = id;
+            this.TypeName = typeName;
         }
         public FieldType(DataRow row)
         {
