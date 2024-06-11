@@ -63,6 +63,36 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _8125c71c_03ef_443e_88eb_0f8e221a1566 {
+            get {
+                object obj = ResourceManager.GetObject("8125c71c-03ef-443e-88eb-0f8e221a1566", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8125c71c_03ef_443e_88eb_0f8e221a1566_fotor_20240611105848 {
+            get {
+                object obj = ResourceManager.GetObject("8125c71c-03ef-443e-88eb-0f8e221a1566-fotor-20240611105848", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8125c71c_03ef_443e_88eb_0f8e221a1566_fotor_2024061111146 {
+            get {
+                object obj = ResourceManager.GetObject("8125c71c-03ef-443e-88eb-0f8e221a1566-fotor-2024061111146", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap OIP__1_ {
             get {
                 object obj = ResourceManager.GetObject("OIP (1)", resourceCulture);

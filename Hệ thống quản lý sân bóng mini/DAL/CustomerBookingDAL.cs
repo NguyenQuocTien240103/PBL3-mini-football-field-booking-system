@@ -186,7 +186,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 
             DataProvider.Instance.ExecuteNonQuery(sql, parameters);
         }
-        public void updatestatusCustomerBookingById(int idCustomerBooking)
+        public void  
         {
             string sql = "update dbo.CustomerBooking set status = 'da huy' where id =@idCustomerBooking ";
             SqlParameter[] parameters = new SqlParameter[]
