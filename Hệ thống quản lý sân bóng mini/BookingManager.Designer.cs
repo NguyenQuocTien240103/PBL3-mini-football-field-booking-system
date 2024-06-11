@@ -52,14 +52,14 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(1272, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1272, 35);
             this.menuStrip1.TabIndex = 27;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // ToolStripMenuItem
             // 
             this.ToolStripMenuItem.Name = "ToolStripMenuItem";
-            this.ToolStripMenuItem.Size = new System.Drawing.Size(98, 30);
+            this.ToolStripMenuItem.Size = new System.Drawing.Size(98, 29);
             this.ToolStripMenuItem.Text = "Manager";
             this.ToolStripMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
             // 
@@ -168,7 +168,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Honeydew;
-            this.BackgroundImage = global::Hệ_thống_quản_lý_sân_bóng_mini.Properties.Resources.OIP__1_;
+            this.BackgroundImage = global::Hệ_thống_quản_lý_sân_bóng_mini.Properties.Resources._8125c71c_03ef_443e_88eb_0f8e221a1566_fotor_2024061111146;
             this.ClientSize = new System.Drawing.Size(1272, 723);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgvBill);

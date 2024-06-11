@@ -273,8 +273,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                     }
                     else
                     {
-                        //   MessageBox.Show(dateTimePicker1.Value.Date.ToString("MM/dd/yyyy") + DateTime.Now.ToString("dd/MM/yyyy"));
-                       // MessageBox.Show(dateTimePicker1.Value.Date.ToString("MM/dd/yyyy") + DateTime.Today.ToString("MM/dd/yyyy"));
                         MessageBox.Show("Chưa đến thời điểm ");
                     }
                 }
@@ -286,7 +284,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         }
         public bool checkFieldStatus(int idField)
         {
-            String status = "";
+            string status = "";
             List<Field> fields = FieldDAL.Instance.LoadFieldList();
             foreach( Field field in fields)
             {
@@ -323,7 +321,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                     DateTime.Today.Day, int.Parse(cb3.SelectedItem.ToString()), int.Parse(cb4.SelectedItem.ToString()), 0);
 
                 DateTime ngaydat = dateTimePicker1.Value.Date;
-                MessageBox.Show(ngaydat.ToString());
 
                 if (PriceBookinng > 0)
                 {
@@ -342,6 +339,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             {
                 MessageBox.Show("Sân bạn chọn không hợp lệ");
             }
+            LoadCustomerBooking();
         }
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -365,13 +363,14 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 {
                     CustomerDAL.Instance.updateCustomer(customerBooking.IdCustomer, txtCustomerName.Text, txtCustomerPhone.Text);
                     CustomerBookingDAL.Instance.updateCustomerBooking(int.Parse(s1), customerBooking.IdCustomer, int.Parse(txtIdField.Text), startTime, endTime, float.Parse(txtPriceBooking.Text.ToString()), txtStatus.Text,ngaydat);
-                    this.Close();
+                    
                 }
                 else
                     {
                         MessageBox.Show("Sân đã có người đặt");
                     }
                 }
+            LoadCustomerBooking();
         }
         //public void updateDatagridViewAfterSearch(string TypeName, string FieldName, string search)
         //{
@@ -439,7 +438,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             List<CustomerBooking> customerbookings = CustomerBookingDAL.Instance.LoadCustomerBooking();
             foreach (CustomerBooking customerbooking in customerbookings)
             {
-                if ((customerbooking.Status == "dat truoc" || customerbooking.Status == "truc tiep") && customerbooking.IdFieldName == idField && customerbooking.Ngaydat == ngaydat)
+                if ((customerbooking.Status == "dat truoc" || customerbooking.Status == "truc tiep") && customerbooking.IdFieldName == idField && customerbooking.Ngaydat.ToString("MM/dd/yyyy") == ngaydat.ToString("MM/dd/yyyy"))
                 {
                     if (sosanhthoigian(endTime, customerbooking.StartTime.ToString("HH:mm")) == true &&
                         sosanhthoigian(endTime, customerbooking.EndTime.ToString("HH:mm")) == false)
