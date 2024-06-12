@@ -31,24 +31,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
         public List<CustomerBookingDetail> LoadCustomerBookingById(int idField)
         {
 
-
-            //String sql = "SELECT CustomerBooking.id,FieldName.id AS idField," +
-            //    " \r\nFieldType.TypeName," +
-            //    " \r\nFieldName.name AS FieldName," +
-            //    " \r\n Customer.name AS CustomerName, " +
-            //    "\r\nCustomer.phone AS CustomerPhone," +
-            //    "\r\nCustomerBooking.startTime," +
-            //    "\r\n CustomerBooking.endTime," +
-            //    "\r\nCustomerBooking.priceBooking, " +
-            //    "\r\nCustomerBooking.status ," +
-            //     "\r\n       CustomerBooking.ngaydat" +
-            //    "\r\nFROM FieldType" +
-            //    " \r\nINNER JOIN FieldName ON FieldType.id = FieldName.idFieldType and  FieldName.id = " + idField.ToString()+
-            //    "\r\nINNER JOIN CustomerBooking ON FieldName.id = CustomerBooking.idFieldName and " +
-            //    "CustomerBooking.status='chua thanh toan'\r\n" +
-            //    "INNER JOIN Customer ON CustomerBooking.idCustomer = Customer.id ";
-
-
             string sql = "SELECT CustomerBooking.id,FieldName.id AS idField," +
                 " \r\nFieldType.TypeName," +
                 " \r\nFieldName.name AS FieldName," +
@@ -68,10 +50,10 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             List<CustomerBookingDetail> ListCustomerBookingDetail = new List<CustomerBookingDetail>();
             SqlParameter[] parameters = new SqlParameter[]
             {
-            new SqlParameter("@idField", idField)
+                    new SqlParameter("@idField", idField)
             };
 
-            DataTable dataTable = DataProvider.Instance.ExecuteQuery(sql,parameters); 
+            DataTable dataTable = DataProvider.Instance.ExecuteQuery(sql, parameters);
 
             foreach (DataRow row in dataTable.Rows)
             {
@@ -81,7 +63,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             return ListCustomerBookingDetail;
         }
 
-        public List<CustomerBookingDetail> LoadCustomerBookingById1()
+        public List<CustomerBookingDetail> LoadCustomerBooked()
         {
             string sql = "\r\nSELECT CustomerBooking.id,FieldName.id AS idField," +
                 "\r\nFieldType.TypeName," +

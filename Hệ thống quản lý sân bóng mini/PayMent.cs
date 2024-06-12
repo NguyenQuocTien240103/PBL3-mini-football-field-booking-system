@@ -19,36 +19,23 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         public PayMent()
         {
             InitializeComponent();
-           
             setCombox();
-            
         }
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void cbName_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
         public void abc(Field field)
         {
             // Gán dữ liệu từ Form1 cho textField2 của Form2
             txtID.Text = field.Id.ToString();
             txtFieldName.Text = field.Name.ToString();
-            // lấy ra id của TypeField có trong table Field
-            int idTypeField = field.IdFieldType;
             // lấy ra trương FieldType bằng cách lấy theo ID
-            FieldType fieldType = FieldTypeDAL.Instance.getFieldTypeById(idTypeField);
-            txtType.Text = fieldType.TypeName.ToString(); // lấy ra tên loại sân từ id
+            FieldType fieldType = FieldTypeDAL.Instance.getFieldTypeById(field.IdFieldType);
+            txtType.Text = fieldType.TypeName.ToString();
             cbPrice.Items.Add(fieldType.NormalPrice.ToString());
             cbPrice.Items.Add(fieldType.SpecialPrice.ToString());
-
-            // showTime khi ta sử dụng deletgate để tham chiếu đến hàm abc
             showInformationFromField();
-
         }
         void setCombox()
         {
@@ -61,10 +48,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             {
                 if (i < 10)
                 {
-                    String index = i.ToString();
                     cb2.Items.Add("0" + i);
                     cb4.Items.Add("0" + i);
-
                 }
                 else
                 {
@@ -72,35 +57,28 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                     cb4.Items.Add(i);
                 }
             }
-
         }
-
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             if (txtTotal.Text != "")
             {
-
                 int idField = int.Parse(txtID.Text.ToString());
-                int idCustomerBooking = CustomerBookingDAL.Instance.getIdCustomerByidField(idField);
+                int idCustomerBooking = CustomerBookingDAL.Instance.getIdCustomerOnCustomerBookingBy(idField);
                 BillDAL.Instance.insertBill(idCustomerBooking, float.Parse(txtTotal.Text));
                 CustomerBookingDAL.Instance.updateCustomerBooking(idField);
                 FieldDAL.Instance.updateFieldById(idField, "empty");
-                this.Close();   
+                this.Close();
             }
         }
-
         private void cbPrice_SelectedIndexChanged(object sender, EventArgs e)
         {
             ComboBox cb = sender as ComboBox;
-            String s = cb.SelectedItem.ToString();
+            string s = cb.SelectedItem.ToString();
             float price = float.Parse(s);
             showTotalPrice(price);
-
         }
-
         void showTotalPrice(float price)
         {
-
             string giobatdau = cb1.SelectedItem.ToString();
             float giobegin = float.Parse(giobatdau);
             string phutbatdau = cb2.SelectedItem.ToString();
@@ -112,20 +90,18 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             float hieu = (gioend * 60 + phutend) - (giobegin * 60 + phutbegin);
             float a = hieu / 60;
             txtTotal.Text = (a * price).ToString();
-
-
         }
         void showInformationFromField()
         {
             List<CustomerBooking> customerBookings = CustomerBookingDAL.Instance.LoadCustomerBooking();
-            
+
             int idField = int.Parse(txtID.Text);
             string tgbatdau = "";
             string tgkethuc = "";
             int idCustomer = 0;
-            foreach ( CustomerBooking customerBooking in customerBookings )
+            foreach (CustomerBooking customerBooking in customerBookings)
             {
-                if(customerBooking.IdFieldName == idField && customerBooking.Status=="truc tiep")
+                if (customerBooking.IdFieldName == idField && customerBooking.Status == "truc tiep")
                 {
                     tgbatdau = customerBooking.StartTime.ToString("HH:mm");
                     tgkethuc = customerBooking.EndTime.ToString("HH:mm");
@@ -134,7 +110,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                     break;
                 }
             }
-          //  MessageBox.Show(tgbatdau + tgkethuc);
+
             string[] parts1 = tgbatdau.Split(':');
             string[] parts2 = tgkethuc.Split(':');
             cb1.Text = parts1[0];
@@ -142,14 +118,13 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             cb3.Text = parts2[0];
             cb4.Text = parts2[1];
 
-
             List<Customer> ListCustomers = CustomerDAL.Instance.LoadCustomerList();
-            foreach( Customer customer in ListCustomers )
+            foreach (Customer customer in ListCustomers)
             {
                 if (customer.Id == idCustomer)
                 {
-                    txtName.Text=customer.Name;
-                    txtPhone.Text=customer.Phone;
+                    txtName.Text = customer.Name;
+                    txtPhone.Text = customer.Phone;
                 }
             }
         }
