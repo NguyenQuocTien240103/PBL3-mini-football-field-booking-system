@@ -170,11 +170,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 Instance.LoadCustomerBookingById1();
            
             foreach (CustomerBookingDetail customerbooking in customerBookingDetails) {
-
-                //dataTable.Rows.Add(customerbooking.Id, customerbooking.IdField,
-                //customerbooking.TypeName, customerbooking.FieldName, customerbooking.CustomerName,
-                //customerbooking.CustomerPhone, customerbooking.startTime.ToString("HH:mm"), customerbooking.endTime.ToString("HH:mm"),
-                //customerbooking.priceBooking, customerbooking.status, customerbooking.Ngaydat.ToString("dd/MM/yyyy"));
                 if (customerbooking.ToString().Contains(TypeName) && customerbooking.ToString().Contains(FieldName) && customerbooking.ToString().ToLower().Contains(search))
                 {
                     dataTable.Rows.Add(customerbooking.Id, customerbooking.IdField,
@@ -261,7 +256,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                         int idField = int.Parse(s2);
                         if (checkFieldStatus(idField))
                         {
-                            FieldDAL.Instance.updateFieldById(idField, "busy");
+                            FieldDAL.Instance.updateFieldState(idField, "busy");
                             CustomerBookingDAL.Instance.updateCustomerBookingById(idCustomerBooking);
                             this.Close();
                         }
@@ -314,11 +309,9 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 int idFieldChoose = int.Parse(txtIdField.Text.ToString());
 
                 // cập  nhật trạng thái
-                DateTime startTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month,
-                    DateTime.Today.Day, int.Parse(cb1.SelectedItem.ToString()), int.Parse(cb2.SelectedItem.ToString()), 0);
+                DateTime startTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month,DateTime.Today.Day, int.Parse(cb1.SelectedItem.ToString()), int.Parse(cb2.SelectedItem.ToString()), 0);
 
-                DateTime endTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month,
-                    DateTime.Today.Day, int.Parse(cb3.SelectedItem.ToString()), int.Parse(cb4.SelectedItem.ToString()), 0);
+                DateTime endTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month,DateTime.Today.Day, int.Parse(cb3.SelectedItem.ToString()), int.Parse(cb4.SelectedItem.ToString()), 0);
 
                 DateTime ngaydat = dateTimePicker1.Value.Date;
 
@@ -350,13 +343,9 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             }
             else
             {
-                DateTime startTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month,
-              DateTime.Today.Day, int.Parse(cb1.SelectedItem.ToString()), int.Parse(cb2.SelectedItem.ToString()), 0);
-
-                DateTime endTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month,
-                    DateTime.Today.Day, int.Parse(cb3.SelectedItem.ToString()), int.Parse(cb4.SelectedItem.ToString()), 0);
+                DateTime startTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month,DateTime.Today.Day, int.Parse(cb1.SelectedItem.ToString()), int.Parse(cb2.SelectedItem.ToString()), 0);
+                DateTime endTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month,DateTime.Today.Day, int.Parse(cb3.SelectedItem.ToString()), int.Parse(cb4.SelectedItem.ToString()), 0);
                 DateTime ngaydat = dateTimePicker1.Value.Date;
-
                 CustomerBooking customerBooking = CustomerBookingDAL.Instance.getCustomerByCustomerBooking(int.Parse(s1));
 
                 if (checktimeFieldNeedUpdate(int.Parse(txtIdField.Text), startTime.ToString("HH:mm"), endTime.ToString("HH:mm"),int.Parse(s1),ngaydat))
@@ -372,48 +361,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 }
             LoadCustomerBooking();
         }
-        //public void updateDatagridViewAfterSearch(string TypeName, string FieldName, string search)
-        //{
-        //    //MessageBox.Show(TypeName + FieldName);
-        //    if (TypeName == "All" && FieldName == "All")
-        //    {
-        //        TypeName = "";
-        //        FieldName = "";
-        //    }
-        //    if (FieldName == "All")
-        //    {
-        //        FieldName = "";
-        //    }
-        //    DataTable dataTable = new DataTable();
-        //    dataTable.Columns.AddRange(new DataColumn[]
-        //    {
-        //            new DataColumn {ColumnName = "id", DataType = typeof(int)},
-        //            new DataColumn {ColumnName = "idField", DataType = typeof(int)},
-        //            new DataColumn {ColumnName = "TypeName", DataType = typeof(string)},
-        //            new DataColumn {ColumnName = "FieldName", DataType = typeof(string)},
-        //            new DataColumn {ColumnName = "CustomerName", DataType = typeof(string)},
-        //            new DataColumn {ColumnName = "CustomerPhone", DataType = typeof(string)},
-        //            new DataColumn {ColumnName = "startTime", DataType = typeof(string)},
-        //            new DataColumn {ColumnName = "endTime", DataType = typeof(string)},
-        //            new DataColumn {ColumnName = "priceBooking", DataType = typeof(float)},
-        //            new DataColumn {ColumnName = "status", DataType = typeof(string)},
-        //            new DataColumn {ColumnName = "bookingDay", DataType = typeof(string)}
-        //    });
-
-        //    List<CustomerBookingDetail> customerBookingDetails = CustomerBookingDetailDAL.
-        //        Instance.LoadCustomerBookingById1();
-        //    foreach (CustomerBookingDetail customerbooking in customerBookingDetails)
-        //    {
-        //        if (customerbooking.ToString().Contains(TypeName) && customerbooking.ToString().Contains(FieldName) && customerbooking.ToString().ToLower().Contains(search))
-        //        {
-        //            dataTable.Rows.Add(customerbooking.Id, customerbooking.IdField,
-        //            customerbooking.TypeName, customerbooking.FieldName, customerbooking.CustomerName,
-        //            customerbooking.CustomerPhone, customerbooking.startTime.ToString("HH:mm"), customerbooking.endTime.ToString("HH:mm"),
-        //            customerbooking.priceBooking, customerbooking.status, customerbooking.Ngaydat.ToString("dd/MM/yyyy"));
-        //        }
-        //    }
-        //    dataGridView1.DataSource = dataTable;
-        //}
         private void btnSearch_Click(object sender, EventArgs e)
         {
             LoadCustomerBooking(cbTypeField.SelectedItem.ToString(), cbField.SelectedItem.ToString(), txtSearch.Text.ToLower());

@@ -101,7 +101,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 DataTable dataTable = new DataTable();
                 dataTable.Columns.AddRange(new DataColumn[]
                 {
-                    
                     new DataColumn {ColumnName = "id", DataType = typeof(int)},
                     new DataColumn {ColumnName = "idField", DataType = typeof(int)},
                     new DataColumn {ColumnName = "TypeName", DataType = typeof(string)},

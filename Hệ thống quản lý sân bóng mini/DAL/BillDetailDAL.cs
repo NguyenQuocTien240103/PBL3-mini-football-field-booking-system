@@ -11,7 +11,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 {
     public class BillDetailDAL
     {
-
         private static BillDetailDAL _Instance;
         public static BillDetailDAL Instance
         {
@@ -27,11 +26,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             {
 
             }
-
         }
-
         private BillDetailDAL() { }
-
         public List<BillDetail> LoadBill()
         {
 
@@ -60,12 +56,9 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             foreach (DataRow row in data.Rows)
             {
                 BillDetail bill = new BillDetail(row);
-               //    MessageBox.Show(bill.Name.ToString());
                 listBill.Add(bill);
-
             }
             return listBill;
-
         }
     }
 }

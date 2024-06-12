@@ -114,18 +114,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             }
         }
 
-        public CustomerBooking(int id,int idCustomer, 
-            int idFieldName, DateTime startTime, DateTime EndTime, int priceBooking, string status, DateTime ngaydat)
-        {
-            this.Id = id;
-            this.IdCustomer = idCustomer;
-            this.IdFieldName = idFieldName;
-            this.StartTime= startTime;
-            this.EndTime = EndTime;
-            this.PriceBooking = priceBooking;
-            this.Status = status;
-            this.Ngaydat = ngaydat;
-        }
+
 
         public CustomerBooking(DataRow row)
         {

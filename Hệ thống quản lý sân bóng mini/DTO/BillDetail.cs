@@ -148,21 +148,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
                 _PaymentDay = value;
             }
         }
-        public BillDetail(string name, string phone,  string fieldType, string fieldName, DateTime startTime, DateTime endTime,
-            float priceBooking, string status, float totalPrice,  DateTime paymentDay)
-        {
-            this.Name = name;
-            this.Phone = phone;
-            this.FieldType = fieldType;
-            this.FieldName = fieldName;
-            this.StartTime = startTime;
-            this.EndTime = endTime;
-            this.PriceBooking = priceBooking;
-            this.Status = status;
-            this.TotalPrice = totalPrice;
-            this.PaymentDay = paymentDay;
-           
-        }
         public BillDetail(DataRow row)
         {
             this.Name = (string)row["CustomerName"];

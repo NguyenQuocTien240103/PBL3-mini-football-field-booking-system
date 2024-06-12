@@ -31,25 +31,7 @@
             private DataProvider() { }
            // private string connectionSTR =
              //       "Data Source=DESKTOP-L96UHDF\\SQLEXPRESS;Initial Catalog=quanli;Integrated Security=True";
-            private string connectionSTR =
-            "Data Source=DESKTOP-CVOKJNA\\TIEN;Initial Catalog=QLSB;Integrated Security=True";
-            //"Data Source = KHOAS84\\KHOA;Initial Catalog = QLSB; Integrated Security = True";
-        //public DataTable ExcuteQuery(string query)
-        //{
-        //    // open connection to DB
-        //    SqlConnection connection = new SqlConnection(connectionSTR);
-        //    connection.Open();
-        //    // execute query
-        //    SqlCommand cmd = new SqlCommand(query, connection);
-        //    // represent one table
-        //    DataTable data = new DataTable();
-
-        //    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-        //    adapter.Fill(data);
-
-        //    connection.Close();
-        //    return data;
-        //}
+            private string connectionSTR ="Data Source=DESKTOP-CVOKJNA\\TIEN;Initial Catalog=QLSB;Integrated Security=True";
         public DataTable ExecuteQuery(string query, SqlParameter[] parameters = null)
         {
             DataTable data = new DataTable();
@@ -73,47 +55,6 @@
             }
             return data;
         }
-
-        //public int ExcuteNonQuery(string query)
-        //    {
-        //        int data = 0;
-        //        // open connection to DB
-        //        SqlConnection connection = new SqlConnection(connectionSTR);
-        //        connection.Open();
-        //        // execute query
-        //        SqlCommand cmd = new SqlCommand(query, connection);
-        //        data = cmd.ExecuteNonQuery();
-        //        connection.Close();
-        //        return data;    
-        //    }
-        //public object ExcuteScaLar (string query, object[] parameter = null)
-        //{
-        //    object data = 0;
-        //    // open connection to DB
-        //    SqlConnection connection = new SqlConnection(connectionSTR);
-        //    connection.Open();
-        //    // execute query
-        //    SqlCommand cmd = new SqlCommand(query, connection);
-        //    if (parameter != null)
-        //    {
-        //        int i = 0;
-        //        string[] listPara = query.Split(' ');
-        //        foreach (string para in listPara)
-        //        {
-        //            if (para.Contains("@"))
-        //            {
-        //                cmd.Parameters.AddWithValue(para, parameter[i]);
-        //                i++;
-        //            }
-
-        //        }
-        //    }
-
-        //    data = cmd.ExecuteScalar();
-        //    connection.Close();
-        //    return data;
-        //}
-
         public int ExecuteNonQuery(string query, SqlParameter[] parameters = null)
         {
             int data = 0;

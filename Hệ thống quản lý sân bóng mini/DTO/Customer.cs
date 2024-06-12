@@ -48,14 +48,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
 
 
 
-        public Customer(int Id, string Name, string Phone)
-        {
-            this.Id = Id;
-            this.Name = Name;
-            this.Phone = Phone;
-
-        }
-
         public Customer(DataRow row)
         {
             this.Id = (int)row["id"];

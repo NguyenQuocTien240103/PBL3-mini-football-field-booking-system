@@ -149,24 +149,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
                 _Ngaydat = value;
             }
         }
-
-
-        public CustomerBookingDetail(int id,int IdField, string TypeName, string FieldName,
-            string CustomerName, string CustomerPhone, DateTime startTime, DateTime endTime, float priceBooking,string status,DateTime ngaydat)
-        {
-            this.Id = id;
-            this.IdField = IdField;
-            this.TypeName = TypeName;
-            this.FieldName = FieldName;
-            this.CustomerName = CustomerName;
-            this.CustomerPhone = CustomerPhone;
-            this.startTime = startTime;
-            this.endTime = endTime;
-            this.priceBooking = priceBooking;
-            this.status = status;
-            this.Ngaydat = ngaydat;
-        }
-
         public CustomerBookingDetail(DataRow row)
         {
             this.Id = (int)row["id"];

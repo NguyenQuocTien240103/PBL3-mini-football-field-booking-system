@@ -60,13 +60,14 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         }
         private void btnConfirm_Click(object sender, EventArgs e)
         {
+            int idField = int.Parse(txtID.Text.ToString());
+            float price = float.Parse(txtTotal.Text);
             if (txtTotal.Text != "")
             {
-                int idField = int.Parse(txtID.Text.ToString());
-                int idCustomerBooking = CustomerBookingDAL.Instance.getIdCustomerOnCustomerBookingBy(idField);
-                BillDAL.Instance.insertBill(idCustomerBooking, float.Parse(txtTotal.Text));
-                CustomerBookingDAL.Instance.updateCustomerBooking(idField);
-                FieldDAL.Instance.updateFieldById(idField, "empty");
+                int idCustomerBooking = CustomerBookingDAL.Instance.GetIdCustomerBooking(idField,"truc tiep");
+                BillDAL.Instance.insertBill(idCustomerBooking, price);
+                CustomerBookingDAL.Instance.updateCustomerBookingDone(idField);
+                FieldDAL.Instance.updateFieldState(idField, "empty");
                 this.Close();   
             }
         }
@@ -94,7 +95,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         void showInformationFromField()
         {
             List<CustomerBooking> customerBookings = CustomerBookingDAL.Instance.LoadCustomerBooking();
-            
             int idField = int.Parse(txtID.Text);
             string tgbatdau = "";
             string tgkethuc = "";

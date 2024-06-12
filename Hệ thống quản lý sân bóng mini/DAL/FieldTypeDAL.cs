@@ -49,12 +49,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
         public FieldType getFieldTypeById(int id)
         {
 
-            //string sql = "Select * FROM dbo.FieldType Where id = " + id.ToString();
-            //DataTable data = DataProvider.Instance.ExecuteQuery(sql);
-            ////mỗi TypeField chỉ có 1 id duy nhất nên chỉ cho 1 trường TypeField duy nhất vậy nên ta k cần dùng list
-            //FieldType fieldType = new FieldType(data.Rows[0]);
-            //return fieldType;
-
             // Sử dụng tham số trong câu truy vấn để tăng cường bảo mật
             string sql = "SELECT * FROM dbo.FieldType WHERE id = @id";
             SqlParameter[] parameters = new SqlParameter[]
@@ -80,9 +74,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 
         public void updateFieldType(int id, string name, float normalPrice, float specialPrice)
         {
-            //string sql = "UPDATE  dbo.FieldType SET TypeName ='" + name.ToString() + "'" +",normalDayPrice='"+normalPrice + "'"+",specialDayPrice =' "+specialPrice
-            //    +"' where id = " + id;
-            //DataProvider.Instance.ExcuteNonQuery(sql);
 
             string sql = "UPDATE dbo.FieldType SET TypeName = @name, normalDayPrice = @normalPrice, specialDayPrice = @specialPrice WHERE id = @id";
 

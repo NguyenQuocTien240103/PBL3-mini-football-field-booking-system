@@ -54,8 +54,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             DataProvider.Instance.ExecuteNonQuery(sql, parameters);
 
         }
-
-        
         public void InSertCustomerBooking(int idCustomer, int idFieldName,
            DateTime startTime, DateTime endTime, float priceBooking, string status, DateTime ngaydat)
         {
@@ -76,7 +74,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             };
             DataProvider.Instance.ExecuteNonQuery(sql, parameters);
         }
-
         public void InSertCustomerBooking1(int idCustomer, int idFieldName,
            string startTime, string endTime, float priceBooking, string status)
         {
@@ -97,7 +94,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             // Execute non-query with parameters
             DataProvider.Instance.ExecuteNonQuery(sql, parameters);
         }
-   
         public void updateCustomerBooking(int idCustomerBooking, int idCustomer, int idFieldName,
            DateTime startTime, DateTime endTime, float priceBooking, string status,DateTime ngaydat)
         {
@@ -142,8 +138,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             }
             return listCustomerBooking;
         }
-
-        public void updateCustomerBooking(int idField)
+        public void updateCustomerBookingDone(int idField)
         {
             string sql = "UPDATE dbo.CustomerBooking " +
                 "SET status = 'da thanh toan' " +
@@ -155,7 +150,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             };
 
             DataProvider.Instance.ExecuteNonQuery(sql, parameters);
-
         }
         public void updateCustomerBookingById(int idCustomerBooking)
         {
@@ -177,7 +171,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             };
             DataProvider.Instance.ExecuteNonQuery(sql,parameters);
         }
-
         public CustomerBooking getCustomerByCustomerBooking(int idCustomerBooking)
         {
             string sql = "SELECT * FROM dbo.CustomerBooking WHERE id = @idCustomerBooking";
@@ -198,27 +191,22 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 
             CustomerBooking customerBooking = new CustomerBooking(data.Rows[0]);
             return customerBooking;
-
-
         }
-
-        public int getIdCustomerOnCustomerBookingBy(int idField)
+        public int GetIdCustomerBooking(int idField,string status)
         {
-            string sql = "Select * from dbo.CustomerBooking Where status='truc tiep' and idFieldName=@idField" ;
+            string sql = "Select * from dbo.CustomerBooking Where status=@status and idFieldName=@idField";
             SqlParameter[] parameters = new SqlParameter[]
             {
-               new SqlParameter("@idField", idField)
+               new SqlParameter("@idField", idField),
+               new SqlParameter("@status", status)
             };
             DataTable data = DataProvider.Instance.ExecuteQuery(sql,parameters);
             CustomerBooking customerBooking = new CustomerBooking(data.Rows[0]);
             return customerBooking.Id;
         }
-
         public void delCustomerBookingById(int idCustomerBooking)
         {
-
             string sql = "Delete from dbo.CustomerBooking where id = @idCustomerBooking";
-
             SqlParameter[] parameters = new SqlParameter[]
             {
                new SqlParameter("@idCustomerBooking", idCustomerBooking)

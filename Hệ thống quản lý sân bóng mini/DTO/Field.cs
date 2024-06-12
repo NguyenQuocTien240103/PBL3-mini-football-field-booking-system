@@ -56,14 +56,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.demo
             }
         }
 
-        public Field(int Id,int IdFieldType, string Name,string Status)
-        {
-            this.Id = Id;
-            this.Status = Status;
-            this.Name = Name;
-            this.IdFieldType = IdFieldType;
-
-        }
         public Field(int Id, string Name)
         {
             this.Id = Id;   

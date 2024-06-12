@@ -26,11 +26,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             {
 
             }
-            
         }
-
         private BillDAL() { }
-
         public List<Bill> LoadBill()
         {
             List<Bill> listBill = new List<Bill>();
@@ -40,26 +37,19 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             {
                 Bill bill = new Bill(row);
                 listBill.Add(bill);
-
             }
             return listBill;
-
         }
         public void insertBill(int idCustomerBooking,float totalPrice)
         {
-            //  string sql  = "insert into dbo.Bill(idCustomerBooking,totalPrice) values"+ "(" + idCustomerBooking+","+totalPrice+")";
-            //  DataProvider.Instance.ExcuteNonQuery(sql);
-
             // Câu truy vấn SQL với tham số
             string sql = "INSERT INTO dbo.Bill (idCustomerBooking, totalPrice) VALUES (@idCustomerBooking, @totalPrice)";
-
             // Tạo mảng các SqlParameter
             SqlParameter[] parameters = new SqlParameter[]
             {
                 new SqlParameter("@idCustomerBooking", idCustomerBooking),
                 new SqlParameter("@totalPrice", totalPrice)
             };
-
             // Thực thi truy vấn với tham số
             DataProvider.Instance.ExecuteNonQuery(sql, parameters);
         }

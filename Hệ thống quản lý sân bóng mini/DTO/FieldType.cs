@@ -63,12 +63,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             return _TypeName;
 
         }
-        public FieldType(int id, string typeName, float normalPrice, float specialPrice) {
-            this.Id = id;
-            this.TypeName= typeName;
-            this.NormalPrice = normalPrice;
-            this.SpecialPrice = specialPrice;
-        }
         public FieldType(int id, string typeName)
         {
             this.Id = id;

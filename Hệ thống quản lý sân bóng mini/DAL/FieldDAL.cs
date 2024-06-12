@@ -69,12 +69,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             }
             return fieldList;
         }
-        public void updateFieldById(int id, String status)
+        public void updateFieldState(int id, string status)
         {
-            // String sql = "UPDATE  dbo.FieldName SET status = " + status.ToString() + "where id = " + id.ToString();
-            // string sql = "UPDATE  dbo.FieldName SET status ='" + status.ToString()+"' where id = " + id.ToString();
-            //DataProvider.Instance.ExcuteNonQuery(sql);
-            // Parameterized SQL query to improve security
             string sql = "UPDATE dbo.FieldName SET status = @status WHERE id = @id";
 
             // Create array of SqlParameter
@@ -89,9 +85,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
         }
         public void updateField(int id,string nameField,int idTypeField)
         {
-            //string sql = "UPDATE dbo.FieldName SET name ='" + nameField + "', idFieldType = " + idTypeField + " WHERE id = " + id;
-            //DataProvider.Instance.ExcuteNonQuery(sql);
-            // Parameterized SQL query to improve security
             string sql = "UPDATE dbo.FieldName SET name = @nameField, idFieldType = @idTypeField WHERE id = @id";
 
             // Create array of SqlParameter
@@ -107,10 +100,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
         }
         public void insertField(string name,int idFieldType)
         {
-            //string status = "empty";
-            //string sql = "INSERT INTO dbo.FieldName (name, status, idFieldType) " +
-            //     "VALUES('" + name + "','" + status + "'," + idFieldType.ToString() + ")";
-            //DataProvider.Instance.ExcuteNonQuery(sql);
+
             string status = "empty";  // Assuming status is always set to "empty" when creating a new field
             string sql = "INSERT INTO dbo.FieldName (name, status, idFieldType) VALUES (@name, @status, @idFieldType)";
 
@@ -127,9 +117,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
         }
         public void DelField(int idField)
         {
-            //string sql = "Delete from dbo.FieldName where id=" + idField;
-            //DataProvider.Instance.ExcuteNonQuery(sql);
-            // Using a parameterized query to enhance security
             string sql = "DELETE FROM dbo.FieldName WHERE id = @idField";
 
             // Create array of SqlParameter

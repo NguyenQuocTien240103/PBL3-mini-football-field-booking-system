@@ -83,7 +83,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 endTime, PriceBookinng, "truc tiep", DateTime.Now.Date);
 
             //update state field by idField
-            FieldDAL.Instance.updateFieldById(int.Parse(txtFieldID.Text), "busy");
+            FieldDAL.Instance.updateFieldState(int.Parse(txtFieldID.Text), "busy");
             this.Close();
         }
     }

@@ -56,16 +56,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
                 _DatePayment = value;
             }
         }
-
-
-        public Bill(int id, int idCustomerBooking, float totalPrice, DateTime dateTime)
-        {
-            this.Id = id;
-            this.IdCustomerBooking = idCustomerBooking;
-            this.TotalPrice = totalPrice;
-            this.DatePayment = dateTime;
-        }
-
         public Bill(DataRow row)
         {
             this.Id = (int)row["id"];
