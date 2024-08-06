@@ -28,18 +28,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             }
         }
         private BillDAL() { }
-        public List<Bill> LoadBill()
-        {
-            List<Bill> listBill = new List<Bill>();
-            string sql = " select * from dbo.Bill";
-            DataTable data = DataProvider.Instance.ExecuteQuery(sql);
-            foreach (DataRow row in data.Rows)
-            {
-                Bill bill = new Bill(row);
-                listBill.Add(bill);
-            }
-            return listBill;
-        }
+        
         public void insertBill(int idCustomerBooking,float totalPrice)
         {
             // Câu truy vấn SQL với tham số

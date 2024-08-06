@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Hệ_thống_quản_lý_sân_bóng_mini.BLL;
 using Hệ_thống_quản_lý_sân_bóng_mini.DAL;
 using Hệ_thống_quản_lý_sân_bóng_mini.demo;
 using Hệ_thống_quản_lý_sân_bóng_mini.DTO;
@@ -19,69 +20,24 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         public Manager()
         {
             InitializeComponent();
-            loadBill();
+            GetAllBill();
             LoadField();
             LoadTypeField();
             LoadFieldType();
         }
         public delegate void Mydel();
         public Mydel d { get; set; }
-        void loadBill()
-        {
-            dataGridView1.Controls.Clear();   
-            DataTable dataTable = new DataTable();
-            dataTable.Columns.AddRange(new DataColumn[]
-            {
-                    new DataColumn {ColumnName = "name", DataType = typeof(string)},
-                    new DataColumn {ColumnName = "phone", DataType = typeof(string)},
-                    new DataColumn {ColumnName = "FieldType", DataType = typeof(string)},
-                    new DataColumn {ColumnName = "FieldName", DataType = typeof(string) },
-                    new DataColumn {ColumnName = "startTime", DataType = typeof(string)},
-                    new DataColumn {ColumnName = "endTime", DataType = typeof(string)},
-                    new DataColumn {ColumnName = "priceBooking", DataType = typeof(float)},
-                    new DataColumn {ColumnName = "status", DataType = typeof(string)},
-                    new DataColumn {ColumnName = "totalPrice", DataType = typeof(float)},
-                    new DataColumn {ColumnName = "payMentDay", DataType = typeof(string)}
-            });
-            List<BillDetail> listBillDetal = BillDetailDAL.Instance.LoadBill();
-            foreach (BillDetail billdetail in listBillDetal)
-            {
-                dataTable.Rows.Add(billdetail.Name,billdetail.Phone,billdetail.FieldType,billdetail.FieldName,
-                    billdetail.StartTime.ToString("HH:mm"),billdetail.EndTime.ToString("HH:mm"),
-                    billdetail.PriceBooking,billdetail.Status,billdetail.TotalPrice,billdetail.PaymentDay.ToString("MM/dd/yyyy"));
-            }
-            dataGridView1.DataSource = dataTable;
+        void GetAllBill()
+        { 
+            dataGridView1.DataSource = BillBLL.Instance.ShowBill();
         }
-
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            string sql = "\r\nSELECT \r\n " +
-                "Customer.name  ,\r\n    " +
-                "Customer.phone,\r\n   " +
-                "FieldType.TypeName AS FieldType, \r\n   " +
-                "FieldName.name AS FieldName, \r\n   " +
-                "CustomerBooking.startTime,\r\n   " +
-                "CustomerBooking.endTime,\r\n    " +
-                "CustomerBooking.priceBooking,\r\n   " +
-                "CustomerBooking.status,\r\n   " +
-                "Bill.totalPrice,\r\n   " +
-                "Bill.paymentDay\r\nFROM \r\n    " +
-                "FieldType\r\nINNER JOIN \r\n   " +
-                "FieldName ON FieldType.id = FieldName.idFieldType\r\n" +
-                "INNER JOIN \r\n    " +
-                "CustomerBooking ON FieldName.id = CustomerBooking.idFieldName\r\n" +
-                "INNER JOIN \r\n    " +
-                "Customer ON CustomerBooking.idCustomer = Customer.id \r\n" +
-                "INNER JOIN \r\n    " +
-                "Bill ON CustomerBooking.id = Bill.idCustomerBooking and Bill.paymentDay= '"+dateTimePicker1.Value.ToShortDateString().ToString()+"'";
-            DataTable data = DataProvider.Instance.ExecuteQuery(sql);
-            dataGridView1.Controls.Clear();
-            dataGridView1.DataSource = data;
+            string date = dateTimePicker1.Value.ToShortDateString();
+            dataGridView1.DataSource = BillBLL.Instance.ShowBill(date);
         }
-
         void LoadField()
         {
-
             DataTable dataTable = new DataTable();
             dataTable.Columns.AddRange(new DataColumn[]
             {
@@ -103,15 +59,11 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                     }
 
                 }
-               
-
             }
             dataGridView2.DataSource = dataTable;
             dataGridView2.Columns[0].Visible = false;
             dataGridView2.Columns[3].Visible = false;
-
         }
-
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
@@ -126,8 +78,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 showTypeName(id);
             }
         }
-       
-
         void showTypeName(int id)
         {
             List<FieldType> listFieldType = FieldTypeDAL.Instance.LoadFieldType();
@@ -139,16 +89,13 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 }
             }
         }
-
         void LoadTypeField()
         {
             List<FieldType> listFieldType = FieldTypeDAL.Instance.LoadFieldType();
             //  cbIdType.DataSource = listFieldType;
             //    cbIdType.DisplayMember = "id";
             cbIdType.Items.AddRange(listFieldType.ToArray());
-            
         }
-
         private void cbIdType_SelectedIndexChanged(object sender, EventArgs e)
         {
           //  List<FieldType> listFieldType = FieldTypeDAL.Instance.LoadFieldType();
@@ -161,7 +108,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             }
             
         }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             int id = int.Parse(cbIdType.Text);
@@ -189,18 +135,13 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         }
         private void btnDel_Click(object sender, EventArgs e)
         {
-
             FieldDAL.Instance.DelField(int.Parse(txtIdField.Text));
             LoadField();
             d();
         }
-
-
-
         // Table FieldType
         void LoadFieldType()
         {
-
             DataTable dataTable = new DataTable();
             dataTable.Columns.AddRange(new DataColumn[]
             {
@@ -216,9 +157,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             }
             dataGridView3.DataSource = dataTable;
             dataGridView3.Columns[0].Visible = false;
-
         }
-
         private void dataGridView3_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
@@ -232,13 +171,10 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 txtPriceSpecial.Text = selectedRow.Cells[3].Value.ToString();
             }
         }
-
         private void btnEditType_Click(object sender, EventArgs e)
         {
-
             FieldTypeDAL.Instance.updateFieldType(int.Parse(txtIdType.Text), txtTenLoai.Text.ToString(), float.Parse(txtPriceNormal.Text), float.Parse(txtPriceSpecial.Text));
             LoadFieldType();
-
         }
         private void btnEdit_Click(object sender, EventArgs e)
         {
@@ -255,10 +191,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             }
             if (check)
             {
-                // insert vào
-              //  FieldDAL.Instance.insertField(txtNameField.Text, int.Parse(cbIdType.Text));
-              //  LoadField();
-              //  d();
                 FieldDAL.Instance.updateField(int.Parse(txtIdField.Text), txtNameField.Text.ToString(), int.Parse(cbIdType.SelectedItem.ToString()));
                 LoadField();
                 d();
@@ -267,12 +199,11 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             {
                 MessageBox.Show("Sân đã trùng tên");
             }
-            
         }
-
         private void btnRf_Click(object sender, EventArgs e)
         {
-            loadBill();
+            dataGridView1.Controls.Clear();
+            GetAllBill();
         }
     }
 }

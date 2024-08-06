@@ -28,28 +28,24 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             }
         }
         private CustomerBookingDetailDAL() { }
-        public List<CustomerBookingDetail> LoadCustomerBookingById(int idField)
+        public List<CustomerBookingDetail> LoadCustomerBookingById(string state,int idField = 0)
         {
-
-            string sql = "SELECT CustomerBooking.id,FieldName.id AS idField," +
-                " \r\nFieldType.TypeName," +
-                " \r\nFieldName.name AS FieldName," +
-                " \r\n Customer.name AS CustomerName, " +
-                "\r\nCustomer.phone AS CustomerPhone," +
-                "\r\nCustomerBooking.startTime," +
-                "\r\n CustomerBooking.endTime," +
-                "\r\nCustomerBooking.priceBooking, " +
-                "\r\nCustomerBooking.status ," +
-                 "\r\n       CustomerBooking.ngaydat" +
-                "\r\nFROM FieldType" +
-                " \r\nINNER JOIN FieldName ON FieldType.id = FieldName.idFieldType and  FieldName.id = @idField" +
-                "\r\nINNER JOIN CustomerBooking ON FieldName.id = CustomerBooking.idFieldName and " +
-                "CustomerBooking.status='truc tiep'\r\n" +
-                "INNER JOIN Customer ON CustomerBooking.idCustomer = Customer.id ";
-
+            string sql = "SELECT CustomerBooking.id, FieldName.id AS idField, " +
+                  "FieldType.TypeName, FieldName.name AS FieldName, " +
+                  "Customer.name AS CustomerName, Customer.phone AS CustomerPhone, " +
+                  "CustomerBooking.startTime, CustomerBooking.endTime, " +
+                  "CustomerBooking.priceBooking, CustomerBooking.status, " +
+                  "CustomerBooking.ngaydat " +
+                  "FROM FieldType " +
+                  "INNER JOIN FieldName ON FieldType.id = FieldName.idFieldType " +
+                  "INNER JOIN CustomerBooking ON FieldName.id = CustomerBooking.idFieldName " +
+                  "INNER JOIN Customer ON CustomerBooking.idCustomer = Customer.id " + 
+                  "WHERE CustomerBooking.status = @state " +
+                  (idField != 0 ? "AND FieldName.id = @idField" : "");
             List<CustomerBookingDetail> ListCustomerBookingDetail = new List<CustomerBookingDetail>();
             SqlParameter[] parameters = new SqlParameter[]
             {
+                    new SqlParameter("@state", state),
                     new SqlParameter("@idField", idField)
             };
 
@@ -62,37 +58,5 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
             }
             return ListCustomerBookingDetail;
         }
-
-        public List<CustomerBookingDetail> LoadCustomerBookingById1()
-        {
-            string sql = "\r\nSELECT CustomerBooking.id,FieldName.id AS idField," +
-                "\r\nFieldType.TypeName," +
-                " \r\nFieldName.name AS FieldName," +
-                " \r\n       Customer.name AS CustomerName," +
-                " \r\n       Customer.phone AS CustomerPhone," +
-                "\r\n       CustomerBooking.startTime," +
-                "\r\n       CustomerBooking.endTime," +
-                "\r\n       CustomerBooking.priceBooking," +
-                "\r\n       CustomerBooking.status," +
-                "\r\n       CustomerBooking.ngaydat" +
-                "\r\nFROM FieldType" +
-                "\r\nINNER JOIN FieldName ON FieldType.id = FieldName.idFieldType " +
-                "\r\nINNER JOIN CustomerBooking ON FieldName.id = CustomerBooking.idFieldName and CustomerBooking.status='dat truoc'" +
-                "\r\nINNER JOIN Customer ON CustomerBooking.idCustomer = Customer.id";
-
-            List<CustomerBookingDetail> ListCustomerBookingDetail = new List<CustomerBookingDetail>();
-
-            //  DataTable dataTable = DataProvider.Instance.ExcuteQuery(sql);
-
-            DataTable dataTable = DataProvider.Instance.ExecuteQuery(sql);
-
-            foreach (DataRow row in dataTable.Rows)
-            {
-                CustomerBookingDetail customerBookingDetail = new CustomerBookingDetail(row);
-                ListCustomerBookingDetail.Add(customerBookingDetail);
-            }
-            return ListCustomerBookingDetail;
-        }
-
     }
 }

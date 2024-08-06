@@ -46,7 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL\AccountDAL.cs" />
+    <Compile Include="BLL\BillBLL.cs" />
+    <Compile Include="BLL\CustomerBLL.cs" />
+    <Compile Include="BLL\CustomerBookingBLL.cs" />
+    <Compile Include="BLL\FieldBLL.cs" />
+    <Compile Include="BLL\FieldTypeBLL.cs" />
     <Compile Include="DAL\BillDAL.cs" />
     <Compile Include="DAL\BillDetailDAL.cs" />
     <Compile Include="DAL\CustomerBookingDAL.cs" />
@@ -67,18 +71,6 @@
     </Compile>
     <Compile Include="EditForm.Designer.cs">
       <DependentUpon>EditForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormInformationBookingNow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormInformationBookingNow.Designer.cs">
-      <DependentUpon>FormInformationBookingNow.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="BookingManager.cs">
       <SubType>Form</SubType>
@@ -108,12 +100,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EditForm.resx">
       <DependentUpon>EditForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormInformationBookingNow.resx">
-      <DependentUpon>FormInformationBookingNow.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BookingManager.resx">
       <DependentUpon>BookingManager.cs</DependentUpon>
@@ -168,5 +154,6 @@
   <ItemGroup>
     <None Include="Resources\8125c71c-03ef-443e-88eb-0f8e221a1566-fotor-2024061111146.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

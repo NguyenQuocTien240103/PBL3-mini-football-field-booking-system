@@ -33,8 +33,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
                 _Name = value;
             }
         }
-        private String _Phone;
-        public String Phone
+        private string _Phone;
+        public string Phone
         {
             get
             {
@@ -46,6 +46,12 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             }
         }
 
+        public Customer(int id,string name,string phone)
+        {
+            this.Id = id;
+            this.Name = name;
+            this.Phone = phone;
+        }
 
 
         public Customer(DataRow row)

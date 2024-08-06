@@ -75,8 +75,8 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
             }
         }
 
-        private String _Status;
-        public String Status
+        private string _Status;
+        public string Status
         {
             get
             {

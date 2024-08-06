@@ -127,3 +127,17 @@ C:\Users\nguye\OneDrive\Desktop\newPBL\software\Hệ thống quản lý sân bó
 C:\Users\nguye\OneDrive\Desktop\newPBL\software\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ thống quản lý sân bóng mini.csproj.CoreCompileInputs.cache
 C:\Users\nguye\OneDrive\Desktop\newPBL\software\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ thống quản lý sân bóng mini.exe
 C:\Users\nguye\OneDrive\Desktop\newPBL\software\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ thống quản lý sân bóng mini.pdb
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\Hệ thống quản lý sân bóng mini\bin\Debug\Hệ thống quản lý sân bóng mini.exe.config
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\Hệ thống quản lý sân bóng mini\bin\Debug\Hệ thống quản lý sân bóng mini.exe
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\Hệ thống quản lý sân bóng mini\bin\Debug\Hệ thống quản lý sân bóng mini.pdb
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ thống quản lý sân bóng mini.csproj.AssemblyReference.cache
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ_thống_quản_lý_sân_bóng_mini.EditForm.resources
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ_thống_quản_lý_sân_bóng_mini.BookingManager.resources
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ_thống_quản_lý_sân_bóng_mini.Manager.resources
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ_thống_quản_lý_sân_bóng_mini.FormInformationBooking.resources
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ_thống_quản_lý_sân_bóng_mini.PayMent.resources
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ_thống_quản_lý_sân_bóng_mini.Properties.Resources.resources
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ thống quản lý sân bóng mini.csproj.GenerateResource.cache
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ thống quản lý sân bóng mini.csproj.CoreCompileInputs.cache
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ thống quản lý sân bóng mini.exe
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\Hệ thống quản lý sân bóng mini\obj\Debug\Hệ thống quản lý sân bóng mini.pdb

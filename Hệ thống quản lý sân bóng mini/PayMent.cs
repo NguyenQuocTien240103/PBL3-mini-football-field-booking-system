@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Hệ_thống_quản_lý_sân_bóng_mini.BLL;
 using Hệ_thống_quản_lý_sân_bóng_mini.DAL;
 using Hệ_thống_quản_lý_sân_bóng_mini.demo;
 using Hệ_thống_quản_lý_sân_bóng_mini.DTO;
@@ -16,26 +17,53 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
 {
     public partial class PayMent : Form
     {
-        public PayMent()
+        public delegate void Mydel();
+        public Mydel d { get; set; }
+        int IdField;
+        public PayMent(int id=0)
         {
             InitializeComponent();
             setCombox();
+            IdField = id;
+            GUI();
         }
-        private void btnCancel_Click(object sender, EventArgs e)
+        public void GUI()
         {
-            this.Close();
-        }
-        public void abc(Field field)
-        {
-            // Gán dữ liệu từ Form1 cho textField2 của Form2
-            txtID.Text = field.Id.ToString();
-            txtFieldName.Text = field.Name.ToString();
-            // lấy ra trương FieldType bằng cách lấy theo ID
-            FieldType fieldType = FieldTypeDAL.Instance.getFieldTypeById(field.IdFieldType);
-            txtType.Text = fieldType.TypeName.ToString(); 
-            cbPrice.Items.Add(fieldType.NormalPrice.ToString());
-            cbPrice.Items.Add(fieldType.SpecialPrice.ToString());
-            showInformationFromField();
+            if(IdField != 0)
+            {
+                string Status = "truc tiep";
+                CustomerBooking Cus = CustomerBookingBLL.Instance.GetCustomerBooking(IdField, Status);
+                Field field = FieldBLL.Instance.GetFieldById(IdField);
+                if(Cus!= null && field !=null)
+                {
+                    Customer customer = CustomerBLL.Instance.GetCustomerById(Cus.IdCustomer);
+                    FieldType fieldType = FieldTypeBLL.Instance.GetFieldTypeById(field.IdFieldType);
+                    if (fieldType != null && customer != null)
+                    {
+                        // field
+                        txtID.Text = field.Id.ToString();
+                        txtFieldName.Text = field.Name.ToString();
+                        txtType.Text = fieldType.TypeName.ToString();
+                        // customer
+                        txtName.Text = customer.Name;
+                        txtPhone.Text = customer.Phone;
+                        // time
+                        string tgbatdau = Cus.StartTime.ToString("HH:mm");
+                        string tgkethuc = Cus.EndTime.ToString("HH:mm");
+                        string[] parts1 = tgbatdau.Split(':');
+                        string[] parts2 = tgkethuc.Split(':');
+                        cb1.Text = parts1[0];
+                        cb2.Text = parts1[1];
+                        cb3.Text = parts2[0];
+                        cb4.Text = parts2[1];
+                        // price
+                        txtPriceBooking.Text = Cus.PriceBooking.ToString();
+                        cbPrice.Items.Add(fieldType.NormalPrice.ToString());
+                        cbPrice.Items.Add(fieldType.SpecialPrice.ToString());
+
+                    }
+                }
+            }
         }
         void setCombox()
         {
@@ -58,75 +86,40 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 }
             }
         }
-        private void btnConfirm_Click(object sender, EventArgs e)
-        {
-            int idField = int.Parse(txtID.Text.ToString());
-            float price = float.Parse(txtTotal.Text);
-            if (txtTotal.Text != "")
-            {
-                int idCustomerBooking = CustomerBookingDAL.Instance.GetIdCustomerBooking(idField,"truc tiep");
-                BillDAL.Instance.insertBill(idCustomerBooking, price);
-                CustomerBookingDAL.Instance.updateCustomerBookingDone(idField);
-                FieldDAL.Instance.updateFieldState(idField, "empty");
-                this.Close();   
-            }
-        }
         private void cbPrice_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox cb = sender as ComboBox;
-            string s = cb.SelectedItem.ToString();
+            string s = cbPrice.SelectedItem.ToString();
             float price = float.Parse(s);
             showTotalPrice(price);
         }
         void showTotalPrice(float price)
         {
-            string giobatdau = cb1.SelectedItem.ToString();
-            float giobegin = float.Parse(giobatdau);
-            string phutbatdau = cb2.SelectedItem.ToString();
-            float phutbegin = float.Parse(phutbatdau);
-            string giokethuc = cb3.SelectedItem.ToString();
-            float gioend = float.Parse(giokethuc);
-            string phutkethuc = cb4.SelectedItem.ToString();
-            float phutend = float.Parse(phutkethuc);
-            float hieu = (gioend * 60 + phutend) - (giobegin * 60 + phutbegin);
-            float a = hieu / 60;
-            txtTotal.Text = (a * price).ToString();
+            float StartHours = float.Parse(cb1.SelectedItem.ToString());
+            float StartMinutes = float.Parse(cb2.SelectedItem.ToString());
+            float EndHours = float.Parse(cb3.SelectedItem.ToString());
+            float EndMinutes = float.Parse(cb4.SelectedItem.ToString());
+            float Handle = (EndHours * 60 + EndMinutes) - (StartHours * 60 + StartMinutes);
+            float Result = Handle / 60;
+            txtTotal.Text = (Result * price).ToString();
         }
-        void showInformationFromField()
+        private void btnConfirm_Click(object sender, EventArgs e)
         {
-            List<CustomerBooking> customerBookings = CustomerBookingDAL.Instance.LoadCustomerBooking();
             int idField = int.Parse(txtID.Text);
-            string tgbatdau = "";
-            string tgkethuc = "";
-            int idCustomer = 0;
-            foreach ( CustomerBooking customerBooking in customerBookings )
+            float price = float.Parse(txtTotal.Text);
+            if (txtTotal.Text != "")
             {
-                if(customerBooking.IdFieldName == idField && customerBooking.Status=="truc tiep")
-                {
-                    tgbatdau = customerBooking.StartTime.ToString("HH:mm");
-                    tgkethuc = customerBooking.EndTime.ToString("HH:mm");
-                    idCustomer = customerBooking.IdCustomer;
-                    txtPriceBooking.Text = customerBooking.PriceBooking.ToString();
-                    break;
-                }
+                BillBLL.Instance.AddBill(idField, price);
+                d();
+                this.Close();
             }
-
-            string[] parts1 = tgbatdau.Split(':');
-            string[] parts2 = tgkethuc.Split(':');
-            cb1.Text = parts1[0];
-            cb2.Text = parts1[1];
-            cb3.Text = parts2[0];
-            cb4.Text = parts2[1];
-
-            List<Customer> ListCustomers = CustomerDAL.Instance.LoadCustomerList();
-            foreach( Customer customer in ListCustomers )
+            else
             {
-                if (customer.Id == idCustomer)
-                {
-                    txtName.Text=customer.Name;
-                    txtPhone.Text=customer.Phone;
-                }
+                MessageBox.Show("please select price!");
             }
+        }
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using Hệ_thống_quản_lý_sân_bóng_mini.BLL;
 using Hệ_thống_quản_lý_sân_bóng_mini.DAL;
 using Hệ_thống_quản_lý_sân_bóng_mini.demo;
 using Hệ_thống_quản_lý_sân_bóng_mini.DTO;
@@ -22,21 +23,15 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
             InitializeComponent();
             setComboxTime();
             LoadCustomerBooking();
-            loadType();
+            loadFieldType();
         }
-        // loadFiled,FieldType
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-        void loadType()
+        void loadFieldType()
         {
             if(cbTypeField.Items.Count == 0)
             {
                 cbTypeField.Items.Add(new FieldType(0,"All"));
-
-                List<FieldType> listFieldType = FieldTypeDAL.Instance.LoadFieldType();
-                foreach(FieldType type in listFieldType)
+                List<FieldType> listFieldType = FieldTypeBLL.Instance.GetAllFieldType();
+                foreach (FieldType type in listFieldType)
                 {
                     cbTypeField.Items.Add(type.TypeName);
                 }
@@ -46,14 +41,14 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         int idType = 0;
         private void cbTypeField_SelectedIndexChanged(object sender, EventArgs e)
         {
-            List<FieldType> listFieldType = FieldTypeDAL.Instance.LoadFieldType();
+            List<FieldType> listFieldType = FieldTypeBLL.Instance.GetAllFieldType();
             ComboBox cb = sender as ComboBox;
             if (cb.SelectedItem.ToString() == "All")
             {
                 LoadFieldByIdTypeField();
             }
             else
-            {
+            {   
                 foreach (FieldType fieldType in listFieldType)
                 {
                     if (fieldType.TypeName == cb.SelectedItem.ToString())
@@ -65,15 +60,15 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 }
             }
         }
-        void LoadFieldByIdTypeField(int id=0)
+        void LoadFieldByIdTypeField(int idFieldType=0)
         {
             cbField.Items.Clear();
             if (cbField.Items.Count == 0)
             {
                 cbField.Items.Add(new Field(0, "All"));
-                if (id != 0)
+                if (idFieldType != 0)
                 {
-                    List<Field> listField = FieldDAL.Instance.GetFieldByIdFieldType(id);
+                    List<Field> listField = FieldBLL.Instance.GetAllField(idFieldType);
                     foreach (Field field in listField)
                     {
                         cbField.Items.Add(field.Name);
@@ -85,23 +80,21 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         private void cbField_SelectedIndexChanged(object sender, EventArgs e)
         {
             ComboBox cb = sender as ComboBox;
-            Show(cbTypeField.SelectedItem.ToString(), cb.SelectedItem.ToString(), idType);
-        }
-        void Show(string Type, string Field, int idType)
-        {
-            txtFieldType.Text = Type;
-            txtFieldName.Text = Field;
-            int id = idType;
-            List<Field> listField = FieldDAL.Instance.GetFieldByIdFieldType(id);
+            txtFieldType.Text = cbTypeField.SelectedItem.ToString();
+            txtFieldName.Text = cb.SelectedItem.ToString();
+            List<Field> listField = FieldBLL.Instance.GetAllField(idType);
             foreach (Field field in listField)
             {
-                if(field.IdFieldType==id && field.Name == Field)
+                if (field.IdFieldType == idType && field.Name == txtFieldName.Text)
                 {
                     txtIdField.Text = field.Id.ToString();
                 }
+                if(cbTypeField.SelectedItem.ToString() == "All" || cb.SelectedItem.ToString() == "All")
+                {
+                    txtIdField.Text = "";
+                }
             }
         }
-        // loadTime
         void setComboxTime()
         {
             for (int i = 0; i < 24; i++)
@@ -132,70 +125,20 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 }
             }
         }
-        void LoadCustomerBooking(string TypeName=null, string FieldName = null, string search = null)
+        void LoadCustomerBooking()
         {
-            //MessageBox.Show(TypeName + FieldName);
-            if(TypeName == null && FieldName == null && search == null)
-            {
-                TypeName = "";
-                FieldName = "";
-                search = "";
-            }
-            if (TypeName == "All" && FieldName == "All")
-            {
-                TypeName = "";
-                FieldName = "";
-            }
-            if (FieldName == "All")
-            {
-                FieldName = "";
-            }
-            DataTable dataTable = new DataTable();
-            dataTable.Columns.AddRange(new DataColumn[]
-            {
-                   // new DataColumn {ColumnName = "STT", DataType = typeof(int)},
-                    new DataColumn {ColumnName = "id", DataType = typeof(int)},
-                    new DataColumn {ColumnName = "idField", DataType = typeof(int)},
-                    new DataColumn {ColumnName = "TypeName", DataType = typeof(string)},
-                    new DataColumn {ColumnName = "FieldName", DataType = typeof(string)},
-                    new DataColumn {ColumnName = "CustomerName", DataType = typeof(string)},
-                    new DataColumn {ColumnName = "CustomerPhone", DataType = typeof(string)},
-                    new DataColumn {ColumnName = "startTime", DataType = typeof(string)},
-                    new DataColumn {ColumnName = "endTime", DataType = typeof(string)},
-                    new DataColumn {ColumnName = "priceBooking", DataType = typeof(float)},
-                    new DataColumn {ColumnName = "status", DataType = typeof(string)},
-                    new DataColumn {ColumnName = "bookingDay", DataType = typeof(string)}
-            });
-            List<CustomerBookingDetail> customerBookingDetails = CustomerBookingDetailDAL.
-                Instance.LoadCustomerBookingById1();
-           
-            foreach (CustomerBookingDetail customerbooking in customerBookingDetails) {
-                if (customerbooking.ToString().Contains(TypeName) && customerbooking.ToString().Contains(FieldName) && customerbooking.ToString().ToLower().Contains(search))
-                {
-                    dataTable.Rows.Add(customerbooking.Id, customerbooking.IdField,
-                    customerbooking.TypeName, customerbooking.FieldName, customerbooking.CustomerName,
-                    customerbooking.CustomerPhone, customerbooking.startTime.ToString("HH:mm"), customerbooking.endTime.ToString("HH:mm"),
-                    customerbooking.priceBooking, customerbooking.status, customerbooking.Ngaydat.ToString("MM/dd/yyyy"));
-                }
-            }
-            dataGridView1.DataSource = dataTable;
+            int IdField = 0; // cho IdField = 0 để lấy ra tất cả các Field bằng cách xử lí logic ở câu truy vấn
+            string State = "dat truoc";
+            dataGridView1.DataSource = CustomerBookingBLL.Instance.ShowCustomerBooking(IdField,State);
             dataGridView1.Columns["id"].Visible = false;
             dataGridView1.Columns["idField"].Visible = false;
         }
-        string saveCustomerName = "";
-        string saveCustomerPhone = "";
-        string saveHourBegin = "";
-        string saveMinuteBegin = "";
-        string saveHourEnd = "";
-        string saveMinuteEnd = "";
-        string savePriceBooking = "";
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
                 // Lấy hàng đã click
                 DataGridViewRow selectedRow = dataGridView1.Rows[e.RowIndex];
-
                 // Tiếp theo, bạn có thể lấy giá trị từ các ô trong hàng đã chọn
                 txtIdCustomerBooking.Text= selectedRow.Cells[0].Value.ToString();
                 txtIdField.Text = selectedRow.Cells[1].Value.ToString();
@@ -204,129 +147,36 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
                 txtFieldName.Text = selectedRow.Cells[3].Value.ToString();
                 cbField.Text = selectedRow.Cells[3].Value.ToString();
                 txtCustomerName.Text = selectedRow.Cells[4].Value.ToString();
-                saveCustomerName = selectedRow.Cells[4].Value.ToString();
-
                 txtCustomerPhone.Text = selectedRow.Cells[5].Value.ToString();
-                saveCustomerPhone= selectedRow.Cells[5].Value.ToString();
-
-
                 txtPriceBooking.Text = selectedRow.Cells[8].Value.ToString();
-                savePriceBooking = selectedRow.Cells[8].Value.ToString();
-
                 txtStatus.Text = selectedRow.Cells[9].Value.ToString();
                 dateTimePicker1.Text = selectedRow.Cells[10].Value.ToString();
-
-                // Và tiếp tục lấy giá trị từ các ô khác nếu cần
                 // lấy time
                 string tgbatdau = selectedRow.Cells[6].Value.ToString();
                 string tgkethuc = selectedRow.Cells[7].Value.ToString();
                 string[] parts1 = tgbatdau.Split(':');
                 string[] parts2 = tgkethuc.Split(':');
                 cb1.Text = parts1[0];
-                saveHourBegin  = parts1[0];
-
                 cb2.Text = parts1[1];
-                saveMinuteBegin = parts1[1];
-
                 cb3.Text = parts2[0];
-                saveHourEnd = parts2[0];
-
                 cb4.Text = parts2[1];
-                saveMinuteEnd   = parts2[1];
             }
-        }
-        private void btnConfirm_Click(object sender, EventArgs e)
-        {
-            string s1 = txtIdCustomerBooking.Text;
-            if (s1 == "")
-            {
-                MessageBox.Show("vui lòng chọn đơn đặt sân");
-            }
-            else
-            {
-                if(txtCustomerName.Text == saveCustomerName && txtCustomerPhone.Text == saveCustomerPhone 
-                    && txtPriceBooking.Text == savePriceBooking && cb1.SelectedItem.ToString() == saveHourBegin
-                    && cb2.SelectedItem.ToString() == saveMinuteBegin && cb3.SelectedItem.ToString() == saveHourEnd
-                    && cb4.SelectedItem.ToString() == saveMinuteEnd)
-                {
-                    if (dateTimePicker1.Value.Date.ToString("MM/dd/yyyy") == DateTime.Today.ToString("MM/dd/yyyy"))
-                    {
-                        int idCustomerBooking = int.Parse(s1);
-                        string s2 = txtIdField.Text;
-                        int idField = int.Parse(s2);
-                        if (checkFieldStatus(idField))
-                        {
-                            FieldDAL.Instance.updateFieldState(idField, "busy");
-                            CustomerBookingDAL.Instance.updateCustomerBookingById(idCustomerBooking);
-                            this.Close();
-                        }
-                        else
-                        {
-                            
-                            MessageBox.Show("Sân đang có người đá");
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Chưa đến thời điểm ");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("trường này không có đơn đặt sân");
-                }
-            }
-        }
-        public bool checkFieldStatus(int idField)
-        {
-            string status = "";
-            List<Field> fields = FieldDAL.Instance.LoadFieldList();
-            foreach( Field field in fields)
-            {
-                if(field.Id == idField)
-                {
-                    status = field.Status;
-                    break;
-                }
-            }
-            if (status == "empty")
-            {
-                return true;
-            }
-            return false;
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            float PriceBookinng = float.Parse(txtPriceBooking.Text.ToString());
+            float PriceBookinng = float.Parse(txtPriceBooking.Text);
+            int Id = 1; // id bất kì
             string Name = txtCustomerName.Text;
             string Phone = txtCustomerPhone.Text;
-            CustomerDAL.Instance.InsertCustomer(Name, Phone); // insert Customer
-            // lấy idCustomer mới insert
-            int idCustomer = CustomerDAL.Instance.getIdCustomerLast(); // đã giải quyết
-
+            Customer Cus = new Customer(Id, Name, Phone);
+            DateTime StartTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, int.Parse(cb1.SelectedItem.ToString()), int.Parse(cb2.SelectedItem.ToString()), 0);
+            DateTime EndTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, int.Parse(cb3.SelectedItem.ToString()), int.Parse(cb4.SelectedItem.ToString()), 0);
+            DateTime Date = dateTimePicker1.Value.Date;
+            string State = "dat truoc";
             if (txtIdField.Text != "")
             {
-                int idFieldChoose = int.Parse(txtIdField.Text.ToString());
-
-                // cập  nhật trạng thái
-                DateTime startTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month,DateTime.Today.Day, int.Parse(cb1.SelectedItem.ToString()), int.Parse(cb2.SelectedItem.ToString()), 0);
-
-                DateTime endTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month,DateTime.Today.Day, int.Parse(cb3.SelectedItem.ToString()), int.Parse(cb4.SelectedItem.ToString()), 0);
-
-                DateTime ngaydat = dateTimePicker1.Value.Date;
-
-                if (PriceBookinng > 0)
-                {
-                    if (checktimeFieldNeedAdd(idFieldChoose, startTime.ToString("HH:mm"), endTime.ToString("HH:mm"), ngaydat))
-                    {
-                        CustomerBookingDAL.Instance.InSertCustomerBooking(idCustomer, idFieldChoose, startTime,
-                           endTime, PriceBookinng, "dat truoc", ngaydat);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Sân đã có người đặt");
-                    }
-                }
+                int IdField = int.Parse(txtIdField.Text);
+                CustomerBookingBLL.Instance.AddCustomerBooking(IdField, Cus, PriceBookinng, StartTime, EndTime, Date, State);
             }
             else
             {
@@ -337,127 +187,79 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             string s1 = txtIdCustomerBooking.Text;
-            if(s1 == "")
+            if (s1 == "")
             {
                 MessageBox.Show("vui lòng chọn đơn đặt sân");
             }
             else
             {
-                DateTime startTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month,DateTime.Today.Day, int.Parse(cb1.SelectedItem.ToString()), int.Parse(cb2.SelectedItem.ToString()), 0);
-                DateTime endTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month,DateTime.Today.Day, int.Parse(cb3.SelectedItem.ToString()), int.Parse(cb4.SelectedItem.ToString()), 0);
-                DateTime ngaydat = dateTimePicker1.Value.Date;
-                CustomerBooking customerBooking = CustomerBookingDAL.Instance.getCustomerByCustomerBooking(int.Parse(s1));
-
-                if (checktimeFieldNeedUpdate(int.Parse(txtIdField.Text), startTime.ToString("HH:mm"), endTime.ToString("HH:mm"),int.Parse(s1),ngaydat))
-                {
-                    CustomerDAL.Instance.updateCustomer(customerBooking.IdCustomer, txtCustomerName.Text, txtCustomerPhone.Text);
-                    CustomerBookingDAL.Instance.updateCustomerBooking(int.Parse(s1), customerBooking.IdCustomer, int.Parse(txtIdField.Text), startTime, endTime, float.Parse(txtPriceBooking.Text.ToString()), txtStatus.Text,ngaydat);
-                    
-                }
-                else
-                    {
-                        MessageBox.Show("Sân đã có người đặt");
-                    }
-                }
+                int IdCustomerBooking = int.Parse(s1);
+                int IdField = int.Parse(txtIdField.Text);
+                DateTime StartTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, int.Parse(cb1.SelectedItem.ToString()), int.Parse(cb2.SelectedItem.ToString()), 0);
+                DateTime EndTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, int.Parse(cb3.SelectedItem.ToString()), int.Parse(cb4.SelectedItem.ToString()), 0);
+                DateTime Date = dateTimePicker1.Value.Date;
+                int Id = 1; // id bất kì
+                string Name = txtCustomerName.Text;
+                string Phone = txtCustomerPhone.Text;
+                Customer Cus = new Customer(Id, Name, Phone);
+                float PriceBooking = float.Parse(txtPriceBooking.Text);
+                string State = txtStatus.Text;
+                CustomerBookingBLL.Instance.UpdateCustomerBooking(IdCustomerBooking, IdField, StartTime, EndTime, Date, Cus, PriceBooking, State);
+            }
             LoadCustomerBooking();
-        }
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            LoadCustomerBooking(cbTypeField.SelectedItem.ToString(), cbField.SelectedItem.ToString(), txtSearch.Text.ToLower());
         }
         private void btnDel_Click(object sender, EventArgs e)
         {
-            if(txtIdCustomerBooking.Text.ToString() == "")
+            if (txtIdCustomerBooking.Text == "")
             {
                 MessageBox.Show("vui lòng chọn đơn đặt sân");
             }
             else
             {
-                // cap nhat thanh trang thai da huy
-                CustomerBookingDAL.Instance.updatestatusCustomerBookingById(int.Parse(txtIdCustomerBooking.Text));
-                BillDAL.Instance.insertBill(int.Parse(txtIdCustomerBooking.Text), float.Parse(txtPriceBooking.Text));
+                int IdCustomerBooking = int.Parse(txtIdCustomerBooking.Text);
+                float PriceBooking = float.Parse(txtPriceBooking.Text);
+                CustomerBookingBLL.Instance.DelCustomerBooking(IdCustomerBooking, PriceBooking);
                 this.Close();
             }
         }
-        public bool checktimeFieldNeedAdd(int idField, string startTime, string endTime, DateTime ngaydat)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
-            bool check = true;
-            List<CustomerBooking> customerbookings = CustomerBookingDAL.Instance.LoadCustomerBooking();
-            foreach (CustomerBooking customerbooking in customerbookings)
-            {
-                if ((customerbooking.Status == "dat truoc" || customerbooking.Status == "truc tiep") && customerbooking.IdFieldName == idField && customerbooking.Ngaydat.ToString("MM/dd/yyyy") == ngaydat.ToString("MM/dd/yyyy"))
-                {
-                    if (sosanhthoigian(endTime, customerbooking.StartTime.ToString("HH:mm")) == true &&
-                        sosanhthoigian(endTime, customerbooking.EndTime.ToString("HH:mm")) == false)
-                    {
-                        check = false;
-                        break;
-                    }
-                    if (sosanhthoigian(startTime, customerbooking.EndTime.ToString("hh:mm")) == false &&
-                        sosanhthoigian(startTime, customerbooking.StartTime.ToString("hh:mm")) == true)
-                    {
-                        check = false;
-                        break;
-                    }
-                    if (sosanhthoigian(startTime, customerbooking.StartTime.ToString("hh:mm")) == false &&
-                        sosanhthoigian(endTime, customerbooking.EndTime.ToString("hh:mm")) == true)
-                    {
-                        check = false;
-                        break;
-                    }
-                }
-            }
-            return check;
+            int IdField = 0; // cho IdField = 0 để lấy ra tất cả các Field bằng cách xử lí logic ở câu truy vấn
+            string State = "dat truoc";
+            string TypeName = cbTypeField.SelectedItem.ToString();
+            string FieldName = cbField.SelectedItem.ToString();
+            string Search = txtSearch.Text.ToLower();
+            dataGridView1.DataSource = CustomerBookingBLL.Instance.ShowCustomerBooking(IdField,State,TypeName,FieldName,Search);
+            dataGridView1.Columns["id"].Visible = false;
+            dataGridView1.Columns["idField"].Visible = false;
         }
-        public bool checktimeFieldNeedUpdate(int idField, string startTime, string endTime, int idCustomerBooking, DateTime ngaydat)
+        private void btnConfirm_Click(object sender, EventArgs e)
         {
-            bool check = true;
-            List<CustomerBooking> customerbookings = CustomerBookingDAL.Instance.LoadCustomerBooking();
-            foreach (CustomerBooking customerbooking in customerbookings)
+            string s1 = txtIdCustomerBooking.Text;
+            if (s1 == "")
             {
-                if ((customerbooking.Status == "dat truoc" || customerbooking.Status == "truc tiep") && customerbooking.IdFieldName == idField && customerbooking.Id != idCustomerBooking && customerbooking.Ngaydat == ngaydat)
-                {
-                    if (sosanhthoigian(endTime, customerbooking.StartTime.ToString("HH:mm")) == true &&
-                        sosanhthoigian(endTime, customerbooking.EndTime.ToString("HH:mm")) == false)
-                    {
-                        check = false;
-                        break;
-                    }
-                    if (sosanhthoigian(startTime, customerbooking.EndTime.ToString("hh:mm")) == false &&
-                        sosanhthoigian(startTime, customerbooking.StartTime.ToString("hh:mm")) == true)
-                    {
-                        check = false;
-                        break;
-                    }
-                    if (sosanhthoigian(startTime, customerbooking.StartTime.ToString("hh:mm")) == false &&
-                        sosanhthoigian(endTime, customerbooking.EndTime.ToString("hh:mm")) == true)
-                    {
-                        check = false;
-                        break;
-                    }
-                }
-            }
-            return check;
-        }
-        public bool sosanhthoigian(string time1, string time2)
-        {
-            int minutes1 = TimeToMinutes(time1);
-            int minutes2 = TimeToMinutes(time2);
-            if (minutes1 > minutes2)
-            {
-                return true;
+                MessageBox.Show("vui lòng chọn đơn đặt sân");
             }
             else
             {
-                return false;
+                    if (dateTimePicker1.Value.Date.ToString("MM/dd/yyyy") == DateTime.Today.ToString("MM/dd/yyyy"))
+                    {
+                        int IdCustomerBooking = int.Parse(s1);
+                        int IdField = int.Parse(txtIdField.Text);
+                        string State = "busy";
+                        CustomerBookingBLL.Instance.ConfirmCustomerBooking(IdCustomerBooking,IdField,State);
+                        this.Close();
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Chưa đến thời điểm ");
+                    }   
             }
         }
-        public int TimeToMinutes(string time)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-            string[] parts = time.Split(':');
-            int hours = int.Parse(parts[0]);
-            int minutes = int.Parse(parts[1]);
-            return hours * 60 + minutes;
+            this.Close();
         }
     }
 }
