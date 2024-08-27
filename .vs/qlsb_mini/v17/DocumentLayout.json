@@ -1,0 +1,371 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|c:\\users\\nguye\\onedrive\\desktop\\qlsb\\pbl3\\qlsb_mini\\bll\\billbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\bll\\billbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|c:\\users\\nguye\\onedrive\\desktop\\qlsb\\pbl3\\qlsb_mini\\resources\\8125c71c-03ef-443e-88eb-0f8e221a1566-fotor-20240611105848.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\resources\\8125c71c-03ef-443e-88eb-0f8e221a1566-fotor-20240611105848.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|c:\\users\\nguye\\onedrive\\desktop\\qlsb\\pbl3\\qlsb_mini\\bookingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\bookingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\bll\\customerbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\bll\\customerbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\dal\\billdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\dal\\billdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\dto\\fieldtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\dto\\fieldtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\dto\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\dto\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\dto\\customerbookingdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\dto\\customerbookingdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\dto\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\dto\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\dto\\billdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\dto\\billdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\dto\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\dto\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\bookingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\bookingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\bookingmanager.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\bookingmanager.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\forminformationbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\forminformationbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\forminformationbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\forminformationbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC64B42B-DA90-444A-883C-04E579A15A2D}|qlsb_mini\\qlsb_mini.csproj|solutionrelative:qlsb_mini\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BillBLL.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\BLL\\BillBLL.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\BLL\\BillBLL.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\BLL\\BillBLL.cs",
+              "RelativeToolTip": "qlsb_mini\\BLL\\BillBLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T07:27:28.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "8125c71c-03ef-443e-88eb-0f8e221a1566-fotor-20240611105848.jpg - Bitmap [1132x400, 24 bit, JPG]",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\Resources\\8125c71c-03ef-443e-88eb-0f8e221a1566-fotor-20240611105848.jpg",
+              "RelativeDocumentMoniker": "qlsb_mini\\Resources\\8125c71c-03ef-443e-88eb-0f8e221a1566-fotor-20240611105848.jpg",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\Resources\\8125c71c-03ef-443e-88eb-0f8e221a1566-fotor-20240611105848.jpg - Bitmap [1132x400, 24 bit, JPG]",
+              "RelativeToolTip": "qlsb_mini\\Resources\\8125c71c-03ef-443e-88eb-0f8e221a1566-fotor-20240611105848.jpg - Bitmap [1132x400, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-08-27T07:27:15.327Z",
+              "EditorCaption": " - Bitmap [1132x400, 24 bit, JPG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Manager.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\Manager.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\Manager.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\Manager.cs [Design]",
+              "RelativeToolTip": "qlsb_mini\\Manager.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:44:34.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\Manager.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\Manager.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\Manager.cs",
+              "RelativeToolTip": "qlsb_mini\\Manager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:44:36.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\DTO\\Customer.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\DTO\\Customer.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\DTO\\Customer.cs",
+              "RelativeToolTip": "qlsb_mini\\DTO\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:46:13.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BillDetail.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\DTO\\BillDetail.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\DTO\\BillDetail.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\DTO\\BillDetail.cs",
+              "RelativeToolTip": "qlsb_mini\\DTO\\BillDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:45:47.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\EditForm.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\EditForm.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\EditForm.cs [Design]",
+              "RelativeToolTip": "qlsb_mini\\EditForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:45:00.122Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CustomerBookingDetail.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\DTO\\CustomerBookingDetail.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\DTO\\CustomerBookingDetail.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\DTO\\CustomerBookingDetail.cs",
+              "RelativeToolTip": "qlsb_mini\\DTO\\CustomerBookingDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:46:14.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Bill.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\DTO\\Bill.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\DTO\\Bill.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\DTO\\Bill.cs",
+              "RelativeToolTip": "qlsb_mini\\DTO\\Bill.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:45:39.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookingManager.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\BookingManager.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\BookingManager.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\BookingManager.cs",
+              "RelativeToolTip": "qlsb_mini\\BookingManager.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAA7wDQAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:45:21.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Field.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\DTO\\Field.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\DTO\\Field.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\DTO\\Field.cs",
+              "RelativeToolTip": "qlsb_mini\\DTO\\Field.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:46:15.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FieldType.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\DTO\\FieldType.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\DTO\\FieldType.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\DTO\\FieldType.cs",
+              "RelativeToolTip": "qlsb_mini\\DTO\\FieldType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:46:16.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BillDAL.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\DAL\\BillDAL.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\DAL\\BillDAL.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\DAL\\BillDAL.cs",
+              "RelativeToolTip": "qlsb_mini\\DAL\\BillDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:46:20.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomerBLL.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\BLL\\CustomerBLL.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\BLL\\CustomerBLL.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\BLL\\CustomerBLL.cs",
+              "RelativeToolTip": "qlsb_mini\\BLL\\CustomerBLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:46:24.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BookingManager.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\BookingManager.Designer.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\BookingManager.Designer.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\BookingManager.Designer.cs",
+              "RelativeToolTip": "qlsb_mini\\BookingManager.Designer.cs",
+              "ViewState": "AQIAAJoAAAAAAAAAAAAowKwAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:45:10.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BookingManager.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\BookingManager.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\BookingManager.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\BookingManager.cs [Design]",
+              "RelativeToolTip": "qlsb_mini\\BookingManager.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:45:06.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EditForm.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\EditForm.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\EditForm.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\EditForm.cs",
+              "RelativeToolTip": "qlsb_mini\\EditForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:45:02.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FormInformationBooking.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\FormInformationBooking.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\FormInformationBooking.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\FormInformationBooking.cs",
+              "RelativeToolTip": "qlsb_mini\\FormInformationBooking.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:44:54.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FormInformationBooking.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\FormInformationBooking.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\FormInformationBooking.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\FormInformationBooking.cs [Design]",
+              "RelativeToolTip": "qlsb_mini\\FormInformationBooking.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:44:52.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\Program.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\Program.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\Program.cs",
+              "RelativeToolTip": "qlsb_mini\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:43:42.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PayMent.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\PayMent.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\PayMent.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\PayMent.cs",
+              "RelativeToolTip": "qlsb_mini\\PayMent.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:43:23.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PayMent.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\PayMent.cs",
+              "RelativeDocumentMoniker": "qlsb_mini\\PayMent.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Desktop\\qlsb\\PBL3\\qlsb_mini\\PayMent.cs [Design]",
+              "RelativeToolTip": "qlsb_mini\\PayMent.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T06:43:20.759Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
