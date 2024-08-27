@@ -60,7 +60,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DTO
         }
         public override string ToString()
         {
-            return _TypeName;
+            return _Id.ToString();
 
         }
         public FieldType(int id, string typeName)

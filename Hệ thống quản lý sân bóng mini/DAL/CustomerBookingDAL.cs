@@ -76,7 +76,6 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini.DAL
 
             if (data.Rows.Count == 0)
             {
-                // Handle no matching record scenario (e.g., return null or throw an exception)
                 return null; // Example: return null if no matching customer booking found
             }
 

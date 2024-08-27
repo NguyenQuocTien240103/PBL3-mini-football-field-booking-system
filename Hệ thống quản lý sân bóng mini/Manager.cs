@@ -98,7 +98,7 @@ namespace Hệ_thống_quản_lý_sân_bóng_mini
         }
         private void cbIdType_SelectedIndexChanged(object sender, EventArgs e)
         {
-          //  List<FieldType> listFieldType = FieldTypeDAL.Instance.LoadFieldType();
+          
             ComboBox cb = sender as ComboBox;
             FieldType choosed = cb.SelectedItem as FieldType;
             if (choosed != null)
