@@ -1,0 +1,14 @@
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\qlsb_mini\bin\Debug\qlsb_mini.exe.config
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\qlsb_mini\bin\Debug\qlsb_mini.exe
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\qlsb_mini\bin\Debug\qlsb_mini.pdb
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\qlsb_mini\obj\Debug\qlsb_mini.csproj.AssemblyReference.cache
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\qlsb_mini\obj\Debug\qlsb_mini.EditForm.resources
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\qlsb_mini\obj\Debug\qlsb_mini.BookingManager.resources
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\qlsb_mini\obj\Debug\qlsb_mini.Manager.resources
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\qlsb_mini\obj\Debug\qlsb_mini.FormInformationBooking.resources
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\qlsb_mini\obj\Debug\qlsb_mini.PayMent.resources
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\qlsb_mini\obj\Debug\qlsb_mini.Properties.Resources.resources
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\qlsb_mini\obj\Debug\qlsb_mini.csproj.GenerateResource.cache
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\qlsb_mini\obj\Debug\qlsb_mini.csproj.CoreCompileInputs.cache
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\qlsb_mini\obj\Debug\qlsb_mini.exe
+C:\Users\nguye\OneDrive\Desktop\qlsb\PBL3\qlsb_mini\obj\Debug\qlsb_mini.pdb
